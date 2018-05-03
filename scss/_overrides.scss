@@ -1,0 +1,115 @@
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+body {
+  font-family: $font-family;
+  color: $color-text;
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: $color-text;
+  }
+
+  .container {
+    .row {
+      padding: 40px 0 30px;
+    }
+  }
+}
+
+
+.content-wrapper {
+  .left-sidebar.default-layout {
+    .layout-wrapper {
+      max-width: 1124px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+  }
+}
+
+.content-wrapper {
+  .frontpage-layout {
+    .panel-pane-inner {
+      max-width: 1124px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      position: relative;
+      padding: 40px 0 30px;
+    }
+  }
+}
+
+html {
+  &.overlay-open .navbar-fixed-top {
+    z-index: 400;
+  }
+  &.js {
+    // Collapsible fieldsets.
+    fieldset.collapsed {
+      border-left-width: 1px;
+      border-right-width: 1px;
+      height: auto;
+    }
+    // Throbbers.
+    input.form-autocomplete {
+      background-image: none;
+    }
+    // Autocomplete.
+    input.form-autocomplete {
+      background-image: none;
+    }
+    // Autocomplete (fallback throbber, no icon).
+    .autocomplete-throbber {
+      background-position: 100% 2px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 15px;
+      margin: 2px 0 0 2px;
+      width: 15px;
+    }
+    .autocomplete-throbber.throbbing {
+      background-position: 100% -18px;
+    }
+  }
+}
+
+@mixin outer-container {
+  @include clearfix;
+  max-width: $max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+
+//mixin 
+@mixin wrapper() {
+  @include outer-container;
+  width: $wrapper-width;
+  //width: $outer_width;
+}
+

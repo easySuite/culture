@@ -1,0 +1,81 @@
+/**
+ * Default Variables.
+ *
+ */
+
+// The color-module is dependent on the following five variables and their specific values. Therefore they may not be altered.
+
+$color-primary: #e3e000;
+$color-secondary: #e8e6e7;
+$color-topbar: #e7e7e7;
+
+$black: #000000;
+$charcoal: #262626;
+$color-text: #494949;
+$color-text-link: #e3e000;
+$color-text-link-on-dark: #e3e000;
+$color-text-on-primary: #fffff1;
+$color-text-on-secondary: #fffff2;
+$color-topbar: #f1f2f3;
+$box-shadow: 0 0 9px #969488;
+$white: #ffffff;
+$white-opacity-dark: rgba(255, 255, 255, 0.54);
+$white-opacity-light: rgba(255, 255, 255, 0.2);
+
+// Font
+$font-family: 'FaktPro-Normal', sans-serif;
+$font-family-light: 'FaktPro-Light', sans-serif;
+$font-family-bold: 'FaktPro-SemiBold', sans-serif;
+
+// Font-weight
+$weight-normal: 400;
+
+$font-size-h1:            28px !default; // ~36px
+$font-size-h2:            24px !default; // ~30px
+$font-size-h3:            20px !default; // ~24px
+$font-size-h4:            18px !default; // ~18px
+$font-size-h5:            16px !default; // ~12px
+
+// ==========================================================================
+// Distance
+// ==========================================================================
+$header-height: 148px;
+$topbar-height: 64px;
+$second-level-menu-height: 61px;
+$distance-paragraph: 30px;
+$element-height: 54px;
+$wrapper-width: 90%;
+$search-form-extended-height: 84px;
+$toolbar-height: 65px;
+$admin-menu-height: 29px;
+
+$dynamic-background-width: 1250px;
+
+// ==========================================================================
+// Misc
+// ==========================================================================
+$round-corner: 5px;
+$box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+$box-padding: 15px;
+$disabled: 0.3;
+
+// ==========================================================================
+// Transition
+// ==========================================================================
+$speed: 300ms;
+$speed-fast: 150ms;
+$hover-delay: 400ms;
+$ease: cubic-bezier(0.165,  0.840, 0.440, 1.000);;
+
+//z-index 
+$z-below: 50;
+$z-content: 100;
+$z-above: 150;
+$z-header: 300;
+$z-overlay: 900;
+$z-debug: 999;
+
+$max-width: 1124px;
+
+// Extra small screen / phone
+

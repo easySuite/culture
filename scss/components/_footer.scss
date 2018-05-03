@@ -1,0 +1,46 @@
+.footer {
+  background-color: $charcoal;
+  color: $white;
+  a,
+  a.active {
+    @include transition(color $speed $ease);
+    color: $white;
+    &:hover {
+      color: $white-opacity-dark;
+    }
+  }
+}
+
+.footer-inner {
+  @include wrapper;
+  padding: 50px 0;
+
+  > .panel-pane {
+    @include make-col(4);
+    margin-bottom: 50px;
+    .pane-title {
+      pointer-events: none;
+      &.open {
+        &::after {
+          background-color: $black;
+          color: $white;
+          display: none;
+        }
+      }
+      &::after {
+        display: none; // hide arrow on desktop
+      }
+    }
+    .pane-content {
+      ul {
+        display: block;
+      }
+      .icon {
+        line-height: 30px;
+        span {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

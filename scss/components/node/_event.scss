@@ -1,0 +1,17 @@
+//
+// Styling of content type Ding Event
+
+//@import '../../style.scss';
+
+
+.node-ding-event {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner.row {
+    padding: 20px;
+  }
+}
