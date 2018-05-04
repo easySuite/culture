@@ -7,6 +7,7 @@
 @import 'default-variables';
 @import 'overrides';
 @import 'extend';
-//@import 'components/header';
-//@import 'components/footer';
-//@import "components/node/event";
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+@import "components/node/event";

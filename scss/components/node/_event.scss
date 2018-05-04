@@ -14,4 +14,26 @@
   .inner.row {
     padding: 20px;
   }
+
+  .left {
+    h2 {
+      padding: 25px 0;
+      margin-bottom: 25px;
+      font-family: $font-family-bold;
+      font-size: 18px;
+      border-bottom: 1px solid $grey;
+    }
+
+    .field {
+      .field-label {
+        display: inline-block;
+        width: auto;
+      }
+      .field-items {
+        display: inline-block;
+        width: auto;
+        vertical-align: text-top;
+      }
+    }
+  }
 }
