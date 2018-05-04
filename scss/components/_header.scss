@@ -1,8 +1,7 @@
-
 // In order to make the theme backwards compatible we are styling the existing markup.
 // This makes the code in this file a bit messy.
 .site-header {
-  height: 200px;
+  //height: 100px;
   // ==========================================================================
   // Topbar
   // ==========================================================================
@@ -29,16 +28,23 @@
         @include make-col(8);
         z-index: $z-overlay + 2;
       }
+    }
+  }
 
-      .pane-search-form {
-        @include make-col(6);
-        float: right;
+  .pane-search-form {
+    @include make-col(6);
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
 
-        .form-item-search-block-form input {
-          display: inline-block;
+    .form-item-search-block-form input {
+      display: inline-block;
+      margin-top: 0;
+    }
 
-        }
-      }
+    .form-item,
+    .form-actions {
+      margin-top: 0;
     }
   }
 
@@ -76,6 +82,17 @@
         }
       }
     }
+
+    #search-block-form {
+      .form-actions,
+      .form-item-search-block-form {
+        display: inline-block;
+      }
+
+      .form-actions {
+        margin-left: -6px;
+      }
+    }
   }
 
   // ==========================================================================
@@ -88,7 +105,7 @@
     width: 100%;
   }
 
-  .header-inner {
+  .navigation-inner {
     @include wrapper;
     position: relative;
 
@@ -126,9 +143,7 @@
           border-radius: 0 $round-corner $round-corner 0;
         }
       }
-      
     }
-    
   }
 
   > .navigation-wrapper {
@@ -155,8 +170,13 @@
         top 0ms $ease $speed
       );
       @include make-col(4);
-
+      margin-left: 10px;
     }
+
+    .menu-block-wrapper {
+      margin-left: 10px;
+    }
+
     .secondary-menu-wrapper {
       display: none;
 
