@@ -7,7 +7,7 @@ ul li {
 body {
   font-family: $font-family;
   color: $color-text;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 html,
@@ -31,7 +31,6 @@ body {
   }
 }
 
-
 .content-wrapper {
   .left-sidebar.default-layout {
     .layout-wrapper {
@@ -40,6 +39,9 @@ body {
       margin-right: auto;
       width: 90%;
     }
+  }
+  .container {
+    margin-top: 100px;
   }
 }
 
@@ -57,6 +59,10 @@ body {
 }
 
 html {
+  // .ding2-site-template {
+  //   background-color: $color-topbar;
+  // }
+
   &.overlay-open .navbar-fixed-top {
     z-index: 400;
   }
@@ -113,3 +119,31 @@ h5, .h5 { font-size: $font-size-h5; }
   //width: $outer_width;
 }
 
+.default-panel-layout {
+  margin-top: 100px;
+
+  .secondary-content {
+    @include make-col(4);
+    display: block;
+    float: left;
+
+    .pane-menu-title h2 {
+      margin-top: 15px;
+      margin-bottom: 46px;
+      font-size: 40px;
+      line-height: 44px;
+      font-family: $font-family-light;
+      color: $charcoal;
+    }
+  }
+
+  .primary-content {
+    @include make-col(8);
+    display: block;
+    float: right;
+    
+    .view-ding-event {
+      margin-top: 15px;
+    }
+  }
+}
