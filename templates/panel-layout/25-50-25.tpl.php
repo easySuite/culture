@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * ddbasic implementation to present a Panels layout.
+ * cultur implementation to present a Panels layout.
  *
  * Available variables:
  * - $content: An array of content, each item in the array is keyed to one
