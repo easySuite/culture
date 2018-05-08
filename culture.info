@@ -6,6 +6,7 @@ core        = 7.x
 stylesheets[all][] = css/style.css
 
 ;Scripts
+scripts[] = scripts/news.js
 
 ;Regions
 regions[header]            = Header
@@ -20,3 +21,4 @@ regions[attachment_third]  = Attachment third
 regions[attachment_fourth] = Attachment fourth
 regions[footer]            = Footer
 regions[bottom]            = Bottom
+ 
