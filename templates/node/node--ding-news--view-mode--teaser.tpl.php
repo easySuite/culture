@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DDBasic's theme implementation to display news nodes.
+ * culture's theme implementation to display news nodes.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -17,7 +17,7 @@
  * - $node_url: Direct url of the current node.
  * - $display_submitted: Whether submission information should be displayed.
  * - $submitted: Submission information created from $date (NOTE: modified for
- *   ddbasic during ddbasic_preprocess_node in templates.php)
+ *   culture during culture_preprocess_node in templates.php)
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the
@@ -73,9 +73,9 @@
  * language, e.g. $node->body['en'], thus overriding any language negotiation
  * rule that was previously applied.
  *
- * ddbasic specific variables:
- * - $ddbasic_updated: Information about latest update on the node created from
- *   $date during ddbasic_preprocess_node().
+ * culture specific variables:
+ * - $culture_updated: Information about latest update on the node created from
+ *   $date during culture_preprocess_node().
  * - $news_full_submitted: Submitted date and time
  * - $news_full_changed: Changed date and time
  * - $news_submitted: Submitted date
@@ -86,7 +86,7 @@
  * @see template_process()
  */
 ?>
-<article class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<article class="container <?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
     <?php print $news_teaser_image; ?>
     <div class="news-text">
