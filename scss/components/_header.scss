@@ -1,8 +1,7 @@
 // In order to make the theme backwards compatible we are styling the existing markup.
 // This makes the code in this file a bit messy.
 .site-header {
-  //height: 100px;
-  // ==========================================================================
+  height: 150px;
   // Topbar
   // ==========================================================================
   .topbar {
@@ -58,6 +57,10 @@
       @include make-col(4);
       height: 44px;
       margin-top: 10px;
+
+      a:hover {
+        text-decoration: none;
+      }
     }
 
     .site-name-container {
@@ -84,6 +87,11 @@
     }
 
     #search-block-form {
+      top: 0;
+      position: absolute;
+      right: 0;
+
+
       .form-actions,
       .form-item-search-block-form {
         display: inline-block;
@@ -134,7 +142,6 @@
             box-shadow: none;
           }
         }
-
       }
       .form-actions {
         width: getColumn(1 of 3);
@@ -173,18 +180,30 @@
       margin-left: 10px;
     }
 
-    .menu-block-wrapper {
+    .main-menu-wrapper {
       margin-left: 10px;
     }
 
     .secondary-menu-wrapper {
-      display: none;
+      > ul.secondary-menu {
+        > li {
+    
+          > a {
+            padding: 30px 0;
+            display: block;
+
+            &:hover {
+              text-decoration: none;
+              color: $color-text;
+            }
+          }
+        }
+      }
 
       .show-secondary-menu & {
         display: block;
         float: right;
         padding-right: 69px;
-
       }
     }
 
@@ -198,7 +217,6 @@
       background-color: $charcoal;
       box-shadow: $box-shadow;
     }
-
   }
 }
 
@@ -207,6 +225,7 @@
 // ==========================================================================
 ul {
   &.menu,
+  &.main-menu,
   &.menu-second-level,
   &.menu-third-level,
   &.secondary-menu,
@@ -224,8 +243,8 @@ ul {
 // ==========================================================================
 // Main menu
 // ==========================================================================
-.menu-block-wrapper {
-  > ul.menu {
+.main-menu-wrapper {
+  > ul.main-menu {
     > li {
 
       > a {
@@ -247,7 +266,7 @@ ul {
         }
       }
 
-      > ul.menu {
+      > ul.main-menu {
         color: $white;
         background-color: $charcoal;
         display: none; // Hide 2 level menu. Displayed on tablet and mobile width jQuery
@@ -268,7 +287,7 @@ ul {
             }
           }
           // 3rd level men
-          .menu {
+          .main-menu {
             background-color: $white;
             display: none; // Hide 2nd level menu. Displayed on tablet and mobile width jQuery
             li {
@@ -291,11 +310,65 @@ ul {
 }
 
 // ==========================================================================
+// Secondary menu
+// ==========================================================================
+.secondary-menu-wrapper {
+  float: right;
+
+  > ul.secondary-menu {
+    > li {
+
+      > a {
+        display: block;
+      }
+
+      a {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: bolder;
+
+        &:hover {
+          text-decoration: none;
+          color: $grey-dark;
+        }
+      }
+    }
+  }
+
+  .topbar-inner & {
+    top: -10px;
+    right: 0;
+    display: block;
+    position: absolute;
+    background-color: $white;
+    padding: 15px;
+
+    .secondary-menu {
+      > li { 
+        border-right: 3px solid $color-text;
+        margin-right: 10px;
+
+        &:last-child {
+            border-right: none;
+            margin-right: 0;
+          }
+        
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================================
 // Main menu & Main menu second level
 // ==========================================================================
 ul {
-  &.menu,
-  &.menu-second-level {
+  &.main-menu,
+  &.secondary-menu {
     > li {
       position: relative;
       float: left;
