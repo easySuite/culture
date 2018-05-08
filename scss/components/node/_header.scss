@@ -1,0 +1,405 @@
+// In order to make the theme backwards compatible we are styling the existing markup.
+// This makes the code in this file a bit messy.
+.site-header {
+  height: 150px;
+  // Topbar
+  // ==========================================================================
+  .topbar {
+    @include transition(transform $speed $ease);
+    position: fixed;
+    z-index: $z-overlay + 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color-topbar;
+    box-shadow: $box-shadow;
+  }
+
+  .navigation-wrapper {
+    .navigation-inner {
+      max-width: 1124px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      position: relative;
+  
+      .pane-menu-block-1 {
+        @include make-col(8);
+        z-index: $z-overlay + 2;
+      }
+    }
+  }
+
+  .pane-search-form {
+    @include make-col(6);
+    float: right;
+    margin-right: 10px;
+    margin-top: 7px;
+
+    .form-item-search-block-form input {
+      display: inline-block;
+      margin-top: 0;
+    }
+
+    .form-item,
+    .form-actions {
+      margin-top: 0;
+    }
+  }
+
+  .topbar-inner {
+    @include wrapper;
+    @include transition(height $speed $ease);
+    position: relative;
+    height: 64px;
+
+    .logo {
+      @include make-col(4);
+      height: 44px;
+      margin-top: 10px;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    .site-name-container {
+      height: 44px;
+
+      &.logo-container {
+        .site-name {
+          display: none;
+        }
+        .vertical-helper {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          max-height: 100%;
+          max-width: 95%;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    #search-block-form {
+      top: 0;
+      position: absolute;
+      right: 0;
+
+
+      .form-actions,
+      .form-item-search-block-form {
+        display: inline-block;
+      }
+
+      .form-actions {
+        margin-left: -6px;
+      }
+    }
+  }
+
+  // ==========================================================================
+  // Header wrapper
+  // ==========================================================================
+  .header-wrapper {
+    position: fixed;
+    z-index: $z-header - 1;
+    top: $topbar-height;
+    width: 100%;
+  }
+
+  .navigation-inner {
+    @include wrapper;
+    position: relative;
+
+    .pane-search-form {
+      @include transition(
+        transform $speed $ease,
+        top 0ms $ease $speed
+      );
+      @include make-col(4);
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      padding: 15px 0;
+
+
+      .form-item-search-block-form {
+        width: getColumn(2 of 3) + getGutter(3);
+        float: left;
+        input[type="text"] {
+          @include transition(width $speed $ease);
+          border-radius: $round-corner 0 0 $round-corner;
+          width: 100%;
+          float: right;
+          &:focus {
+            width: getColumn(4 of 2);
+            box-shadow: none;
+          }
+        }
+      }
+      .form-actions {
+        width: getColumn(1 of 3);
+        float: left;
+        input[type="submit"] {
+          border-radius: 0 $round-corner $round-corner 0;
+        }
+      }
+    }
+  }
+
+  > .navigation-wrapper {
+    @include transition(
+      transform $speed $ease,
+      box-shadow $speed $ease
+    );
+    position: fixed;
+    z-index: $z-header - 2;
+    top: $topbar-height;
+    left: 0;
+    width: 100%;
+    background-color: $color-primary;
+    box-shadow: $box-shadow;
+  }
+
+  .navigation-inner {
+    @include wrapper;
+    position: relative;
+
+    .main-menu-wrapper {
+      @include transition(
+        transform $speed $ease,
+        top 0ms $ease $speed
+      );
+      @include make-col(4);
+      margin-left: 10px;
+    }
+
+    .main-menu-wrapper {
+      margin-left: 10px;
+    }
+
+    .secondary-menu-wrapper {
+      > ul.secondary-menu {
+        > li {
+    
+          > a {
+            padding: 30px 0;
+            display: block;
+
+            &:hover {
+              text-decoration: none;
+              color: $color-text;
+            }
+          }
+        }
+      }
+
+      .show-secondary-menu & {
+        display: block;
+        float: right;
+        padding-right: 69px;
+      }
+    }
+
+    .pane-menu-block-main-menu-second-level {
+      @include transition(top $speed $ease);
+      position: fixed;
+      z-index: $z-header - 1;
+      top: $header-height;
+      left: 0;
+      width: 100%;
+      background-color: $charcoal;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+// ==========================================================================
+// Menu
+// ==========================================================================
+ul {
+  &.menu,
+  &.main-menu,
+  &.menu-second-level,
+  &.menu-third-level,
+  &.secondary-menu,
+  &.topbar-menu {
+    padding: 0;
+    margin-bottom: 0;
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+// ==========================================================================
+// Main menu
+// ==========================================================================
+.main-menu-wrapper {
+  > ul.main-menu {
+    > li {
+
+      > a {
+        padding: 30px 0;
+        display: block;
+      }
+
+      a {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: bolder;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &::after {
+          background-color: $charcoal;
+        }
+      }
+
+      > ul.main-menu {
+        color: $white;
+        background-color: $charcoal;
+        display: none; // Hide 2 level menu. Displayed on tablet and mobile width jQuery
+        li {
+          width: 100%;
+          padding: 0;
+          a {
+            display: block;
+          }
+        }
+        > li {
+          > a {
+            padding: 30px 5%;
+            border-bottom: 1px solid $white-opacity-light;
+            &.open {
+              position: relative;
+              box-shadow: $box-shadow;
+            }
+          }
+          // 3rd level men
+          .main-menu {
+            background-color: $white;
+            display: none; // Hide 2nd level menu. Displayed on tablet and mobile width jQuery
+            li {
+              a {
+                padding: 10px 5%;
+                color: $charcoal;
+              }
+              &:first-child {
+                padding-top: 20px;
+              }
+              &:last-child {
+                padding-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// Secondary menu
+// ==========================================================================
+.secondary-menu-wrapper {
+  float: right;
+
+  > ul.secondary-menu {
+    > li {
+
+      > a {
+        display: block;
+      }
+
+      a {
+        color: $color-text;
+        font-size: 18px;
+        font-weight: bolder;
+
+        &:hover {
+          text-decoration: none;
+          color: $grey-dark;
+        }
+      }
+    }
+  }
+
+  .topbar-inner & {
+    top: -10px;
+    right: 0;
+    display: block;
+    position: absolute;
+    background-color: $white;
+    padding: 15px;
+
+    .secondary-menu {
+      > li { 
+        border-right: 3px solid $color-text;
+        margin-right: 10px;
+
+        &:last-child {
+            border-right: none;
+            margin-right: 0;
+          }
+        
+        a {
+          font-size: 14px;
+          text-transform: uppercase;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// Main menu & Main menu second level
+// ==========================================================================
+ul {
+  &.main-menu,
+  &.secondary-menu {
+    > li {
+      position: relative;
+      float: left;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        &::after {
+          @include transition(height $speed $ease);
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0;
+        }
+        &:hover {
+          &::after {
+            height: 5px;
+          }
+        }
+      }
+      &.active-trail {
+        a {
+          &::after {
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
+}
