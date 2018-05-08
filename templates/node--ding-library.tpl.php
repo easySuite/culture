@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DDBasic theme's implementation to display a node of the type library.
+ * culture theme's implementation to display a node of the type library.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -108,7 +108,7 @@ $image_exist_class = (!empty($content['group_ding_library_left_column'])) ? ' li
       <?php print render($content); ?>
     </div>
     <?php if (!empty($opening_hours)) : ?>
-    <div class="libraries-opening-hours js-opening-hours-toggle-element"<?php if (variable_get('ding_ddbasic_opening_hours_extended_title', FALSE)): print ' data-extended-title="1"';
+    <div class="libraries-opening-hours js-opening-hours-toggle-element"<?php if (variable_get('ding_culture_opening_hours_extended_title', FALSE)): print ' data-extended-title="1"';
    endif; ?>>
       <?php print $opening_hours;  ?>
     </div>

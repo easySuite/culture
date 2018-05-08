@@ -22,12 +22,24 @@ body {
 
   a {
     color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: none;
+    }
   }
 
   .container {
     .row {
       padding: 40px 0 30px;
     }
+  }
+
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -39,9 +51,6 @@ body {
       margin-right: auto;
       width: 90%;
     }
-  }
-  .container {
-    margin-top: 100px;
   }
 }
 
@@ -59,10 +68,6 @@ body {
 }
 
 html {
-  // .ding2-site-template {
-  //   background-color: $color-topbar;
-  // }
-
   &.overlay-open .navbar-fixed-top {
     z-index: 400;
   }
@@ -105,7 +110,6 @@ html {
   }
 }
 
-
 h1, .h1 { font-size: $font-size-h1; }
 h2, .h2 { font-size: $font-size-h2; }
 h3, .h3 { font-size: $font-size-h3; }
@@ -119,31 +123,44 @@ h5, .h5 { font-size: $font-size-h5; }
   //width: $outer_width;
 }
 
-.default-panel-layout {
-  margin-top: 100px;
-
-  .secondary-content {
-    @include make-col(4);
+@mixin place-icon(
+  $icon,
+  $color: $charcoal-opacity-dark,
+  $size: 54px) {
+  position: relative;
+  &::after {
+    @extend %icon-#{$icon};
+    @extend %icomoon-base;
+    font-size: $size;
+    line-height: 1;
+    color: $color;
     display: block;
-    float: left;
-
-    .pane-menu-title h2 {
-      margin-top: 15px;
-      margin-bottom: 46px;
-      font-size: 40px;
-      line-height: 44px;
-      font-family: $font-family-light;
-      color: $charcoal;
-    }
+    position: absolute;
+    top: 0;
   }
+}
 
-  .primary-content {
-    @include make-col(8);
-    display: block;
-    float: right;
-    
-    .view-ding-event {
-      margin-top: 15px;
-    }
-  }
+table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+.pane-node-title h2 {
+  font-family: $font-family-light;
+  font-size: 40px;
+  line-height: 44px;
+  color: $charcoal;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.sub-menu-title,
+.sub-menu-title h2,
+.sub-menu-title h2 a{
+  font-family: $font-family-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
