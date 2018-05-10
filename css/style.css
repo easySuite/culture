@@ -6373,6 +6373,14 @@ table td {
   margin-top: 10px;
   margin-bottom: 20px; }
 
+.content-wrapper .ding2-site-template .panel-pane .panel-pane-inner {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  position: relative;
+  padding: 40px 0 30px; }
+
 .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
   font-family: 'icomoon';
   speak: none;
@@ -6665,6 +6673,15 @@ ul.main-menu > li, ul.secondary-menu > li {
     height: 5px; }
   ul.main-menu > li.active-trail a::after, ul.secondary-menu > li.active-trail a::after {
     height: 5px; }
+
+.sub-menu-wrapper .pane-content ul.menu li {
+  display: block;
+  margin-bottom: 10px; }
+  .sub-menu-wrapper .pane-content ul.menu li a {
+    display: block;
+    color: #494949; }
+    .sub-menu-wrapper .pane-content ul.menu li a:hover {
+      color: #e3e000; }
 
 .footer {
   background-color: #262626;
@@ -7021,17 +7038,13 @@ select[multiple="multiple"] {
 .node-type-ding-news .node-ding-news .ding-news-right .field-name-og-group-ref {
   display: inline-block;
   width: auto; }
-  .node-type-ding-news .node-ding-news .ding-news-right .field-name-og-group-ref .field-item a {
-    color: #808285; }
-    .node-type-ding-news .node-ding-news .ding-news-right .field-name-og-group-ref .field-item a::after {
-      content: '-';
-      padding-left: 5px; }
+  .node-type-ding-news .node-ding-news .ding-news-right .field-name-og-group-ref .field-item a::after {
+    content: '-';
+    padding-left: 5px; }
 
 .node-type-ding-news .node-ding-news .ding-news-right .field-type-taxonomy-term-reference {
   display: inline-block;
   width: auto; }
-  .node-type-ding-news .node-ding-news .ding-news-right .field-type-taxonomy-term-reference .field-item a {
-    color: #808285; }
 
 .node-type-ding-news .node-ding-news .field-name-field-ding-news-tags .field-item {
   display: inline-block;
@@ -7042,10 +7055,10 @@ select[multiple="multiple"] {
 
 .node-type-ding-news .node-ding-news .field-name-field-ding-news-tags,
 .node-type-ding-news .node-ding-news .meta {
-  padding: 10px 0;
+  padding: 15px 0;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  margin: 30px 0; }
+  margin: 25px 0; }
 
 .view-ding-news {
   flex: 0 0 100%;
@@ -7253,22 +7266,30 @@ select[multiple="multiple"] {
   .pane-ding-facetbrowser ul.main-menu-third-level {
     display: block; }
 
+.pane-ding-news-ding-news-library-list .view-ding-news .views-row-odd,
+.pane-ding-news-ding-news-library-list .view-ding-news .views-row-even {
+  display: inline-block;
+  width: 33.1%;
+  padding: 0; }
+
 .node-ding-library.node-teaser {
-  position: relative; }
+  position: relative;
+  padding: 0; }
   .node-ding-library.node-teaser .libraries {
     float: left;
     width: 100%; }
   .node-ding-library.node-teaser .group-ding-library-left-column {
-    flex: 0 0 25%;
-    max-width: 25%; }
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    display: inline-block; }
   .node-ding-library.node-teaser .group-ding-library-right-column {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    display: inline-block; }
     .node-ding-library.node-teaser .group-ding-library-right-column .country {
       display: none; }
-    .node-ding-library.node-teaser .group-ding-library-right-column a.maps-link {
-      float: left; }
+  .node-ding-library.node-teaser a.maps-link {
+    float: right;
+    margin-right: 20%; }
   .node-ding-library.node-teaser .field-name-field-ding-library-title-image img {
     float: right; }
   .node-ding-library.node-teaser a.opening-hours-toggle {
@@ -7295,16 +7316,21 @@ select[multiple="multiple"] {
     .node-ding-library.node-teaser .page-title a {
       color: #262626; }
   .node-ding-library.node-teaser .field-name-field-ding-library-addresse {
-    flex: 0 0 25%;
-    max-width: 25%; }
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
+    float: left; }
   .node-ding-library.node-teaser .field-name-field-ding-library-phone-number,
   .node-ding-library.node-teaser .field-name-field-ding-library-fax-number,
   .node-ding-library.node-teaser .field-name-field-ding-library-mail,
   .node-ding-library.node-teaser .field-name-field-ding-library-links {
     position: relative;
-    width: getColumn(4);
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: block;
     float: right;
-    margin-right: getColumn(2); }
+    width: 100%;
+    margin-right: 30px; }
     .node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-label,
     .node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-label,
     .node-ding-library.node-teaser .field-name-field-ding-library-mail .field-label,
@@ -7312,12 +7338,13 @@ select[multiple="multiple"] {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100px; }
+      width: 50%;
+      margin-right: 10px; }
     .node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-items,
     .node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-items,
     .node-ding-library.node-teaser .field-name-field-ding-library-mail .field-items,
     .node-ding-library.node-teaser .field-name-field-ding-library-links .field-items {
-      padding-left: 100px; }
+      padding-left: 120px; }
   .node-ding-library.node-teaser .field-name-field-ding-library-mail:last-child {
     margin-right: getColumn(2); }
   .node-ding-library.node-teaser .field-name-field-ding-library-links .field-item {
@@ -7327,20 +7354,41 @@ select[multiple="multiple"] {
     .node-ding-library.node-teaser .field-name-field-ding-library-links .field-item:last-child::after {
       content: none; }
 
+.pane-ding-library-ding-library-libraries-list .panel-pane-inner > h2 {
+  font-size: 40px; }
+
+.view-ding-library .library-list {
+  padding: 0;
+  margin-top: 10px; }
+  .view-ding-library .library-list .views-row {
+    margin-bottom: 0;
+    padding: 15px 0;
+    width: 100%;
+    border-top: 1px solid rgba(38, 38, 38, 0.2); }
+
 .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead {
   padding: 15px 0; }
 
 .node-type-ding-library .pane-weekly-opening-hours {
   flex: 0 0 100%;
   max-width: 100%;
-  clear: left;
+  clear: both;
   padding-top: 30px; }
   .node-type-ding-library .pane-weekly-opening-hours .pane-title {
     font-family: "FaktPro-Light", sans-serif;
     line-height: 33px;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #494949; }
+    color: #494949;
+    border: none;
+    padding: 0; }
+
+.node-type-ding-library h2.pane-title {
+  position: relative;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-top: none; }
 
 .node-type-ding-library .opening-hours-table {
   width: 100%; }
