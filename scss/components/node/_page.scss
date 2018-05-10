@@ -1,0 +1,30 @@
+// // Styling of content type Ding Page
+
+// Style default-panel
+
+.default-panel-layout {
+  .secondary-content {
+    @include make-col(4);
+    display: block;
+    float: left;
+
+    .pane-menu-title h2 {
+      margin-top: 15px;
+      margin-bottom: 46px;
+      font-size: 40px;
+      line-height: 44px;
+      font-family: $font-family-light;
+      color: $charcoal;
+    }
+  }
+
+  .primary-content {
+    @include make-col(8);
+    display: block;
+    float: right;
+    
+    .view-ding-event {
+      margin-top: 15px;
+    }
+  }
+}

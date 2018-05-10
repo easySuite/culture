@@ -1,0 +1,57 @@
+// Styling of content type Ding Event
+
+.node-ding-event {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .inner.row {
+    padding: 20px;
+  }
+
+  .left {
+    h2 {
+      padding: 25px 0;
+      margin-bottom: 25px;
+      font-family: $font-family-bold;
+      font-size: 18px;
+      border-bottom: 1px solid $grey;
+    }
+
+    .field {
+      .field-label {
+        display: inline-block;
+        width: auto;
+      }
+      .field-items {
+        display: inline-block;
+        width: auto;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+
+  .field-name-field-ding-event-category {
+    margin-bottom: 5px;
+  }
+
+  .field-name-field-ding-event-date {
+    font-size: 26px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $grey-medium;
+    color: $grey-dark;
+  }
+
+  .field-name-field-ding-event-lead {
+    font-family: $font-family-bold;
+  }
+
+  .field-name-field-ding-event-lead,
+  .field-name-field-ding-event-body p {
+    margin: 20px 0;
+  }
+}

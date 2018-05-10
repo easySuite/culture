@@ -2,11 +2,13 @@ name        = Culture Theme
 description = Default theme for Culture distribution
 core        = 7.x
 
-# Stylesheets
+;Stylesheets
+stylesheets[all][] = css/style.css
 
-# Scripts
+;Scripts
+scripts[] = scripts/news.js
 
-# Regions
+;Regions
 regions[header]            = Header
 regions[navigation]        = Navigation
 regions[content_top]       = Content top
@@ -19,3 +21,4 @@ regions[attachment_third]  = Attachment third
 regions[attachment_fourth] = Attachment fourth
 regions[footer]            = Footer
 regions[bottom]            = Bottom
+ 

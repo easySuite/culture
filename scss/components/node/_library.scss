@@ -1,0 +1,235 @@
+// // Styling of content type Ding Library
+
+// // ==========================================================================
+// // Teaser
+// // ==========================================================================
+
+.node-ding-library.node-teaser {
+  position: relative;
+  padding: 0;
+
+  .libraries {
+    float: left;
+    width: 100%;
+  }
+
+  .group-ding-library-left-column {
+    @include make-col(8);
+    display: inline-block;
+  }
+
+  .group-ding-library-right-column {
+    margin-bottom: 40px;
+    display: inline-block;
+
+    .country {
+      display: none;
+    }
+  }
+
+  a.maps-link {
+    float: right;
+    margin-right: 20%;
+  }
+
+  .field-name-field-ding-library-title-image {
+    img {
+      float: right;
+    }
+  }
+
+  a.opening-hours-toggle {
+    position: static;
+    width: getColumn(9);
+    margin-top: -20px;
+    margin-left: getColumn(3) + getGutter(12);
+  }
+
+  .libraries-opening-hours {
+    @include make-col(12);
+    margin: 20px 0 30px getColumn(3) + getGutter(12);
+    display: none;
+    .day {
+      .name {
+        @include make-col(3);
+      }
+      .times {
+        @include make-col(3);
+        .instance {
+          @include make-col(2);
+        }
+      }
+    }
+  }
+
+  .page-title {
+    margin: 5px 0 15px;
+    a {
+      color: $charcoal;
+    }
+  }
+
+  .field-name-field-ding-library-addresse {
+    @include make-col(6);
+    display: block;
+    float: left;
+  }
+
+  .field-name-field-ding-library-phone-number,
+  .field-name-field-ding-library-fax-number,
+  .field-name-field-ding-library-mail,
+  .field-name-field-ding-library-links {
+    position: relative;
+    @include make-col(6);
+    display: block;
+    float: right;
+    width: 100%;
+    margin-right: 30px;
+
+    .field-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      margin-right: 10px;
+    }
+
+    .field-items {
+      padding-left: 120px;
+    }
+  }
+
+  .field-name-field-ding-library-mail:last-child {
+    margin-right: getColumn(2);
+  }
+
+  .field-name-field-ding-library-links {
+    .field-item {
+      display: inline-block;
+      &::after {
+        content: ',';
+      }
+      &:last-child {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.pane-ding-library-ding-library-libraries-list {
+  .panel-pane-inner > h2 {
+    font-size: 40px;
+  }
+}
+
+.view-ding-library {
+  .library-list {
+    padding: 0;
+    margin-top: 10px;
+
+    .views-row {
+      margin-bottom: 0;
+      padding: 15px 0;
+      width: 100%;
+      border-top: 1px solid $charcoal-opacity-light;
+    }
+  }
+}
+
+.node-type-ding-library {
+  .pane-node-field-ding-library-lead {
+    .field-name-field-ding-library-lead {
+      padding: 15px 0;
+    }
+  }
+
+  .pane-weekly-opening-hours {
+    @include make-col(12);
+    clear: both;
+    padding-top: 30px;
+
+      .pane-title {
+        font-family: $font-family-light;
+        line-height: 33px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: $color-text;
+        border: none;
+        padding: 0;
+      }
+  }
+
+  h2.pane-title {
+    position: relative;
+    border-bottom: 1px solid $charcoal-opacity-light;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-top: none;
+  }
+
+  .opening-hours-table {
+    width: 100%;
+
+    thead {
+      border: none;
+    }
+
+    tbody {
+      .odd {
+        background-color: $grey;
+
+        td {
+          padding-left: 10px;
+        }
+      }
+
+      .even {
+        background-color: $grey-light;
+
+        td {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .ding-library-address .pane-title, 
+  .ding-library-contact .pane-title {
+    font-family: $font-family-light;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $charcoal-opacity-light;;
+    margin-bottom: 25px;
+    color: $color-text;
+    font-weight: bold;
+  }
+
+  .ding-library-address .library-address,
+  .ding-library-contact .library-contact {
+    margin-bottom: 20px;
+  }
+
+  .ding-library-address {
+    @include make-col(5.5);
+    float: left;
+    margin-right: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  .ding-library-contact {
+    @include make-col(5.5);
+    float: right;
+    display: block;
+    width: 100%;
+
+    .library-contact-phone-label,
+    .library-contact-fax-label {
+      width: 100px;
+      float: left;
+    }
+  }
+}
