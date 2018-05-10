@@ -6,26 +6,33 @@
 
 .node-ding-library.node-teaser {
   position: relative;
+  padding: 0;
 
   .libraries {
     float: left;
     width: 100%;
   }
   .group-ding-library-left-column {
-    @include make-col(3);
+    @include make-col(8);
+    display: inline-block;
+   // float: left;
   }
   .group-ding-library-right-column {
-    @include make-col(7);
+    //@include make-col(4);
     margin-bottom: 40px;
+    display: inline-block;
+    //float: right;
 
     .country {
       display: none;
     }
-
-    a.maps-link {
-      float: left;
-    }
   }
+
+  a.maps-link {
+    float: right;
+    margin-right: 20%;
+  }
+
   .field-name-field-ding-library-title-image {
     img {
       float: right;
@@ -60,25 +67,30 @@
     }
   }
   .field-name-field-ding-library-addresse {
-    @include make-col(3);
+    @include make-col(6);
+    display: block;
+    float: left;
   }
   .field-name-field-ding-library-phone-number,
   .field-name-field-ding-library-fax-number,
   .field-name-field-ding-library-mail,
   .field-name-field-ding-library-links {
     position: relative;
-    width: getColumn(4);
+    @include make-col(6);
+    display: block;
     float: right;
-    margin-right: getColumn(2);
+    width: 100%;
+    margin-right: 30px;
 
     .field-label {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100px;
+      width: 50%;
+      margin-right: 10px;
     }
     .field-items {
-      padding-left: 100px;
+      padding-left: 120px;
     }
   }
   .field-name-field-ding-library-mail:last-child {
@@ -99,6 +111,26 @@
   }
 }
 
+.pane-ding-library-ding-library-libraries-list {
+  .panel-pane-inner > h2 {
+    font-size: 40px;
+  }
+}
+
+.view-ding-library {
+  .library-list {
+    padding: 0;
+    margin-top: 10px;
+
+    .views-row {
+      margin-bottom: 0;
+      padding: 15px 0;
+      width: 100%;
+      border-top: 1px solid $charcoal-opacity-light;
+    }
+  }
+}
+
 .node-type-ding-library {
   .pane-node-field-ding-library-lead {
     .field-name-field-ding-library-lead {
@@ -108,7 +140,7 @@
 
   .pane-weekly-opening-hours {
     @include make-col(12);
-    clear: left;
+    clear: both;
     padding-top: 30px;
 
       .pane-title {
@@ -117,7 +149,17 @@
         font-size: 30px;
         margin-bottom: 20px;
         color: $color-text;
+        border: none;
+        padding: 0;
       }
+  }
+
+  h2.pane-title {
+    position: relative;
+    border-bottom: 1px solid $charcoal-opacity-light;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-top: none;
   }
 
   .opening-hours-table {

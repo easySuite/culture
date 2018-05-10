@@ -99,7 +99,7 @@ if ($view_mode == 'teaser') {
 // Check if library list image present.
 $image_exist_class = (!empty($content['group_ding_library_left_column'])) ? ' library-cover-exist' : '';
 ?>
-<div class="<?php print $classes; ?> clearfix">
+<div class="container <?php print $classes; ?> clearfix">
   <?php if ($view_mode != 'teaser'): ?>
     <h2 class="page-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif ?>

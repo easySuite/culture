@@ -93,3 +93,22 @@ function culture_preprocess__node__ding_news(&$variables) {
       break;
   }
 }
+
+/**
+ * Ding Library.
+ */
+function culture_preprocess__node__ding_library(&$variables) {
+  // Google maps addition to library list.
+  $address = $variables['content']['field_ding_library_addresse'][0]['#address'];
+
+  $street = $address['thoroughfare'];
+  $street = preg_replace('/\s+/', '+', $street);
+  $postal = $address['postal_code'];
+  $city = $address['locality'];
+  $country = $address['country'];
+  $url = "http://www.google.com/maps/place/" . $street . "+" . $postal . "+" . $city . "+" . $country;
+  $link = l(t("Show on map"), $url, array('attributes' => array('class' => 'maps-link', 'target' => '_blank')));
+
+  $variables['content']['maps_link']['#markup'] = $link;
+  $variables['content']['maps_link']['#weight'] = 10;
+}

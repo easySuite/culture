@@ -403,3 +403,23 @@ ul {
     }
   }
 }
+
+
+.sub-menu-wrapper .pane-content {
+  ul.menu {
+    li {
+      display: block;
+      margin-bottom: 10px;
+
+      a {
+        display: block;
+        color: $color-text;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
