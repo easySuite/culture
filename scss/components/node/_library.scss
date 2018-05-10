@@ -12,16 +12,15 @@
     float: left;
     width: 100%;
   }
+
   .group-ding-library-left-column {
     @include make-col(8);
     display: inline-block;
-   // float: left;
   }
+
   .group-ding-library-right-column {
-    //@include make-col(4);
     margin-bottom: 40px;
     display: inline-block;
-    //float: right;
 
     .country {
       display: none;
@@ -38,12 +37,14 @@
       float: right;
     }
   }
+
   a.opening-hours-toggle {
     position: static;
     width: getColumn(9);
     margin-top: -20px;
     margin-left: getColumn(3) + getGutter(12);
   }
+
   .libraries-opening-hours {
     @include make-col(12);
     margin: 20px 0 30px getColumn(3) + getGutter(12);
@@ -60,17 +61,20 @@
       }
     }
   }
+
   .page-title {
     margin: 5px 0 15px;
     a {
       color: $charcoal;
     }
   }
+
   .field-name-field-ding-library-addresse {
     @include make-col(6);
     display: block;
     float: left;
   }
+
   .field-name-field-ding-library-phone-number,
   .field-name-field-ding-library-fax-number,
   .field-name-field-ding-library-mail,
@@ -89,13 +93,16 @@
       width: 50%;
       margin-right: 10px;
     }
+
     .field-items {
       padding-left: 120px;
     }
   }
+
   .field-name-field-ding-library-mail:last-child {
     margin-right: getColumn(2);
   }
+
   .field-name-field-ding-library-links {
     .field-item {
       display: inline-block;

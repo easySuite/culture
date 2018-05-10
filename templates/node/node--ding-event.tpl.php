@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DDBasic's theme implementation to display event nodes.
+ * culture's theme implementation to display event nodes.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -17,7 +17,7 @@
  * - $node_url: Direct url of the current node.
  * - $display_submitted: Whether submission information should be displayed.
  * - $submitted: Submission information created from $date (NOTE: modified for
- *   ddbasic during ddbasic_preprocess_node in templates.php)
+ *   culture during culture_preprocess_node in templates.php)
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the
@@ -73,11 +73,11 @@
  * language, e.g. $node->body['en'], thus overriding any language negotiation
  * rule that was previously applied.
  *
- * ddbasic specific variables:
- * - $ddbasic_updated: Information about latest update on the node created from
+ * culture specific variables:
+ * - $culture_updated: Information about latest update on the node created from
  *   $date during
- *   ddbasic_preprocess_node().
- * - $ddbasic_event_location: String containing adress info for either
+ *   culture_preprocess_node().
+ * - $culture_event_location: String containing adress info for either
  *   field_address or group_audience,
  *   as relevant for the event node
  * - $event_date: Event date or period

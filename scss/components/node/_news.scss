@@ -88,10 +88,11 @@
   }
 }
 
+// ==========================================================================
+// Teaser
+// ==========================================================================
+
 .node-ding-news {
-  // ==========================================================================
-  // Teaser
-  // ==========================================================================
   &.node-teaser {
     position: relative;
     a {
@@ -189,6 +190,7 @@
       margin-bottom: 15px;
       margin-left: 0;
       width: 100%;
+
       a {
         display: block;
         padding: 7px 0 1px 42px;
@@ -204,6 +206,7 @@
           border-radius: $round-corner;
           background-color: $grey;
         }
+
         &.active {
           @include place-icon(check, $color-text-on-primary, 28px);
           &::after {
@@ -222,13 +225,16 @@
       padding: 0;
       margin: 0;
       list-style: none;
+
       li {
         margin-bottom: 15px;
         display: block;
+
         .list-item {
           position: relative;
           display: inline-block;
           padding: 7px 0 1px 42px;
+
           &::before {
             content: '';
             position: absolute;
@@ -240,6 +246,7 @@
             border-radius: $round-corner;
             background-color: $grey;
           }
+
           &.active {
             @include place-icon(check, $color-text-on-primary, 28px);
             &::after {

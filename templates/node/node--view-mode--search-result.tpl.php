@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DDBasic theme's implementation to display a node.
+ * culture theme's implementation to display a node.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
