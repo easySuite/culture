@@ -7,6 +7,7 @@ stylesheets[all][] = css/style.css
 
 ;Scripts
 scripts[] = scripts/news.js
+scripts[] = scripts/event.js
 
 ;Regions
 regions[header]            = Header

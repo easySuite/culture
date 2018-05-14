@@ -354,3 +354,22 @@ select[multiple="multiple"] {
     padding: 3px 5px;
   }
 }
+
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active,
+.show > .btn-success.dropdown-toggle {
+  background-color: $color-primary;
+  color: $charcoal;
+  border-color: $color-primary;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: $color-primary-opacity;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  box-shadow: $color-primary-opacity;
+}
