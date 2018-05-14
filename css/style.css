@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -50,7 +50,7 @@ html {
 @-ms-viewport {
   width: device-width; }
 
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
@@ -158,7 +158,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
 pre {
@@ -412,12 +412,6 @@ mark,
 .figure-caption {
   font-size: 90%;
   color: #6c757d; }
-
-code,
-kbd,
-pre,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 code {
   font-size: 87.5%;
@@ -1455,6 +1449,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .custom-select.is-valid ~ .valid-tooltip {
     display: block; }
 
+.was-validated .form-control-file:valid ~ .valid-feedback,
+.was-validated .form-control-file:valid ~ .valid-tooltip, .form-control-file.is-valid ~ .valid-feedback,
+.form-control-file.is-valid ~ .valid-tooltip {
+  display: block; }
+
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
   color: #28a745; }
 
@@ -1531,6 +1530,11 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
+
+.was-validated .form-control-file:invalid ~ .invalid-feedback,
+.was-validated .form-control-file:invalid ~ .invalid-tooltip, .form-control-file.is-invalid ~ .invalid-feedback,
+.form-control-file.is-invalid ~ .invalid-tooltip {
+  display: block; }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
   color: #dc3545; }
@@ -2387,8 +2391,7 @@ input[type="button"].btn-block {
     .input-group > .custom-file:not(:last-child) .custom-file-label::after {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-    .input-group > .custom-file:not(:first-child) .custom-file-label,
-    .input-group > .custom-file:not(:first-child) .custom-file-label::after {
+    .input-group > .custom-file:not(:first-child) .custom-file-label {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
 
@@ -2479,11 +2482,12 @@ input[type="button"].btn-block {
       background-color: #e9ecef; }
 
 .custom-control-label {
+  position: relative;
   margin-bottom: 0; }
   .custom-control-label::before {
     position: absolute;
     top: 0.25rem;
-    left: 0;
+    left: -1.5rem;
     display: block;
     width: 1rem;
     height: 1rem;
@@ -2494,7 +2498,7 @@ input[type="button"].btn-block {
   .custom-control-label::after {
     position: absolute;
     top: 0.25rem;
-    left: 0;
+    left: -1.5rem;
     display: block;
     width: 1rem;
     height: 1rem;
@@ -2620,7 +2624,7 @@ input[type="button"].btn-block {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(2.25rem + 2px) - 1px * 2);
+    height: 2.25rem;
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
     color: #495057;
@@ -4193,6 +4197,7 @@ button.close {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5); }
     .carousel-indicators li::before {
       position: absolute;
@@ -6206,6 +6211,13 @@ a.text-dark:hover, a.text-dark:focus {
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important; }
 
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
 .visible {
   visibility: visible !important; }
 
@@ -6258,7 +6270,17 @@ a.text-dark:hover, a.text-dark:focus {
       background-color: #fff !important; }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #dee2e6 !important; } }
+    border: 1px solid #dee2e6 !important; }
+  .table-dark {
+    color: inherit; }
+    .table-dark th,
+    .table-dark td,
+    .table-dark thead th,
+    .table-dark tbody + tbody {
+      border-color: #dee2e6; }
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #dee2e6; } }
 
 /**
  * Default Variables.
@@ -6380,6 +6402,9 @@ table td {
   width: 90%;
   position: relative;
   padding: 40px 0 30px; }
+
+.row {
+  margin-left: 0; }
 
 .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
   font-family: 'icomoon';
@@ -6947,6 +6972,19 @@ select[multiple="multiple"] {
   select[multiple="multiple"] option {
     padding: 3px 5px; }
 
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
+.show > .btn-success.dropdown-toggle {
+  background-color: #e3e000;
+  color: #262626;
+  border-color: #e3e000; }
+
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(226, 226, 57, 0.73); }
+
+.btn-success:focus, .btn-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(226, 226, 57, 0.73); }
+
 .default-panel-layout .secondary-content {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
@@ -7008,6 +7046,197 @@ select[multiple="multiple"] {
 .node-ding-event .field-name-field-ding-event-lead,
 .node-ding-event .field-name-field-ding-event-body p {
   margin: 20px 0; }
+
+.ui-datepicker-title {
+  width: 100%;
+  height: 30px;
+  padding: 0 25px;
+  margin: 3px 0 0; }
+  .ui-datepicker-title .ui-datepicker-month,
+  .ui-datepicker-title .ui-datepicker-year {
+    font-family: "FaktPro-Normal", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #262626;
+    line-height: normal;
+    position: static;
+    height: auto;
+    padding: 0 10px; }
+
+.node-ding-event.node-teaser {
+  position: relative;
+  float: left;
+  width: 100%; }
+  .node-ding-event.node-teaser.is-hovered {
+    z-index: 2; }
+  .node-ding-event.node-teaser a {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .node-ding-event.node-teaser .inner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 10px 15px; }
+  .node-ding-event.node-teaser .background {
+    transition: width 300ms cubic-bezier(0.165, 0.84, 0.44, 1), background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e5e5e5; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser .background {
+        transition: none; } }
+    .node-ding-event.node-teaser .background .button {
+      transition: opacity 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      width: 156px;
+      padding: 20px 15px 14px 15px;
+      opacity: 0; }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .node-ding-event.node-teaser .background .button {
+          transition: none; } }
+  .node-ding-event.node-teaser .event-text {
+    position: relative;
+    z-index: 1; }
+  .node-ding-event.node-teaser .info-top {
+    color: rgba(38, 38, 38, 0.54); }
+    .node-ding-event.node-teaser .info-top > div {
+      float: left; }
+  .node-ding-event.node-teaser .date {
+    font-family: "FaktPro-Light", sans-serif;
+    clear: left;
+    color: #494949; }
+  .node-ding-event.node-teaser .title-and-lead {
+    transition: min-height 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    min-height: 61px; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser .title-and-lead {
+        transition: none; } }
+    .node-ding-event.node-teaser .title-and-lead .title {
+      margin-bottom: 10px; }
+  .node-ding-event.node-teaser .field-name-field-ding-event-lead {
+    transition: opacity 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    opacity: 0;
+    height: 0; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser .field-name-field-ding-event-lead {
+        transition: none; } }
+  .node-ding-event.node-teaser .info-bottom {
+    float: left;
+    width: 100%;
+    padding-right: 156px;
+    min-height: 60px;
+    color: #494949; }
+  .node-ding-event.node-teaser .event-list-image {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center; }
+  .node-ding-event.node-teaser .library .field-item {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .node-ding-event.node-teaser.has-image .inner {
+    padding: 0 15px 10px 15px; }
+  .node-ding-event.node-teaser.has-image .event-text {
+    padding-top: 215px; }
+  .node-ding-event.node-teaser:hover .background {
+    transition: width 300ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 115%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3); }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser:hover .background {
+        transition: none; } }
+  .node-ding-event.node-teaser:hover .button {
+    transition: opacity 300ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 1; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser:hover .button {
+        transition: none; } }
+  .node-ding-event.node-teaser:hover .title-and-lead {
+    transition: min-height 300ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    min-height: 118px; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser:hover .title-and-lead {
+        transition: none; } }
+  .node-ding-event.node-teaser:hover .field-name-field-ding-event-lead {
+    transition: opacity 300ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 10; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .node-ding-event.node-teaser:hover .field-name-field-ding-event-lead {
+        transition: none; } }
+
+.view-ding-event {
+  flex: 0 0 100%;
+  max-width: 100%; }
+  .view-ding-event .views-row-odd,
+  .view-ding-event .views-row-even {
+    display: inline-block;
+    width: 48%; }
+  .view-ding-event .views-row-odd {
+    margin-right: 24px; }
+  .view-ding-event .container {
+    padding: 0; }
+  .view-ding-event h3 span.date-display-single {
+    font-family: "FaktPro-Light", sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    width: 100%;
+    float: left;
+    padding: 15px 15px 10px;
+    margin-bottom: 15px;
+    background-color: #808285;
+    color: #ffffff; }
+
+span#edit-title-autocomplete-aria-live div {
+  display: block;
+  position: relative;
+  clear: both; }
+
+.views-submit-button .events-tomorrow a,
+.views-submit-button .events-next_weekend a,
+.views-submit-button .top_events a {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  height: 54px;
+  text-align: left;
+  background-color: #e5e5e5;
+  color: #262626;
+  border-color: #e5e5e5; }
+  .views-submit-button .events-tomorrow a:hover, .views-submit-button .events-tomorrow a:active, .views-submit-button .events-tomorrow a:focus, .views-submit-button .events-tomorrow a:visited, .views-submit-button .events-tomorrow a:focus-within,
+  .views-submit-button .events-next_weekend a:hover,
+  .views-submit-button .events-next_weekend a:active,
+  .views-submit-button .events-next_weekend a:focus,
+  .views-submit-button .events-next_weekend a:visited,
+  .views-submit-button .events-next_weekend a:focus-within,
+  .views-submit-button .top_events a:hover,
+  .views-submit-button .top_events a:active,
+  .views-submit-button .top_events a:focus,
+  .views-submit-button .top_events a:visited,
+  .views-submit-button .top_events a:focus-within {
+    background-color: #e3e000;
+    color: #262626;
+    border-color: #e3e000; }
+
+.views-submit-button .btn-success:not(:disabled):not(.disabled):active:focus,
+.views-submit-button .btn-success:not(:disabled):not(.disabled).active:focus,
+.views-submit-button .show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(226, 226, 57, 0.73); }
 
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
