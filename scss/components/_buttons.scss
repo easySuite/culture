@@ -3,6 +3,17 @@
 // General
 // ==========================================================================
 
+.btn {
+  background-color: $grey;
+  color: $charcoal;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+  }
+}
+
 fieldset {
   border: none;
   margin: 0;
@@ -123,7 +134,9 @@ input#edit-search-block-form--2 {
 //border to filter list events;
 #edit-title-wrapper,
 #edit-field-ding-event-category-tid-wrapper,
-#edit-og-group-ref-target-id-entityreference-filter-wrapper {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper,
+#edit-field-ding-event-target-tid-wrapper,
+.views-exposed-widget.views-submit-button {
   position: relative;
   border-top: 1px solid $charcoal-opacity-light;
   padding-top: 25px;
