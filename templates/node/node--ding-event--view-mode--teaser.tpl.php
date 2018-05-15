@@ -88,7 +88,7 @@
   <a href="<?php print $node_url; ?>">
     <div class="inner row">
       <div class="background">
-        <div class="button"><?php print t('Read more'); ?></div>
+        <div class="button btn"><?php print t('Read more'); ?></div>
       </div>
       <div class="event-text">
         <div class="info-top">
