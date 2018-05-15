@@ -1,0 +1,94 @@
+// Style ding_event_calendar
+
+.pane-ding-event-calendar-ding-event-calendar {
+  .event-items {
+    height: 100%;
+
+    .event-title {
+      display: inline-block;
+      @include make-col(5);
+      padding: 5px 0;
+
+      a {
+        width: auto;
+        font-family: $font-family-bold;
+        font-size: $font-size-normal;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+
+    .info-event {
+      @include make-col(7);
+      display: inline-block;
+      float: right;
+      padding-left: 5px;
+
+      .event-location {
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+        width: 170px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        a {
+          color: $grey-dark;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+
+      .event-time,
+      .event-category {
+        display: inline-block;
+
+        a, span {
+          color: $charcoal;
+        }
+
+        a:hover {
+          color: $color-primary;
+        }
+      }
+
+      a, span {
+        font-size: $font-size-small; 
+      }
+
+      .event-time {
+        margin-left: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $color-primary;
+  font-size: 30px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+#eventsCalendar {
+  margin-top: 20px;
+
+  #calendar {
+    tr td.calendar-day.has-events.selected {
+      background-color: $color-primary;
+
+      a {
+        color: $charcoal;
+      }
+    }
+  } 
+}
