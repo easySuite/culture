@@ -1,0 +1,204 @@
+// kultur calendar styling
+
+#kultur_calendar {
+  #kultur-libraries {
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
+
+    .form-item  {
+      display: inline-block;
+      width: auto;
+
+      label {
+        display: inline-block;
+        
+      }
+    }
+  }
+
+  .fc-day-number {
+    color: $white-opacity-light;
+    font-weight: bolder;
+    font-size: $font-size-max;
+  }
+
+  .fc-month-view {
+    margin-top: 55px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $charcoal;
+    font-weight: bold;
+  }
+
+  .fc-prev-button,
+  .fc-next-button {
+    border-radius: 20px;
+    width: 32px;
+    height: 32px;
+    background: $color-primary;
+
+    span {
+      color: $grey-dark;
+    }
+  }
+
+  .fc-icon-left-single-arrow:after {
+    top: 0;
+    margin-left: -5px;
+  }
+
+  .fc-icon-right-single-arrow:after {
+    top: 0;
+    margin-left: -4px;
+  }
+
+// // Styling tabel calendar
+
+  div,table, thead, tbody, tr, th, span {
+    border: none;
+  }
+
+  td {
+    border-right: 2px solid $grey;
+    position: relative;
+
+    &.fc-today {
+      border-left: 2px solid $grey;
+    }
+  }
+
+  div.fc-row {
+    border: 1px solid $grey;
+    
+    div.fc-content-skeleton {
+      position: relative;
+    }
+  }
+
+  td.fc-widget-header {
+    display: none;
+  }
+
+  div, div.fc-bg, div.fc-content-skeleton, div.fc-day-grid, div.fc-scroller {
+    border: none;
+  }
+
+  .fc-body {
+    background-color: $grey-dark;
+  }
+
+  .fc-day-grid-event {
+    background: none;
+    border: none;
+
+    span {
+      font-family: $font-family-bold;
+      font-weight: bold;
+
+      &.fc-title {
+        display: block;
+        white-space: pre-wrap;
+        padding-left: 10px;
+      }
+
+      &.event-amount {
+        display: inline-block;
+        padding-left: 5px;
+      }
+    }
+
+    &.other-info {
+      position: absolute;
+      bottom: -60px;
+      
+      span {
+        color: $color-primary;
+      }
+    }
+
+    &.kultur-today-event {
+      background-color: $color-primary;
+      border: none;
+      padding: 0;
+      border-radius: 0;
+
+      .td & {
+        background-color: $color-primary;
+      }
+
+        span {
+        color: $charcoal;
+        border: none;
+        }
+  
+      &.other-info {
+        span {
+          color: $charcoal;
+        }
+      }
+    }
+  }
+
+  .fc-today {
+    background-color: $color-primary;
+
+  }
+
+  .fc-day-number {
+    z-index: 0;
+  }
+
+  .fc-day {
+    z-index: 1;
+  }
+}
+
+#kultur_calendar-day {
+  background-color: $charcoal-lighter;
+  margin: 3px;
+
+  .kultur_calendar-title,
+  .kultur_calendar-body {
+    padding: 15px;
+    
+  }
+
+  .day-number {
+    display: none;
+  }
+
+  .kultur_calendar-title, .title a {
+    color: $grey-light;
+  }
+
+  .title,
+  .time,
+  .amount {
+    color: $white;
+    font-weight: bold;
+  }
+
+  .amount {
+    padding-left: 10px;
+  }
+
+  .time{
+    float: right;
+    padding-right: 15px;
+  }
+
+  .event {
+    width: 100%;
+    a {
+      color: $color-primary;
+      font-weight: bold;
+    }
+  }
+
+  .fc-today {
+    background-color: $color-primary;
+  }
+}
