@@ -255,11 +255,16 @@
   }
 }
 
-span#edit-title-autocomplete-aria-live {
-  div {
-    display: block;
-    position: relative;
-    clear: both;
+#autocomplete {
+  border: 1px solid $grey;
+
+  ul {
+      li {
+      padding-left: 5px;
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
   }
 }
 
