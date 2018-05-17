@@ -81,10 +81,14 @@
 .view-ding-news {
   @include make-col(12);
 
+  .views-row-odd {
+    margin-right: 15px;
+  }
+
   .views-row-odd,
   .views-row-even {
     display: inline-block;
-    width: 49%;
+    width: 48%;
   }
 }
 

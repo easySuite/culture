@@ -1,7 +1,6 @@
 
 ul li {
   list-style: none;
-  display: inline-block;
 }
 
 body {
@@ -29,42 +28,35 @@ body {
     }
   }
 
-  .container {
-    .row {
-      padding: 40px 0 30px;
-    }
-  }
-
-
   img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-}
 
-.content-wrapper {
-  .left-sidebar.default-layout {
-    .layout-wrapper {
-      max-width: 1124px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-    }
+  .container {
+    padding: 0;
   }
 }
 
 .content-wrapper {
-  .frontpage-layout {
-    .panel-pane-inner {
-      max-width: 1124px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-      position: relative;
-      padding: 40px 0 30px;
-    }
-  }
+  .frontpage-layout .panel-pane-inner, 
+  .left-sidebar.default-layout .layout-wrapper,
+  .pane-page-content  {
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    position: relative;
+    padding: 40px 0;
+ }
+}
+
+.pane-page-tabs {
+  max-width: 1124px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 html {
@@ -90,7 +82,7 @@ html {
     .autocomplete-throbber {
       background-position: 100% 2px;
       background-repeat: no-repeat;
-      display: inline-block;
+      //display: inline-block;
       height: 15px;
       margin: 2px 0 0 2px;
       width: 15px;
@@ -165,17 +157,23 @@ table td {
   margin-bottom: 20px;
 }
 
-.content-wrapper {
-  .ding2-site-template {
-    .panel-pane {
-      .panel-pane-inner {
-        max-width: 1124px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        position: relative;
-        padding: 40px 0 30px;
-      }
-    }
+.row {
+  margin-left: 0;
+}
+
+//ding nis style for slideshow
+
+.field-slideshow.field-slideshow-processed {
+  max-width: 535px !important;
+  height: 500px !important;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+#cboxWrapper {
+  #cboxClose {
+    top: 0;
+    right: 0;
   }
 }

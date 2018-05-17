@@ -1,6 +1,6 @@
 
 // Bootstrap Framework.
-@import '../npde_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // Base-theme overrides.
 @import 'default-variables';
@@ -12,4 +12,7 @@
 @import 'components/node/page';
 @import "components/node/event";
 @import "components/node/news";
+@import "components/node/campaign";
 @import "components/node/library";
+@import "components/modules/kultur_calendar";
+@import "components/modules/ding_event_calendar";

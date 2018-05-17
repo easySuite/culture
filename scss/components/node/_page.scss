@@ -3,6 +3,9 @@
 // Style default-panel
 
 .default-panel-layout {
+  padding-left: 0;
+  padding-right: 0;
+
   .secondary-content {
     @include make-col(4);
     display: block;

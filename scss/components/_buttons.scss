@@ -3,6 +3,17 @@
 // General
 // ==========================================================================
 
+.btn {
+  background-color: $grey;
+  color: $charcoal;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+  }
+}
+
 fieldset {
   border: none;
   margin: 0;
@@ -123,7 +134,9 @@ input#edit-search-block-form--2 {
 //border to filter list events;
 #edit-title-wrapper,
 #edit-field-ding-event-category-tid-wrapper,
-#edit-og-group-ref-target-id-entityreference-filter-wrapper {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper,
+#edit-field-ding-event-target-tid-wrapper,
+.views-exposed-widget.views-submit-button {
   position: relative;
   border-top: 1px solid $charcoal-opacity-light;
   padding-top: 25px;
@@ -353,4 +366,23 @@ select[multiple="multiple"] {
   option {
     padding: 3px 5px;
   }
+}
+
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active,
+.show > .btn-success.dropdown-toggle {
+  background-color: $color-primary;
+  color: $charcoal;
+  border-color: $color-primary;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: $color-primary-opacity;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  box-shadow: $color-primary-opacity;
 }
