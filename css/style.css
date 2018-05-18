@@ -8079,8 +8079,18 @@ select[multiple="multiple"] {
   font-size: 28px;
   font-weight: bold; }
 
-.ding_nodelist-carousel .ding_nodelist-items .article-info .item-price {
+.ding_nodelist-carousel .ding_nodelist-items .article-info .library a {
   color: #e3e000; }
+
+.ding_nodelist-carousel .ding_nodelist-items .article-info .item-price {
+  color: #ffffff; }
+
+.ding_nodelist-carousel .ding_nodelist-items .field-name-field-ding-event-category {
+  background-color: #e3e000;
+  border-radius: 5px;
+  min-width: 120px;
+  max-width: 160px;
+  padding-left: 5px; }
 
 .ding_nodelist-carousel .pagination a {
   line-height: 1.8;

@@ -21,7 +21,7 @@
     }
   }
 
-  
+
 }
 
 .ding_nodelist-carousel {
@@ -38,10 +38,25 @@
       }
     }
 
-    .article-info .item-price {
-      color: $color-primary;
+    .article-info {
+      .library a {
+        color: $color-primary;
+      }
+
+      .item-price {
+        color: $white;
+      }
+    }
+
+    .field-name-field-ding-event-category {
+      background-color: $color-primary;
+      border-radius: 5px;
+      min-width: 120px;
+      max-width: 160px;
+      padding-left: 5px;
     }
   }
+
   .pagination {
     a {
       line-height: 1.8;
