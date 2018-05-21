@@ -52,7 +52,7 @@
     <?php endif; ?>
   
     <?php if ($more): ?>
-      <div class="more-link">
+      <div class="more-link btn">
         <?php print $more; ?>
       </div>
     <?php endif; ?>

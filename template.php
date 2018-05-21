@@ -6,12 +6,18 @@
  */
 require_once __DIR__ . '/template.node.php';
 
-
 /**
- * Render callback.
+ * Implements hook_process_html().
  *
- * Remove panels div separator.
+ * Process variables for html.tpl.php.
  */
+function ddbasic_process_html(&$vars) {
+
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_html_alter($vars);
+  }
+}
 
  /**
  * Implements theme_menu_tree().
@@ -88,5 +94,15 @@ function culture_preprocess_panels_pane(&$vars) {
 
   if ($vars['pane']->subtype == 'menu_block-main_menu_second_level') {
     cu_body_class('has-second-level-menu');
+  }
+}
+
+/**
+ * Implements hook_process_page().
+ */
+function culture_process_page(&$vars) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($vars);
   }
 }

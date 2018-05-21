@@ -4,13 +4,13 @@
  * @file
  * Node related preprocessors.
  */
-
 /**
  * Implements hook_preprocess_node().
  *
  * Override or insert variables into the node templates.
  */
-function culture_preprocess_node(&$variables) {
+function culture_preprocess_node(&$variables, $hook) {
+  //
   // Add tpl suggestions for node view modes.
   if (isset($variables['view_mode'])) {
     $variables['theme_hook_suggestions'][] = 'node__view_mode__' . $variables['view_mode'];
@@ -22,6 +22,15 @@ function culture_preprocess_node(&$variables) {
   $function = 'culture_preprocess__node__' . $variables['type'];
   if (function_exists($function)) {
     call_user_func_array($function, array(&$variables));
+  }
+
+  // Opening hours on library list. but not on the search page.
+  $path = drupal_get_path_alias();
+  if (!(strpos($path, 'search', 0) === 0)) {
+    $hooks = theme_get_registry(FALSE);
+    if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
+      $variables['opening_hours'] = theme('ding_culture_opening_hours_week', array('node' => $variables['node']));
+    }
   }
 
   // Add updated to variables.

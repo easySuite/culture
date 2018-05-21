@@ -17,10 +17,24 @@
   @include wrapper;
   padding: 50px 0;
 
-  > .panel-pane {
-    @include make-col(4);
-    margin-bottom: 50px;
+  .contextual-links-region {
+    display: inline-block;
+    @include make-col(12);
+    width: 23%;
+    float: left;
 
+    .panel-pane-inner {
+      max-width: 200px;
+    }
+  }
+
+  .attachment-first,
+  .attachment-second,
+  .attachment-third {
+    margin-right: 20px;
+  }
+
+  > .panel-pane {
     .pane-title {
       pointer-events: none;
       &.open {

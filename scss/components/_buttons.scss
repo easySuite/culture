@@ -2,8 +2,7 @@
 // ==========================================================================
 // General
 // ==========================================================================
-
-.btn {
+.btn, .more-link {
   background-color: $grey;
   color: $charcoal;
 
@@ -11,6 +10,31 @@
   &:active,
   &:focus {
     background-color: $color-primary;
+  }
+}
+
+.btn-search {
+  padding: 15px 15px 14px 15px;
+  background-color: $grey-medium;
+}
+
+.more-link {
+  position: relative;
+  @extend .btn;
+  padding: 15px 45px 14px 15px;
+  background-color: $grey-medium;
+
+  a:hover {
+    color: $charcoal;
+  }
+
+  a {
+    @include place-icon(arrow-right);
+  }
+
+  a::after {
+    top: -18px;
+    right: -47px;
   }
 }
 
@@ -385,4 +409,16 @@ select[multiple="multiple"] {
 .btn-success:focus,
 .btn-success.focus {
   box-shadow: $color-primary-opacity;
+}
+
+.select-wrapper,
+fieldset.collapsible .fieldset-title,
+input[type=checkbox]:checked+label {
+  @include place-icon(check);
+  color: $charcoal;
+}
+
+input[type=checkbox]:checked+label::after {
+  left: -11px;
+  top: -15px;
 }

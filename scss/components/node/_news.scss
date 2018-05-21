@@ -212,9 +212,10 @@
         }
 
         &.active {
-          @include place-icon(check, $color-text-on-primary, 28px);
+          @include place-icon(check);
           &::after {
-            left: 0;
+            left: -11px;
+            top: -15px;
           }
           &::before {
             background-color: $color-primary;
@@ -252,9 +253,10 @@
           }
 
           &.active {
-            @include place-icon(check, $color-text-on-primary, 28px);
+            @include place-icon(check);
             &::after {
-              left: 0;
+              left: -11px;
+              top: -15px;
             }
             &::before {
               background-color: $color-primary;
