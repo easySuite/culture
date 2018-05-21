@@ -1,0 +1,78 @@
+// Style ding_nodlist.
+.pane-ding-nodelist {
+
+  .ding_nodelist-taxonomy {
+    .event-list-leaf {
+      .event-list-day {
+        background-color: $color-primary;
+        color: $charcoal;
+      }
+
+      .event-list-month {
+        padding-top: 5px;
+        font-size: $font-size-small;
+      }
+
+      .event-list-date {
+        font-size: $font-size-max;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.ding_nodelist-carousel {
+  .ding_nodelist-items {
+    .event-time {
+      .event-day {
+        background-color: $color-primary;
+        color: $charcoal;
+      }
+
+      .event-date {
+        font-size: 28px;
+        font-weight: bold;
+      }
+    }
+
+    .article-info {
+      .library a {
+        color: $color-primary;
+      }
+
+      .item-price {
+        color: $white;
+      }
+    }
+
+    .field-name-field-ding-event-category {
+      background-color: $color-primary;
+      border-radius: 5px;
+      min-width: 120px;
+      max-width: 160px;
+      padding-left: 5px;
+    }
+  }
+
+  .pagination {
+    a {
+      line-height: 1.8;
+      color: $charcoal;
+      background-color: $white;
+    }
+
+    a.selected {
+      background-color: $color-primary;
+      color: $charcoal;
+
+      span {
+        margin-top: -2px;
+      }
+    }
+  }
+
+  .article_image img,
+  .event-image img {
+    display: block;
+  }
+}

@@ -6397,6 +6397,8 @@ table td {
 
 .row {
   margin-left: 0; }
+  .row .col {
+    margin-top: 40px; }
 
 .field-slideshow.field-slideshow-processed {
   max-width: 535px !important;
@@ -6408,6 +6410,15 @@ table td {
 #cboxWrapper #cboxClose {
   top: 0;
   right: 0; }
+
+.pane-instagram-block-instagram-block {
+  margin-top: 40px; }
+  .pane-instagram-block-instagram-block h2.pane-title {
+    display: none; }
+  .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .slick-arrow {
+    border: none; }
+  .pane-instagram-block-instagram-block .ding-social-insta-block .slick-track {
+    height: auto; }
 
 .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
   font-family: 'icomoon';
@@ -8043,9 +8054,55 @@ select[multiple="multiple"] {
 .slick-next {
   right: 10px; }
 
-#eventsCalendar {
-  margin-top: 20px; }
-  #eventsCalendar #calendar tr td.calendar-day.has-events.selected {
-    background-color: #e3e000; }
-    #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
-      color: #262626; }
+#eventsCalendar #calendar tr td.calendar-day.has-events.selected {
+  background-color: #e3e000; }
+  #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
+    color: #262626; }
+
+.pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-day {
+  background-color: #e3e000;
+  color: #262626; }
+
+.pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-month {
+  padding-top: 5px;
+  font-size: 12px; }
+
+.pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-date {
+  font-size: 18px;
+  font-weight: bold; }
+
+.ding_nodelist-carousel .ding_nodelist-items .event-time .event-day {
+  background-color: #e3e000;
+  color: #262626; }
+
+.ding_nodelist-carousel .ding_nodelist-items .event-time .event-date {
+  font-size: 28px;
+  font-weight: bold; }
+
+.ding_nodelist-carousel .ding_nodelist-items .article-info .library a {
+  color: #e3e000; }
+
+.ding_nodelist-carousel .ding_nodelist-items .article-info .item-price {
+  color: #ffffff; }
+
+.ding_nodelist-carousel .ding_nodelist-items .field-name-field-ding-event-category {
+  background-color: #e3e000;
+  border-radius: 5px;
+  min-width: 120px;
+  max-width: 160px;
+  padding-left: 5px; }
+
+.ding_nodelist-carousel .pagination a {
+  line-height: 1.8;
+  color: #262626;
+  background-color: #ffffff; }
+
+.ding_nodelist-carousel .pagination a.selected {
+  background-color: #e3e000;
+  color: #262626; }
+  .ding_nodelist-carousel .pagination a.selected span {
+    margin-top: -2px; }
+
+.ding_nodelist-carousel .article_image img,
+.ding_nodelist-carousel .event-image img {
+  display: block; }
