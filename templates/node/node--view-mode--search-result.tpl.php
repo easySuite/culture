@@ -2,7 +2,7 @@
 
 /**
  * @file
- * culture theme's implementation to display a node.
+ * DDBasic theme's implementation to display a node.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -79,8 +79,13 @@
  */
 ?>
 <div class="<?php print $classes; ?> view-mode-search-result">
+  <a href="<?php print $node_url; ?>">
+    <div class="title-node">
+      <h3 class="title"><?php print $title; ?></h3>
+    </div>
+  </a>
   <div class="content"<?php print $content_attributes; ?>>
     <?php print render($content); ?>
-    <?php print l('<div class="button">' . t('Read more') . '</div>', $node_url, array('html' => TRUE)); ?>
+    <div class="read-more"><?php print l('<div class="button btn btn-search">' . t('Read more') . '</div>', $node_url, array('html' => TRUE)); ?></div>
   </div>
 </div>
