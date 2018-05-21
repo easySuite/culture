@@ -139,6 +139,10 @@ table td {
 
 .row {
   margin-left: 0;
+
+  .col {
+    margin-top: 40px;
+  }
 }
 
 //ding nis style for slideshow
@@ -155,5 +159,25 @@ table td {
   #cboxClose {
     top: 0;
     right: 0;
+  }
+}
+
+.pane-instagram-block-instagram-block {
+  margin-top: 40px;
+
+  h2.pane-title {
+    display: none;
+  }
+
+  .ding-social-insta-slick-controls {
+    .slick-arrow {
+      border: none;
+    }
+  }
+
+  .ding-social-insta-block {
+    .slick-track {
+      height: auto;
+    }
   }
 }
