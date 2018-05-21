@@ -48,7 +48,6 @@ body {
     margin-right: auto;
     width: 90%;
     position: relative;
-    padding: 40px 0;
  }
 }
 
@@ -82,7 +81,6 @@ html {
     .autocomplete-throbber {
       background-position: 100% 2px;
       background-repeat: no-repeat;
-      //display: inline-block;
       height: 15px;
       margin: 2px 0 0 2px;
       width: 15px;
@@ -112,24 +110,6 @@ h5, .h5 { font-size: $font-size-h5; }
 @mixin wrapper() {
   @include outer-container;
   width: $wrapper-width;
-  //width: $outer_width;
-}
-
-@mixin place-icon(
-  $icon,
-  $color: $charcoal-opacity-dark,
-  $size: 54px) {
-  position: relative;
-  &::after {
-    @extend %icon-#{$icon};
-    @extend %icomoon-base;
-    font-size: $size;
-    line-height: 1;
-    color: $color;
-    display: block;
-    position: absolute;
-    top: 0;
-  }
 }
 
 table td {

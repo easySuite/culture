@@ -49,7 +49,7 @@
   <?php endif; ?>
 
   <?php if (!empty($content['bottom'])): ?>
-    <div class="bottom">
+    <div class="bottom btn">
       <?php print render($content['bottom']); ?>
     </div>
   <?php endif; ?>
