@@ -6445,9 +6445,7 @@ table td {
 
 .more-link a::after, .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
-input[type=checkbox]:checked + label::after,
-.panel-pane ul.sub-menu li a.active::after,
-.panel-pane .select-list ul.list-items li .list-item.active::after {
+input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -6462,9 +6460,7 @@ input[type=checkbox]:checked + label::after,
 
 .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
-input[type=checkbox]:checked + label::after,
-.panel-pane ul.sub-menu li a.active::after,
-.panel-pane .select-list ul.list-items li .list-item.active::after {
+input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
   content: "\e906"; }
 
 .site-header {
@@ -7169,27 +7165,12 @@ select[multiple="multiple"] {
 
 .select-wrapper,
 fieldset.collapsible .fieldset-title,
-input[type=checkbox]:checked + label,
-.panel-pane ul.sub-menu li a.active,
-.panel-pane .select-list ul.list-items li .list-item.active {
+input[type=checkbox]:checked + label {
   position: relative;
   color: #262626; }
   .select-wrapper::after,
   fieldset.collapsible .fieldset-title::after,
-  input[type=checkbox]:checked + label::after,
-  .panel-pane ul.sub-menu li a.active::after,
-  .panel-pane .select-list ul.list-items li .list-item.active::after {
-    font-size: 54px;
-    line-height: 1;
-    color: rgba(38, 38, 38, 0.54);
-    display: block;
-    position: absolute;
-    top: 0; }
-
-.panel-pane ul.sub-menu li a.active {
-  position: relative;
-  color: #262626; }
-  .panel-pane ul.sub-menu li a.active::after {
+  input[type=checkbox]:checked + label::after {
     font-size: 54px;
     line-height: 1;
     color: rgba(38, 38, 38, 0.54);
