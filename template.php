@@ -11,15 +11,24 @@ require_once __DIR__ . '/template.node.php';
  *
  * Process variables for html.tpl.php.
  */
-function ddbasic_process_html(&$vars) {
-
+function culture_process_html(&$vars) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_html_alter($vars);
   }
 }
 
- /**
+/**
+ * Implements hook_process_page().
+ */
+function culture_process_page(&$vars) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($vars);
+  }
+}
+
+/**
  * Implements theme_menu_tree().
  */
 function culture_menu_tree__menu_block__1($vars) {
@@ -94,15 +103,5 @@ function culture_preprocess_panels_pane(&$vars) {
 
   if ($vars['pane']->subtype == 'menu_block-main_menu_second_level') {
     cu_body_class('has-second-level-menu');
-  }
-}
-
-/**
- * Implements hook_process_page().
- */
-function culture_process_page(&$vars) {
-  // Hook into color.module.
-  if (module_exists('color')) {
-    _color_page_alter($vars);
   }
 }
