@@ -28,6 +28,17 @@ function culture_menu_tree__menu_block__2($vars) {
 }
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function culture_preprocess_html(&$vars) {
+  // Include the libraries.
+  libraries_load('jquery.imagesloaded');
+  libraries_load('html5shiv');
+  libraries_load('masonry');
+  libraries_load('slick');
+}
+
+/**
  * Implements hook_preprocess_panels_pane().
  */
 function culture_preprocess_panels_pane(&$vars) {
