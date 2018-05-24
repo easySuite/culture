@@ -6523,7 +6523,7 @@ html.js .autocomplete-throbber.throbbing {
 html .ding2-site-template .content-inner {
   margin: 20px 0; }
 
-html tabel {
+html table {
   width: 100%; }
 
 h1, .h1 {
@@ -6663,8 +6663,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
           .site-header .topbar .main-menu-wrapper ul.main-menu {
             float: none; }
             .site-header .topbar .main-menu-wrapper ul.main-menu li {
-              padding: 0;
-              margin-left: 0; } }
+              padding: 0; } }
   .site-header .navigation-wrapper {
     background-color: #e3e000;
     width: 100%;

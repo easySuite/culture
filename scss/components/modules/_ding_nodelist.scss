@@ -81,10 +81,4 @@
   .event-list-leaf ~ .item .event-arrow-link:after {
     color: $color-primary;
   }
-
-  // @include make-col(12);
-
-  // @media #{$wide}, #{$normal} {
-  //   @include make-col(8);
-  // }
 } 

@@ -12,7 +12,7 @@
 <div <?php if (!empty($css_id)) { print 'id="' . $css_id . '"'; } ?> class="container default-panel-layout">
   <?php if(!empty($content['left_sidebar']) || !empty($content['main_content'])) : ?>
   <div class="row left-and-main-content">
-    <div class="layout-wrapper col-md-12 ">
+    <div class="layout-wrapper col-md-12">
       <?php if (!empty($content['left_sidebar'])): ?>
         <aside class="secondary-content col-md-4 float-left">
           <?php print $content['left_sidebar']; ?>

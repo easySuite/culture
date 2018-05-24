@@ -87,10 +87,10 @@
 <div class="card <?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
     <?php
-        if (!empty($event_background_image)):
-          print '<img class="card-img-top" style="background-image:url(' . $event_background_image . ');"' . $image_title . '>';
-        endif;
-      ?>
+      if (!empty($event_background_image)):
+        print '<img class="card-img-top" style="background-image:url(' . $event_background_image . ');"' . $image_title . '>';
+      endif;
+    ?>
   </a>
   <div class="card-body">
     <div class="info-top">

@@ -85,7 +85,6 @@
  * @see template_preprocess_node()
  * @see template_process()
  */
-//var_dump($variables);die;
 ?>
 <div class="card <?php print $classes; ?>"<?php print $attributes; ?>>
   
