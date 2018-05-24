@@ -80,89 +80,13 @@
 
 .view-ding-news {
   @include make-col(12);
-
-  .views-row-odd {
-    margin-right: 15px;
-  }
-
-  .views-row-odd,
-  .views-row-even {
-    display: inline-block;
-    width: 48%;
-  }
 }
 
-// ==========================================================================
-// Teaser
-// ==========================================================================
-
-.node-ding-news {
-  &.node-teaser {
-    position: relative;
-    a {
-      display: block;
-      color: $charcoal;
-    }
-
-    .background-image-styling-16-9 {
-      display: block;
-      position: relative;
-      background-color: #e5e5e5;
-      padding-top: 56.25%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }  
-
-    .ding-news-list-image {
-      &::after {
-        @include transition(background-color $speed $ease);
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-      }
-    }
-
-    h3.title {
-      margin: 10px 0 5px;
-    }
-    .category-and-submitted {
-      float: left;
-      width: 100%;
-      color: $charcoal-opacity-dark;
-    }
-    .field-name-field-ding-news-category {
-      float: left;
-    }
-    .field-name-field-ding-news-lead {
-      @include transition(opacity $speed $ease);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      color: $white;
-      opacity: 0;
-      overflow: hidden;
-    }
-
-    // Hover for non touch devices
-
-    &:hover {
-      .ding-news-list-image {
-        &::after {
-          background-color: $black-overlay;
-        }
-      }
-      .field-name-field-ding-news-lead {
-        opacity: 1;
-      }
-    }
-  }
+.ding-news-list-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  @extend .card-img-top;
 }
 
 .secondary-content {
@@ -173,13 +97,6 @@
       font-size: 40px;
       color: $color-text;
     }
-  }
-}
-
-.view {
-  .views-row,
-  .view-content ul li {
-    margin-bottom: 20px;
   }
 }
 
@@ -322,13 +239,23 @@
   }
 }
 
-.pane-ding-news-ding-news-library-list {
-  .view-ding-news {
-    .views-row-odd,
-    .views-row-even {
-      display: inline-block;
-      width: 33.1%;
-      padding: 0;
+.pane-ding-news-ding-news-list {
+  .view {
+    .views-row,
+    .view-content ul li {
+      margin-bottom: 20px;
+    }
+  
+    .views-row {
+      @include make-col(12);
+
+      @media #{$wide}, #{$normal} {
+        @include make-col(5.8);
+      }
+    }
+  
+    .views-row-odd {
+      margin-right: 15px;
     }
   }
 }

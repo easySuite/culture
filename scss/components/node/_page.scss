@@ -5,29 +5,41 @@
 .default-panel-layout {
   padding-left: 0;
   padding-right: 0;
+  margin-top: 40px;
+}
 
-  .secondary-content {
-    @include make-col(4);
-    display: block;
-    float: left;
+.page-contact {
+  .col-md-8 {
+    @extend .col-md-12;
 
-    .pane-menu-title h2 {
-      margin-top: 15px;
-      margin-bottom: 46px;
-      font-size: 40px;
-      line-height: 44px;
-      font-family: $font-family-light;
-      color: $charcoal;
-    }
-  }
+    form {
+      input {
+        @extend .form-control;
+      }
 
-  .primary-content {
-    @include make-col(8);
-    display: block;
-    float: right;
-    
-    .view-ding-event {
-      margin-top: 15px;
+      select {
+        @extend .custom-select;
+      }
+      
+      textarea {
+        @extend .form-control;
+      }
+
+      input#edit-copy {
+        visibility: hidden;
+      }
+
+      input#edit-submit {
+        @extend .btn;
+        width: auto;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: $color-primary;
+        box-shadow: 0 0 0 0.2rem $color-primary;
+      }
     }
   }
 }

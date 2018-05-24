@@ -84,36 +84,36 @@
  * @see template_process()
  */
 ?>
-<article class="container <?php print $classes; ?>"<?php print $attributes; ?>>
+<div class="card <?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
-    <div class="inner row">
-      <div class="background">
-        <div class="button btn"><?php print t('Read more'); ?></div>
-      </div>
-      <div class="event-text">
-        <div class="info-top">
-          <?php print render($content['field_ding_event_category']); ?>
-        </div>
-        <div class="date"><?php print $event_date; ?></div>
-        <div class="title-and-lead">
-          <h3 class="title"><?php print $title; ?></h3>
-          <?php print render($content['field_ding_event_lead']); ?>
-        </div>
-        <div class="info-bottom">
-          <?php if ($alt_location_is_set): ?>
-            <div class="library"><?php print $content['field_ding_event_location'][0]['#address']['name_line']; ?></div>
-          <?php else: ?>
-            <div class="library"><?php print render($content['og_group_ref']); ?></div>
-          <?php endif; ?>
-          <div class="date-time"><?php print $event_time; ?></div>
-          <div class="price"><?php print $event_price; ?></div>
-        </div>
-      </div>
-    </div>
     <?php
-      if (!empty($event_background_image)):
-        print '<div class="event-list-image" style="background-image:url(' . $event_background_image . ');"' . $image_title . '></div>';
-      endif;
-    ?>
+        if (!empty($event_background_image)):
+          print '<img class="card-img-top" style="background-image:url(' . $event_background_image . ');"' . $image_title . '>';
+        endif;
+      ?>
   </a>
-</article>
+  <div class="card-body">
+    <div class="info-top">
+      <?php print render($content['field_ding_event_category']); ?>
+    </div>
+    <div class="date"><?php print $event_date; ?></div>
+    <a href="<?php print $node_url; ?>">
+        <h3 class="card-title"><?php print $title; ?></h3>
+      <div class="card-text">   
+        <?php print render($content['field_ding_event_lead']); ?>
+      </div>
+    </a>
+    <div class="info-bottom float-left">
+      <?php if ($alt_location_is_set): ?>
+        <div class="library"><?php print $content['field_ding_event_location'][0]['#address']['name_line']; ?></div>
+      <?php else: ?>
+        <div class="library"><?php print render($content['og_group_ref']); ?></div>
+      <?php endif; ?>
+      <div class="date-time"><?php print $event_time; ?></div>
+      <div class="price"><?php print $event_price; ?></div>
+    </div>
+    <a href="<?php print $node_url; ?>">
+      <div class="button btn float-right"><?php print t('Read more'); ?></div>
+    </a>
+  </div>
+</div>

@@ -78,14 +78,16 @@
  * @see template_process()
  */
 ?>
-<div class="<?php print $classes; ?> view-mode-search-result">
-  <a href="<?php print $node_url; ?>">
-    <div class="title-node">
-      <h3 class="title"><?php print $title; ?></h3>
+<div class="card <?php print $classes; ?> view-mode-search-result ">
+  <div class="card-body"> 
+    <a href="<?php print $node_url; ?>">
+      <div class="title-node card-title">
+        <h3 class="title"><?php print $title; ?></h3>
+      </div>
+    </a>
+    <div class="card-text content"<?php print $content_attributes; ?>>
+      <?php print render($content); ?>
+      <div class="read-more"><?php print l('<div class="button btn btn-search">' . t('Read more') . '</div>', $node_url, array('html' => TRUE)); ?></div>
     </div>
-  </a>
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php print render($content); ?>
-    <div class="read-more"><?php print l('<div class="button btn btn-search">' . t('Read more') . '</div>', $node_url, array('html' => TRUE)); ?></div>
   </div>
 </div>

@@ -85,21 +85,27 @@
  * @see template_preprocess_node()
  * @see template_process()
  */
+//var_dump($variables);die;
 ?>
-<article class="container <?php print $classes; ?>"<?php print $attributes; ?>>
+<div class="card <?php print $classes; ?>"<?php print $attributes; ?>>
+  
+  <?php if (!empty($news_image_url)) : ?>
   <a href="<?php print $node_url; ?>">
-    <?php print $news_teaser_image; ?>
-    <div class="news-text">
-      <h3 class="title"><?php print $title; ?></h3>
-      <div class="category-and-submitted">
-        <?php print render($content['field_ding_news_category']); ?>
-        <?php if (isset($content['field_editorial_base'])) : ?>
-            <?php print render($content['field_editorial_base']); ?>
-        <?php endif; ?>
-        <div class="info-dash">-</div>
-        <div class="submitted"><?php print $news_submitted; ?></div>
-      </div>
-      <?php print render($content['field_ding_news_lead']); ?>
-    </div>
+    <img class="card-img-top" style="background-image:url(<?php print $news_image_url; ?>);">
   </a>
-</article>
+  <?php endif; ?>
+  <div class="card-body">
+    <div class="info-top">
+      <?php print render($content['field_ding_news_category']); ?>
+    </div>
+    <a href="<?php print $node_url; ?>">
+        <h3 class="card-title"><?php print $title; ?></h3>
+      <div class="card-text">   
+        <?php print render($content['field_ding_news_lead']); ?>
+      </div>
+    </a>
+    <a href="<?php print $node_url; ?>">
+      <div class="button btn float-right"><?php print t('Read more'); ?></div>
+    </a>
+  </div>
+</div>

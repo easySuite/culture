@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
+<div class="<?php print $classes; ?> container">
 <?php print render($title_prefix); ?>
 <h2><?php print $view->build_info['title']; ?></h2>
 <?php print render($title_suffix); ?>
@@ -50,7 +50,7 @@
 <?php endif; ?>
 
 <?php if ($rows): ?>
-  <div class="view-content">
+  <div class="view-content row">
     <?php print $rows; ?>
   </div>
 <?php elseif ($empty): ?>

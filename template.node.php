@@ -278,6 +278,8 @@ function culture_preprocess__node__ding_news(&$variables) {
         else {
           $variables['news_teaser_image'] = '<div class="ding-news-list-image background-image-styling-16-9" style="background-image:url(' . $img_url . ')"></div>';
         }
+
+        $variables['news_image_url'] = $img_url;
       }
       else {
         $variables['news_teaser_image'] = '<div class="ding-news-list-image background-image-styling-16-9"></div>';

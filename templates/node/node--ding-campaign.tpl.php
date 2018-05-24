@@ -83,8 +83,8 @@
   hide($content['comments']);
   hide($content['links']);
 ?>
-<div class="<?php print $classes; ?>">
-  <div class="ding-campaign ding-campaign--content <?php print $type . " " . $panel_style; ?>" <?php print !empty($background) ? $background : ''; ?>>
+<div class="<?php print $classes; ?> container">
+  <div class="ding-campaign ding-campaign--content row <?php print $type . " " . $panel_style; ?>" <?php print !empty($background) ? $background : ''; ?>>
     <a href="<?php print $link; ?>" target="<?php print $target; ?>">
       <?php // if campaign type is "text" or "text on image" hide image here ?>
       <?php if ($type != "text" && $type != "text-on-image" && $type != 'full'): ?>
