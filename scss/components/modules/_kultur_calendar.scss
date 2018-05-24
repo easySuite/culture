@@ -199,7 +199,12 @@
   .kultur_calendar-title,
   .kultur_calendar-body {
     padding: 15px;
-    
+
+    a {
+      span.fc-title {
+        color: $color-primary;
+      }
+    }
   }
 
   .day-number {
