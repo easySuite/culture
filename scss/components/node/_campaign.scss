@@ -3,9 +3,8 @@
   @include make-col(12);
   position: relative;
   margin-bottom: 20px;
-  // general styles for all campaigns
+  //general styles for all campaigns
   .ding-campaign-headline {
-    font-family: $font-family-bold;
     display: none;
   }
   .ding-campaign-description {
@@ -20,13 +19,7 @@
    z-index: 3;
    color: $color-text-link;
   }
-  .no-touch & {
-    &:hover {
-      a {
-        color: $color-text-link-on-dark;
-      }
-    }
-  }
+
   // campaign layout specific styles
   &.text-on-image {
     background-size: cover;
@@ -114,11 +107,6 @@
         }
       }
     }
-    .no-touch & {
-      &:hover {
-        background: $grey-dark;
-      }
-    }
   }
   // image only layout
   &.image {
@@ -132,110 +120,4 @@
       width: 100%;
     }
   }
-}
-
-.node-type-ding-campaign {
-  .node.node-ding-campaign{
-    max-width: 1124px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    overflow: auto;
-    padding-top: 15px;
-  }
-
-  .image {
-    img {
-      width: auto;
-      display: block
-    }
-  }
-}
-
-.ding-campaign-grid-item {
-  @include make-col(3.5);
-  margin: 0 10px 50px 10px;
-
-  h2 {
-    margin-bottom: 0px;
-    font-size: 120%;
-    line-height: 1;
-    padding-top: 10px;
-    position: absolute;
-    width: 200px;
-  }
-
-  .ding-campaign-grid-title{
-    a {
-      color: $color-text;
-    }
-  }
-
-  .media {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-  }
-
-  .media__image { display: block; }
-
-  .media__body {
-    background: rgba(0, 0, 0, 0.7);
-    bottom: 0;
-    color: white;
-    font-size: 1em;
-    left: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0.75em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-  }
-
-  .media__body:hover { opacity: 1; }
-
-  .media__body:after,
-  .media__body:before {
-    bottom: 1em;
-    content: '';
-    left: 1em;
-    opacity: 0;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: 0.6s 0.2s;
-    transition: 0.6s 0.2s;
-  }
-
-  .media__body:before {
-    border-bottom: none;
-    border-top: none;
-    left: 2em;
-    right: 2em;
-  }
-
-  .media__body:after {
-    border-left: none;
-    border-right: none;
-    bottom: 2em;
-    top: 2em;
-  }
-
-  .media__body:hover:after,
-  .media__body:hover:before {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  .media__body h2 { margin-top: 0; }
-
-  .media__body p { margin-bottom: 1.5em; }
 }

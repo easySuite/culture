@@ -6,10 +6,7 @@ core        = 7.x
 stylesheets[all][] = css/style.css
 
 ;Scripts
-scripts[] = scripts/news.js
-scripts[] = scripts/event.js
-scripts[] = scripts/view.js
-scripts[] = scripts/utils.js
+scripts[] = node_modules/bootstrap/dist/js/bootstrap.min.js
 
 ;Regions
 regions[header]            = Header

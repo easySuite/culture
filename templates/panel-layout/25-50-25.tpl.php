@@ -9,16 +9,16 @@
  * - $css_id: unique id if present.
  */
 ?>
-<div <?php if (!empty($css_id)) { print 'id="' . $css_id . '"'; } ?> class=" container default-panel-layout">
+<div <?php if (!empty($css_id)) { print 'id="' . $css_id . '"'; } ?> class="container default-panel-layout">
   <?php if(!empty($content['left_sidebar']) || !empty($content['main_content'])) : ?>
   <div class="row left-and-main-content">
-    <div class="layout-wrapper ">
+    <div class="layout-wrapper col-md-12">
       <?php if (!empty($content['left_sidebar'])): ?>
-        <aside class="secondary-content col-md-4">
+        <aside class="secondary-content col-md-4 float-left">
           <?php print $content['left_sidebar']; ?>
         </aside>
       <?php endif ?>
-      <div class="primary-content col-md-8">
+      <div class="primary-content col-md-8 float-right">
         <?php print $content['main_content']; ?>
       </div>
     </div>

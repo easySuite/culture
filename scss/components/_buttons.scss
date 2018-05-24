@@ -14,22 +14,20 @@
 }
 
 .btn-search {
-  padding: 15px 15px 14px 15px;
   background-color: $grey-medium;
 }
 
 .more-link {
   position: relative;
   @extend .btn;
-  padding: 15px 45px 14px 15px;
+  @extend .float-right;
+  padding: 15px 15px 14px 15px;
   background-color: $grey-medium;
+  margin-top: 10px;
+
 
   a:hover {
     color: $charcoal;
-  }
-
-  a {
-    @include place-icon(arrow-right);
   }
 
   a::after {
@@ -124,8 +122,8 @@ input[type="text"],
 input#edit-search-block-form--2 {
   font-family: $font-family;
   width: 100%;
-  height: $element-height;
-  padding: 23px 15px 18px;
+  height: $element-height-min;
+  padding: 15px;
   border: none;
   border-radius: $round-corner;
   line-height: 1em;
@@ -133,6 +131,16 @@ input#edit-search-block-form--2 {
   &:focus {
     outline: none;
     box-shadow: 0 0 10px $grey-medium;
+  }
+}
+
+input#edit-search-block-form--2 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+
+  @media #{$wide}, #{$normal} {
+    height: $element-height;
   }
 }
 
@@ -209,8 +217,8 @@ input[type="submit"] {
   @include transition(background-color $speed $ease);
   display: block;
   width: 100%;
-  height: $element-height;
-  padding: 20px 15px 14px;
+  height: $element-height-min;
+  padding: 15px;
   border: none;
   border-radius: $round-corner;
   color: $white;
@@ -218,6 +226,11 @@ input[type="submit"] {
   line-height: 1em;
   text-align: left;
   cursor: pointer;
+
+  @media #{$wide}, #{$normal} {
+    height: $element-height;
+  }
+
   &:hover {
     background-color: $grey-dark;
   }
@@ -307,91 +320,6 @@ input[type="radio"] {
   }
 }
 
-// ==========================================================================
-// Select list
-// ==========================================================================
-
-// In order to hide the default select list button in all browsers we need to wrap all select lists in a div.
-// We can then hide the button by making the select list wider than its wrapper. And then place our own button.
-
-// Select list
-//
-// A select list needs to be wrapped in a div with the class "form-type-select" to be styled correct
-//
-// Markup:
-// <div class="form-type-select">
-//  <div class="select-wrapper">
-//    <select>
-//      <option>Option</option>
-//      <option>Option</option>
-//    </select>
-//  </div>
-// </div>
-
-.select-wrapper {
-  position: relative;
-  overflow: hidden;
-  height: $element-height;
-  background-color: $white;
-  border: 1px solid $grey;
-  border-radius: $round-corner;
-
- // @include place-icon(arrow-down-small, $charcoal-opacity-dark);
-  &::after {
-    right: 0;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    background-color: $grey;
-    background-repeat: no-repeat;
-    background-position: right 4px center;
-    width: $element-height;
-    height: $element-height;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-.select-wrapper-multiple {
-  height: auto;
-  &::before,
-  &::after {
-    display: none;
-  }
-}
-
-select {
-  font-family: $font-family;
-  position: absolute;
-  z-index: $z-below;
-  width: 110%;
-  height: 52px;
-  -webkit-appearance: none;
-  border-radius: 0;
-  padding: 20px 30% 12px 10px;
-  border: none;
-  background-color: transparent;
-  &:focus {
-    outline: none;
-  }
-  &::-ms-expand {
-    display: none;
-  }
-}
-
-select[multiple="multiple"] {
-  position: static;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  option {
-    padding: 3px 5px;
-  }
-}
-
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle {
@@ -421,4 +349,27 @@ input[type=checkbox]:checked+label {
 input[type=checkbox]:checked+label::after {
   left: -11px;
   top: -15px;
+}
+
+ul.main-menu.navbar-nav {
+  float: left;
+
+  li {
+    padding: 10px 30px;
+    margin-left: -40px;
+    &:hover,
+    &:active {
+      background: $grey-medium;
+    }
+
+    @media #{$wide}, #{$normal} {
+      &:hover,
+      &:active {
+        background: none;
+      }
+
+      padding: 0;
+      margin-left: 0;
+    }
+  }
 }

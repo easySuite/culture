@@ -76,3 +76,9 @@
     display: block;
   }
 }
+
+.ding_nodelist-taxonomy {
+  .event-list-leaf ~ .item .event-arrow-link:after {
+    color: $color-primary;
+  }
+} 

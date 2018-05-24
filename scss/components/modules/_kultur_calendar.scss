@@ -1,10 +1,24 @@
 // kultur calendar styling
-
 #kultur_calendar {
+  margin-bottom: 40px;
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+ 
+  td {
+    white-space: nowrap;
+  }
+
   #kultur-libraries {
     text-align: center;
     vertical-align: middle;
-    width: fit-content;
+    width: 100%;
+
+    @media #{$wide}, #{$normal}, #{$tablet} {
+      width: fit-content;
+    }
 
     .form-item  {
       display: inline-block;
@@ -20,7 +34,11 @@
   .fc-day-number {
     color: $white-opacity-light;
     font-weight: bolder;
-    font-size: $font-size-max;
+    font-size: 10px;
+
+    @media #{$wide}, #{$normal}, #{$tablet} {
+      font-size: $font-size-max;
+    }
   }
 
   .fc-month-view {
@@ -70,6 +88,14 @@
     }
   }
 
+  .fc-day-top.fc-past {
+    height: 0;
+
+    @media #{$wide}, #{$normal}, #{$tablet} {
+      height: auto;
+    }
+  }
+
   div.fc-row {
     border: 1px solid $grey;
     
@@ -82,12 +108,16 @@
     display: none;
   }
 
-  div, div.fc-bg, div.fc-content-skeleton, div.fc-day-grid, div.fc-scroller {
+  div, div.fc-bg,
+  div.fc-content-skeleton,
+  div.fc-day-grid, 
+  div.fc-scroller {
     border: none;
   }
 
   .fc-body {
     background-color: $grey-dark;
+    height: auto;
   }
 
   .fc-day-grid-event {
@@ -101,7 +131,15 @@
       &.fc-title {
         display: block;
         white-space: pre-wrap;
-        padding-left: 10px;
+        font-size: 10px;
+        font-weight: normal;
+
+        @media #{$wide}, #{$normal} {
+          padding-left: 10px;
+          font-size: $font-size-normal;
+          font-weight: blold;
+        }
+        
       }
 
       &.event-amount {
@@ -112,7 +150,6 @@
 
     &.other-info {
       position: absolute;
-      bottom: -60px;
       
       span {
         color: $color-primary;
@@ -144,7 +181,6 @@
 
   .fc-today {
     background-color: $color-primary;
-
   }
 
   .fc-day-number {

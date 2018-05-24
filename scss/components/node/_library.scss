@@ -70,9 +70,13 @@
   }
 
   .field-name-field-ding-library-addresse {
-    @include make-col(6);
+    @include make-col(12);
     display: block;
     float: left;
+
+    @media #{$wide}, #{$normal} {
+      @include make-col(6);
+     }
   }
 
   .field-name-field-ding-library-phone-number,
@@ -80,11 +84,15 @@
   .field-name-field-ding-library-mail,
   .field-name-field-ding-library-links {
     position: relative;
-    @include make-col(6);
+    @include make-col(12);
     display: block;
     float: right;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 0;
+    @media #{$wide}, #{$normal} {
+      @include make-col(6);
+      margin-right: 30px;
+     }
 
     .field-label {
       position: absolute;
@@ -120,8 +128,12 @@
 
 .pane-ding-library-ding-library-libraries-list {
   .panel-pane-inner > h2 {
-    font-size: 40px;
+    font-size: 24px;
   }
+}
+
+.pane-ding-library-ding-library-libraries-list {
+  margin-top: 40px; 
 }
 
 .view-ding-library {
@@ -213,18 +225,26 @@
   }
 
   .ding-library-address {
-    @include make-col(5.5);
+    @include make-col(12);
     float: left;
     margin-right: 20px;
     display: block;
     width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      @include make-col(5.5);
+     }
   }
 
   .ding-library-contact {
-    @include make-col(5.5);
+    @include make-col(12);
     float: right;
     display: block;
     width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      @include make-col(5.5);
+     }
 
     .library-contact-phone-label,
     .library-contact-fax-label {
@@ -232,4 +252,56 @@
       float: left;
     }
   }
+}
+
+.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
+  display: none;
+
+  @media #{$wide}, #{$normal}, #{$tablet} {
+    display: block;
+  }
+}
+
+.pane-ding-event-ding-event-library-list,
+.pane-ding-news-ding-news-library-list {
+  .views-row {
+    @include make-col(12);
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    @media #{$wide}, #{$normal} {
+      @include make-col(3.8);
+    }
+
+    .card-img-top {
+      display: none;
+    }
+  }
+}
+
+.ding-library-events {
+  margin: 100px 0;
+  clear: both;
+}
+
+.opening-hours-title {
+  display: none;
+}
+
+.button-next,
+.button-previous {
+  @extend .page-link;
+  border: none;
+  margin-top: 10px;
+  color: $charcoal;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.button-next {
+  @extend .float-right;
+}
+.button-previous  {
+  @extend .float-left;
 }

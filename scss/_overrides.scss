@@ -13,6 +13,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   font-family: $font-family;
   color: $color-text;
@@ -36,6 +37,11 @@ body {
 
   .container {
     padding: 0;
+    max-width: 100%;
+  }
+
+  .logo {
+    float: left;
   }
 }
 
@@ -43,19 +49,27 @@ body {
   .frontpage-layout .panel-pane-inner, 
   .left-sidebar.default-layout .layout-wrapper,
   .pane-page-content  {
-    max-width: 1124px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    position: relative;
+    width: 100%;
+
+    @media #{$wide}, #{$normal} {
+      max-width: 1124px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      position: relative;
+    }
  }
 }
 
 .pane-page-tabs {
+  width: 100%;
+
+  @media #{$wide}, #{$normal} {
   max-width: 1124px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  }
 }
 
 html {
@@ -88,6 +102,16 @@ html {
     .autocomplete-throbber.throbbing {
       background-position: 100% -18px;
     }
+  }
+
+  .ding2-site-template {
+    .content-inner {
+      margin: 20px 0;
+    }
+  }
+
+  table {
+    width: 100%;
   }
 }
 
@@ -138,7 +162,8 @@ table td {
 }
 
 .row {
-  margin-left: 0;
+  margin-right: -5px;
+  margin-left: -7px;
 
   .col {
     margin-top: 40px;
@@ -181,3 +206,27 @@ table td {
     }
   }
 }
+
+.pager-next
+.pager-prev {
+  @extend .page-link;
+}
+
+.front .col-md-4 {
+  width: 100%;
+  @include make-col(12);
+
+  @media #{$wide}, #{$normal} {
+    @include make-col(4);
+  }
+}
+
+.front .col-md-8 {
+  width: 100%;
+  @include make-col(12);
+
+  @media #{$wide}, #{$normal} {
+    @include make-col(8);
+  }
+}
+

@@ -18,12 +18,17 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<div class="main-menu-wrapper <?php print $classes; ?>" <?php print $id; ?>>
-  <?php if ($admin_links): ?>
-    <?php print $admin_links; ?>
-  <?php endif; ?>
-  <?php if (!empty($title)): ?>
-    <h2 class="nav-title"><?php print $title; ?></h2>
-  <?php endif; ?>
-  <?php print render($content); ?>
-</div>
+<nav class="main-menu-wrapper navbar navbar-expand-lg navbar-light bg-light<?php print $classes; ?>" <?php print $id; ?>>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <?php if ($admin_links): ?>
+      <?php print $admin_links; ?>
+    <?php endif; ?>
+    <?php if (!empty($title)): ?>
+      <h2 class="nav-title"><?php print $title; ?></h2>
+    <?php endif; ?>
+    <?php print render($content); ?>
+  </div>
+</nav>

@@ -19,14 +19,33 @@
     .field {
       .field-label {
         display: inline-block;
-        width: auto;
+        width: 100px;
+        padding-right: 10px;
       }
       .field-items {
         display: inline-block;
         width: auto;
         vertical-align: text-top;
+
+        .street-block {
+          width: auto;
+          display: inline-block;
+          padding-right: 5px;
+        }
+
+        .thoroughfare,
+        .country {
+          display: inline-block;
+          width: auto;
+        }
+      
       }
     }
+  }
+
+  .field-name-field-ding-event-list-filter,
+  .field-name-field-ding-event-price.field-label-hidden {
+    display: none;
   }
 
   .field-name-field-ding-event-category {
@@ -74,183 +93,55 @@
   }
 }
 
-.node-ding-event {
-  // ==========================================================================
-  // Teaser
-  // ==========================================================================
-  &.node-teaser {
-    position: relative;
-    float: left;
-    width: 100%;
-    &.is-hovered {
-      z-index: 2;
-    }
-    a {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-    .inner {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      padding: $box-padding $box-padding 10px $box-padding;
-    }
-    .background {
-      @include transition(
-        width $speed $ease,
-        background-color $speed $ease,
-        box-shadow $speed $ease
-      );
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: $grey;
-      .button {
-        @include transition(opacity $speed $ease);
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        width: 156px;
-        padding: 20px 15px 14px 15px;
-        opacity: 0;
+//list events
+.view-display-id-ding_event_list {
+ h3 .date-display-single {
+    @extend .display-4;
+  }
+  .view-content {
+    @include make-col(12);
+    .views-row {
+      @include make-col(12);
+      margin-bottom: 15px;
 
+      @media #{$wide}, #{$normal} {
+        @include make-col(5.8);
       }
     }
-    .event-text {
-      position: relative;
-      z-index: 1;
-    }
-    .info-top {
-      color: $charcoal-opacity-dark;
-      > div {
-        float: left;
-      }
-    }
-    .date {
-     font-family: $font-family-light;
-      clear: left;
-      color: $color-text;
-    }
-    .title-and-lead {
-      @include transition(
-        min-height $speed $ease
-      );
-      min-height: 61px;
-      .title {
-        margin-bottom: 10px;
-      }
-    }
-    .field-name-field-ding-event-lead {
-      @include transition(
-        opacity $speed $ease
-      );
-      width: 100%;
-      opacity: 0;
-      height: 0;
-    }
-    .info-bottom {
-      float: left;
-      width: 100%;
-      padding-right: 156px;
-      min-height: 60px;
-      color: $color-text;
-    }
-    .event-list-image {
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      height: 200px;
-      overflow: hidden;
-      background-size: cover;
-      background-position: center center;
 
+    .views-row-odd {
+      margin-right: 15px;
     }
-    .library {
-      .field-item {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-    &.has-image {
-      .inner {
-        padding: 0 $box-padding 10px $box-padding;
-      }
-      .event-text {
-        padding-top: 215px;
-      }
-    }
-    // Hover for non touch devices
-   // .no-touch & {
-      &:hover {
-        .background {
-          @include transition(
-            width $speed $hover-delay $ease,
-            background-color $speed $ease,
-            box-shadow $speed $ease
-          );
-          width: 115%;
-          background-color: $white;
-          box-shadow: $box-shadow;
-
-        }
-        .button {
-          @include transition(
-            opacity $speed $hover-delay $ease,
-            background-color $speed $ease,
-            color $speed $ease
-          );
-          opacity: 1;
-          z-index: 2;
-        }
-        .title-and-lead {
-          @include transition(
-            min-height $speed $hover-delay $ease
-          );
-          min-height: 118px;
-        }
-        .field-name-field-ding-event-lead {
-          @include transition(
-            opacity $speed $hover-delay $ease
-          );
-          opacity: 10;
-        }
-      }
-    
   }
 }
 
-.view-ding-event {
+.card-img-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 150px;
+}
+
+.field-name-field-culture-lists-control{
   @include make-col(12);
+  width: 100%;
 
-  .views-row-odd,
-  .views-row-even {
-    display: inline-block;
-    width: 48%;
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
+  .view-content {
+    @include make-col(12);
+    .views-row {
+      @include make-col(12);
+      margin-right: 15px;
 
-  .views-row-odd {
-    margin-right: 24px;
-  }
-
-  .container {
-    padding: 0;
-  }
-
- h3  span.date-display-single {
-    font-family: $font-family-light;
-    font-size: 40px;
-    line-height: 44px;
-    width: 100%;
-    float: left;
-    padding: 15px 15px 10px;
-    margin-bottom: 15px;
-    background-color:$grey-dark;
-    color: #ffffff;
+      @media #{$wide}, #{$normal} {
+        @include make-col(3.8);
+      }
+      
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }

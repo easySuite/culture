@@ -32,7 +32,7 @@ function culture_process_page(&$vars) {
  * Implements theme_menu_tree().
  */
 function culture_menu_tree__menu_block__1($vars) {
-  return '<ul class="main-menu">' . $vars['tree'] . '</ul>';
+  return '<ul class="main-menu navbar-nav navbar-nav mr-auto">' . $vars['tree'] . '</ul>';
 }
 
 /**

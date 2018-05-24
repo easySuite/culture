@@ -59,48 +59,25 @@
   img {
     width: 150px;
     height: auto;
-  }
-
-  .search-left,
-  .search-right {
-    @include make-col(8);
-    display: inline-block;
-  }
-
-  .search-right {
-    float: right;
+    @extend .float-right;
   }
 
   .search-results {
-    .node {
-      transition: background-color .3s cubic-bezier(.165,.84,.44,1),box-shadow .3s cubic-bezier(.165,.84,.44,1);
-      min-height: 104px;
-      cursor: auto;
-      width: 100%;
-      float: left;
-      padding: 15px;
-      box-sizing: border-box;
-      background-color: #e5e5e5;
+    ul {
+      padding-left: 0;
     }
-
-    .search-result {
-      width: 100%;
-      float: left;
-      list-style: none;
-      margin-left: 0;
-      margin-bottom: 10px;
+    .node {
+      background-color: $grey-light;
     }
 
     .title-node {
       color: $charcoal;
-      font-size: 24px;
     }
 
     .read-more {
       @include make-col(12);
       display: block;
       margin-top: 20px;
-      clear: both;
     }
   }
 }
