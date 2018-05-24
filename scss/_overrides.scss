@@ -221,7 +221,6 @@ table td {
   }
 }
 
-
 .front .col-md-8 {
   width: 100%;
   @include make-col(12);
@@ -230,3 +229,4 @@ table td {
     @include make-col(8);
   }
 }
+
