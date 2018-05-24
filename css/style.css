@@ -7779,6 +7779,9 @@ ul.main-menu.navbar-nav {
   .ding-campaign.image img {
     width: 100%; }
 
+.pane-campaign .ding-campaign-full-width {
+  display: none; }
+
 .node-ding-library.node-teaser {
   position: relative;
   padding: 0; }
