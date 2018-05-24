@@ -121,13 +121,15 @@
   min-height: 150px;
 }
 
-.field-name-field-culture-lists-control{
+.field-name-field-culture-lists-control,
+.pane-ding-related-content-news-events {
   @include make-col(12);
   width: 100%;
 
   h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   .view-content {
     @include make-col(12);

@@ -7442,25 +7442,32 @@ ul.main-menu.navbar-nav {
   background-size: cover;
   min-height: 150px; }
 
-.field-name-field-culture-lists-control {
+.field-name-field-culture-lists-control,
+.pane-ding-related-content-news-events {
   flex: 0 0 100%;
   max-width: 100%;
   width: 100%; }
-  .field-name-field-culture-lists-control h2 {
+  .field-name-field-culture-lists-control h2,
+  .pane-ding-related-content-news-events h2 {
     font-size: 30px;
-    margin-bottom: 20px; }
-  .field-name-field-culture-lists-control .view-content {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .field-name-field-culture-lists-control .view-content,
+  .pane-ding-related-content-news-events .view-content {
     flex: 0 0 100%;
     max-width: 100%; }
-    .field-name-field-culture-lists-control .view-content .views-row {
+    .field-name-field-culture-lists-control .view-content .views-row,
+    .pane-ding-related-content-news-events .view-content .views-row {
       flex: 0 0 100%;
       max-width: 100%;
       margin-right: 15px; }
       @media screen and (min-width: 1200px), screen and (min-width: 992px) {
-        .field-name-field-culture-lists-control .view-content .views-row {
+        .field-name-field-culture-lists-control .view-content .views-row,
+        .pane-ding-related-content-news-events .view-content .views-row {
           flex: 0 0 31.66667%;
           max-width: 31.66667%; } }
-      .field-name-field-culture-lists-control .view-content .views-row:last-child {
+      .field-name-field-culture-lists-control .view-content .views-row:last-child,
+      .pane-ding-related-content-news-events .view-content .views-row:last-child {
         margin-right: 0; }
 
 .node-type-ding-news .node-ding-news img {
@@ -7777,19 +7784,21 @@ ul.main-menu.navbar-nav {
   padding: 0; }
   .node-ding-library.node-teaser .libraries {
     float: left;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
   .node-ding-library.node-teaser .group-ding-library-left-column {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-    display: inline-block; }
+    float: left; }
   .node-ding-library.node-teaser .group-ding-library-right-column {
     margin-bottom: 40px;
-    display: inline-block; }
+    display: inline-block;
+    clear: both; }
     .node-ding-library.node-teaser .group-ding-library-right-column .country {
       display: none; }
   .node-ding-library.node-teaser a.maps-link {
     float: right;
-    margin-right: 20%; }
+    position: absolute;
+    top: 0;
+    right: 0; }
   .node-ding-library.node-teaser .field-name-field-ding-library-title-image img {
     float: right; }
   .node-ding-library.node-teaser a.opening-hours-toggle {
@@ -8119,6 +8128,9 @@ ul.main-menu.navbar-nav {
   #kultur_calendar-day .kultur_calendar-title,
   #kultur_calendar-day .kultur_calendar-body {
     padding: 15px; }
+    #kultur_calendar-day .kultur_calendar-title a span.fc-title,
+    #kultur_calendar-day .kultur_calendar-body a span.fc-title {
+      color: #e3e000; }
   #kultur_calendar-day .day-number {
     display: none; }
   #kultur_calendar-day .kultur_calendar-title, #kultur_calendar-day .title a {
