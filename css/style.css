@@ -6607,6 +6607,12 @@ table td {
       flex: 0 0 66.66667%;
       max-width: 66.66667%; } }
 
+#user-login .submit-button-with-icon input[type="submit"] {
+  width: auto; }
+
+.pane-facebook-embeds {
+  margin: 20px 0; }
+
 .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
 input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
@@ -6691,7 +6697,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
       display: inline-block;
       margin-top: 0; }
     .site-header .pane-search-form .form-item-search-block-form {
-      width: calc(100% - 60px); }
+      width: calc(100% - 80px); }
     .site-header .pane-search-form .form-item,
     .site-header .pane-search-form .form-actions {
       margin-top: 0; }
@@ -6991,13 +6997,13 @@ ul.main-menu > li, ul.secondary-menu > li {
     display: block;
     clear: both;
     content: ""; }
-  .footer-inner .contextual-links-region {
+  .footer-inner .pane-block {
     display: inline-block;
     flex: 0 0 100%;
     max-width: 100%;
     width: 23%;
     float: left; }
-    .footer-inner .contextual-links-region .panel-pane-inner {
+    .footer-inner .pane-block .panel-pane-inner {
       max-width: 200px; }
   .footer-inner .attachment-first,
   .footer-inner .attachment-second,
@@ -7327,7 +7333,7 @@ ul.main-menu.navbar-nav {
   float: left; }
   ul.main-menu.navbar-nav li {
     padding: 10px 30px;
-    margin-left: -40px; }
+    margin-left: -20px; }
     ul.main-menu.navbar-nav li:hover, ul.main-menu.navbar-nav li:active {
       background: #ccc; }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
@@ -7384,6 +7390,15 @@ ul.main-menu.navbar-nav {
     display: inline-block;
     width: auto; }
 
+.node-ding-event .field-name-field-ding-event-tags {
+  padding: 15px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 25px 0; }
+  .node-ding-event .field-name-field-ding-event-tags .field-item {
+    display: inline-block;
+    padding-right: 10px; }
+
 .node-ding-event .field-name-field-ding-event-list-filter,
 .node-ding-event .field-name-field-ding-event-price.field-label-hidden {
   display: none; }
@@ -7433,7 +7448,8 @@ ul.main-menu.navbar-nav {
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .view-display-id-ding_event_list .view-content .views-row {
         flex: 0 0 48.33333%;
-        max-width: 48.33333%; } }
+        max-width: 48.33333%;
+        display: inline-block; } }
   .view-display-id-ding_event_list .view-content .views-row-odd {
     margin-right: 15px; }
 
@@ -7465,7 +7481,8 @@ ul.main-menu.navbar-nav {
         .field-name-field-culture-lists-control .view-content .views-row,
         .pane-ding-related-content-news-events .view-content .views-row {
           flex: 0 0 31.66667%;
-          max-width: 31.66667%; } }
+          max-width: 31.66667%;
+          display: inline-block; } }
       .field-name-field-culture-lists-control .view-content .views-row:last-child,
       .pane-ding-related-content-news-events .view-content .views-row:last-child {
         margin-right: 0; }
@@ -7910,7 +7927,7 @@ ul.main-menu.navbar-nav {
     border: none;
     padding: 0; }
 
-.node-type-ding-library h2.pane-title {
+.node-type-ding-library #ding-library-front h2.pane-title {
   position: relative;
   border-bottom: 1px solid rgba(38, 38, 38, 0.2);
   margin-bottom: 25px;
@@ -8214,6 +8231,9 @@ ul.main-menu.navbar-nav {
   background-color: #e3e000; }
   #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
     color: #262626; }
+
+.pane-ding-event-calendar-ding-event-calendar .more-link {
+  margin-bottom: 20px; }
 
 .pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-day {
   background-color: #e3e000;
