@@ -43,6 +43,18 @@
     }
   }
 
+  .field-name-field-ding-event-tags {
+    padding: 15px 0;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    margin: 25px 0;
+
+    .field-item {
+      display: inline-block;
+      padding-right: 10px;
+    }
+  }
+
   .field-name-field-ding-event-list-filter,
   .field-name-field-ding-event-price.field-label-hidden {
     display: none;
@@ -106,6 +118,7 @@
 
       @media #{$wide}, #{$normal} {
         @include make-col(5.8);
+        display: inline-block;
       }
     }
 
@@ -139,6 +152,7 @@
 
       @media #{$wide}, #{$normal} {
         @include make-col(3.8);
+        display: inline-block;
       }
       
       &:last-child {

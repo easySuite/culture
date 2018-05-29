@@ -17,7 +17,7 @@
   @include wrapper;
   padding: 50px 0;
 
-  .contextual-links-region {
+  .pane-block {
     display: inline-block;
     @include make-col(12);
     width: 23%;
