@@ -7,6 +7,7 @@ stylesheets[all][] = css/style.css
 
 ;Scripts
 scripts[] = node_modules/bootstrap/dist/js/bootstrap.min.js
+scripts[] = script/culture.js
 
 ;Regions
 regions[header]            = Header
