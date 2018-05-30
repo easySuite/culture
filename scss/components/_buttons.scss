@@ -171,10 +171,12 @@ input#edit-search-block-form--2 {
 .views-exposed-widget.views-submit-button {
   position: relative;
   border-top: 1px solid $charcoal-opacity-light;
-  padding-top: 25px;
   width: 100%;
 }
 
+.views-exposed-widget.views-submit-button {
+  padding-top: 25px;
+}
 // ==========================================================================
 // Textarea
 // ==========================================================================
