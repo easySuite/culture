@@ -16,17 +16,19 @@
 .footer-inner {
   @include wrapper;
   padding: 50px 0;
+  @extend .row;
 
   .pane-block {
-    display: inline-block;
-    @include make-col(12);
-    width: 23%;
-    float: left;
-
-    .panel-pane-inner {
-      max-width: 200px;
-    }
+    @extend .col;
+    display: block;
+    flex-basis: initial;
   }
+
+ @media #{$wide}, #{$normal}, #{$tablet} {
+    .pane-block {
+      flex-basis: 0;
+    }
+ }
 
   .attachment-first,
   .attachment-second,
