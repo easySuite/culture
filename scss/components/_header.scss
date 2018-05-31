@@ -1,7 +1,7 @@
 // // Styling of header region.
 
 .site-header {
-  height: 175px;
+ height: 90px;
   // Topbar
   // ==========================================================================
   .topbar {
@@ -78,6 +78,12 @@
         }
       }
     }
+
+
+    .form-item-search-block-form input {
+      display: inline-block;
+      margin-top: 0;
+    }
   }
 
   .pane-search-form {
@@ -85,16 +91,13 @@
       @include make-col(6);
     }
     float: right;
-    margin-right: 10px;
     margin-top: 7px;
 
-    .form-item-search-block-form input {
-      display: inline-block;
-      margin-top: 0;
-    }
-
     .form-item-search-block-form {
-      width: calc(100% - 80px);
+      @media #{$wide}, #{$normal} {
+        width: calc(100% - 80px);
+      }
+      width: calc(100% - 60px);
     }
 
     .form-item,
@@ -107,7 +110,7 @@
     @include wrapper;
     @include transition(height $speed $ease);
     position: relative;
-    height: 64px;
+    height: 95px;
 
     .logo {
       @include make-col(4);
@@ -116,6 +119,14 @@
 
       a:hover {
         text-decoration: none;
+      }
+    }
+
+    .form-item-search-block-form {
+      width: calc(100% - 55px);
+
+      .logged-in & {
+        width: calc(100% - 80px);
       }
     }
 
@@ -142,12 +153,27 @@
       }
     }
 
+    .pane-search-form {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+
+      @media #{$wide}, #{$normal} {
+        position: absolute;
+        width: auto;
+        right: 0;
+      }
+
+      .pane-content {
+        display: block;
+        min-height: 50px;
+      }
+    }
+
     #search-block-form {
-      top: 0;
-      position: absolute;
-      right: 0;
-
-
+      @media #{$wide}, #{$normal} {
+        margin-top: 15px;
+      }
       .form-actions,
       .form-item-search-block-form {
         display: inline-block;
@@ -253,6 +279,7 @@
 
     .pane-search-form {
       @extend .col-12;
+      top: 8px;
 
       .pane-content {
         display: block;
@@ -353,7 +380,7 @@ ul {
     ul.navbar-nav {
       li {
         a {
-          padding: 30px 5px 20px 5px;
+          padding: 30px 5px 30px 5px;
 
           display: block;
         }

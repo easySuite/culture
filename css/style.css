@@ -341,7 +341,7 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2; }
 
-.display-4, .view-display-id-ding_event_list h3 .date-display-single {
+.display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
@@ -470,7 +470,8 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, .footer-inner, #kultur_calendar-day .kultur_calendar-title > a,
+#kultur_calendar-day .kultur_calendar-body > a {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -479,12 +480,12 @@ pre {
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col,
+  .no-gutters > .col, .footer-inner .no-gutters > .pane-block,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .site-header .navigation-inner .pane-search-form, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .site-header .navigation-inner .pane-search-form, .col, .footer-inner .pane-block,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .page-contact .col-md-8, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -496,7 +497,7 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-.col {
+.col, .footer-inner .pane-block {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%; }
@@ -1378,7 +1379,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px; }
-  .form-row > .col,
+  .form-row > .col, .footer-inner .form-row > .pane-block,
   .form-row > [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px; }
@@ -6563,10 +6564,17 @@ table td {
   margin-top: 10px;
   margin-bottom: 20px; }
 
-.row {
+.row, .footer-inner, #kultur_calendar-day .kultur_calendar-title > a,
+#kultur_calendar-day .kultur_calendar-body > a {
   margin-right: -5px;
   margin-left: -7px; }
-  .row .col {
+  .front .row .col-md-4, .front .footer-inner .col-md-4, .front #kultur_calendar-day .kultur_calendar-title > a .col-md-4, #kultur_calendar-day .front .kultur_calendar-title > a .col-md-4, .front #kultur_calendar-day .kultur_calendar-body > a .col-md-4, #kultur_calendar-day .front .kultur_calendar-body > a .col-md-4,
+  .front .row .col-md-8,
+  .front .footer-inner .col-md-8,
+  .front #kultur_calendar-day .kultur_calendar-title > a .col-md-8,
+  #kultur_calendar-day .front .kultur_calendar-title > a .col-md-8,
+  .front #kultur_calendar-day .kultur_calendar-body > a .col-md-8,
+  #kultur_calendar-day .front .kultur_calendar-body > a .col-md-8 {
     margin-top: 40px; }
 
 .field-slideshow.field-slideshow-processed {
@@ -6631,7 +6639,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
   content: "\e906"; }
 
 .site-header {
-  height: 175px; }
+  height: 90px; }
   .site-header .topbar {
     transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
     z-index: 901;
@@ -6685,19 +6693,21 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
           z-index: 902; }
         .site-header .navigation-wrapper .navigation-inner .navbar {
           padding: 0; } }
+    .site-header .navigation-wrapper .form-item-search-block-form input {
+      display: inline-block;
+      margin-top: 0; }
   .site-header .pane-search-form {
     float: right;
-    margin-right: 10px;
     margin-top: 7px; }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .site-header .pane-search-form {
         flex: 0 0 50%;
         max-width: 50%; } }
-    .site-header .pane-search-form .form-item-search-block-form input {
-      display: inline-block;
-      margin-top: 0; }
     .site-header .pane-search-form .form-item-search-block-form {
-      width: calc(100% - 80px); }
+      width: calc(100% - 60px); }
+      @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+        .site-header .pane-search-form .form-item-search-block-form {
+          width: calc(100% - 80px); } }
     .site-header .pane-search-form .form-item,
     .site-header .pane-search-form .form-actions {
       margin-top: 0; }
@@ -6708,7 +6718,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
     width: 90%;
     transition: height 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
     position: relative;
-    height: 64px; }
+    height: 95px; }
     .site-header .topbar-inner::after {
       display: block;
       clear: both;
@@ -6723,6 +6733,10 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
       margin-top: 20px; }
       .site-header .topbar-inner .logo a:hover {
         text-decoration: none; }
+    .site-header .topbar-inner .form-item-search-block-form {
+      width: calc(100% - 55px); }
+      .logged-in .site-header .topbar-inner .form-item-search-block-form {
+        width: calc(100% - 80px); }
     .site-header .topbar-inner .site-name-container {
       height: 44px; }
       .site-header .topbar-inner .site-name-container.logo-container .site-name {
@@ -6738,15 +6752,26 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
         max-width: 95%;
         width: auto;
         height: auto; }
-    .site-header .topbar-inner #search-block-form {
-      top: 0;
-      position: absolute;
-      right: 0; }
-      .site-header .topbar-inner #search-block-form .form-actions,
-      .site-header .topbar-inner #search-block-form .form-item-search-block-form {
-        display: inline-block; }
-      .site-header .topbar-inner #search-block-form .form-actions {
-        margin-left: -6px; }
+    .site-header .topbar-inner .pane-search-form {
+      position: relative;
+      width: 100%;
+      min-height: 1px; }
+      @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+        .site-header .topbar-inner .pane-search-form {
+          position: absolute;
+          width: auto;
+          right: 0; } }
+      .site-header .topbar-inner .pane-search-form .pane-content {
+        display: block;
+        min-height: 50px; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .site-header .topbar-inner #search-block-form {
+        margin-top: 15px; } }
+    .site-header .topbar-inner #search-block-form .form-actions,
+    .site-header .topbar-inner #search-block-form .form-item-search-block-form {
+      display: inline-block; }
+    .site-header .topbar-inner #search-block-form .form-actions {
+      margin-left: -6px; }
   .site-header ul.navbar-nav li a {
     color: #262626; }
     .site-header ul.navbar-nav li a.active {
@@ -6825,9 +6850,11 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
       display: block;
       clear: both;
       content: ""; }
-    .site-header .navigation-inner .pane-search-form .pane-content {
-      display: block;
-      margin: 0 25px; }
+    .site-header .navigation-inner .pane-search-form {
+      top: 8px; }
+      .site-header .navigation-inner .pane-search-form .pane-content {
+        display: block;
+        margin: 0 25px; }
     .site-header .navigation-inner .main-menu-wrapper {
       transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1), top 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
       flex: 0 0 33.33333%;
@@ -6886,7 +6913,7 @@ ul.menu, ul.main-menu, ul.menu-second-level, ul.menu-third-level, ul.secondary-m
   .main-menu-wrapper {
     padding-bottom: 0; }
     .main-menu-wrapper ul.navbar-nav li a {
-      padding: 30px 5px 20px 5px;
+      padding: 30px 5px 30px 5px;
       display: block; }
     .main-menu-wrapper ul.navbar-nav li a {
       color: #262626;
@@ -6974,7 +7001,8 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 .footer {
   background-color: #262626;
-  color: #ffffff; }
+  color: #ffffff;
+  clear: both; }
   .footer a,
   .footer a.active {
     transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -6992,19 +7020,18 @@ ul.main-menu > li, ul.secondary-menu > li {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  padding: 50px 0; }
+  padding-top: 30px; }
   .footer-inner::after {
     display: block;
     clear: both;
     content: ""; }
   .footer-inner .pane-block {
-    display: inline-block;
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 23%;
-    float: left; }
-    .footer-inner .pane-block .panel-pane-inner {
-      max-width: 200px; }
+    display: block;
+    flex-basis: initial;
+    margin-bottom: 20px; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px), screen and (min-width: 767px) {
+    .footer-inner .pane-block {
+      flex-basis: 0; } }
   .footer-inner .attachment-first,
   .footer-inner .attachment-second,
   .footer-inner .attachment-third {
@@ -7202,8 +7229,10 @@ input#edit-search-block-form--2 {
 .views-exposed-widget.views-submit-button {
   position: relative;
   border-top: 1px solid rgba(38, 38, 38, 0.2);
-  padding-top: 25px;
   width: 100%; }
+
+.views-exposed-widget.views-submit-button {
+  padding-top: 25px; }
 
 textarea {
   font-family: "FaktPro-Normal", sans-serif;
@@ -7438,6 +7467,10 @@ ul.main-menu.navbar-nav {
     height: auto;
     padding: 0 10px; }
 
+.view-display-id-ding_event_list h3 .date-display-single {
+  font-size: 40px;
+  text-transform: uppercase; }
+
 .view-display-id-ding_event_list .view-content {
   flex: 0 0 100%;
   max-width: 100%; }
@@ -7487,11 +7520,35 @@ ul.main-menu.navbar-nav {
       .pane-ding-related-content-news-events .view-content .views-row:last-child {
         margin-right: 0; }
 
+.bef-checkboxes::after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.fieldset-legend,
+a.fieldset-title {
+  display: block;
+  width: auto; }
+
+.fieldset-legend {
+  height: 50px; }
+
+a.fieldset-title {
+  font-size: 20px; }
+
+fieldset.collapsible .fieldset-title::after {
+  content: "\e905"; }
+
+@media screen and (min-width: 1200px), screen and (min-width: 992px) {
+  fieldset.bef-select-as-checkboxes-fieldset {
+    padding: 0; } }
+
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
   height: auto; }
 
-.node-type-ding-news .node-ding-news .inner.row {
+.node-type-ding-news .node-ding-news .inner.row, .node-type-ding-news .node-ding-news .inner.footer-inner, .node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-title > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-title > a.inner,
+.node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-body > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-body > a.inner {
   padding: 20px; }
 
 .node-type-ding-news .node-ding-news .left h2 {
@@ -7796,8 +7853,8 @@ ul.main-menu.navbar-nav {
   .ding-campaign.image img {
     width: 100%; }
 
-.pane-campaign .ding-campaign-full-width {
-  display: none; }
+.pane-campaign {
+  clear: both; }
 
 .node-ding-library.node-teaser {
   position: relative;
@@ -8027,6 +8084,9 @@ ul.main-menu.navbar-nav {
   .button-previous:hover {
     color: #e3e000; }
 
+#ding-library-front .view .more-link {
+  margin-bottom: 20px; }
+
 #kultur_calendar {
   margin-bottom: 40px; }
   #kultur_calendar table {
@@ -8118,7 +8178,11 @@ ul.main-menu.navbar-nav {
             font-weight: blold; } }
       #kultur_calendar .fc-day-grid-event span.event-amount {
         display: inline-block;
-        padding-left: 5px; }
+        padding-left: 5px;
+        display: none; }
+        @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+          #kultur_calendar .fc-day-grid-event span.event-amount {
+            display: inline-block; } }
     #kultur_calendar .fc-day-grid-event.other-info {
       position: absolute; }
       #kultur_calendar .fc-day-grid-event.other-info span {

@@ -165,15 +165,15 @@
     clear: both;
     padding-top: 30px;
 
-      .pane-title {
-        font-family: $font-family-light;
-        line-height: 33px;
-        font-size: 30px;
-        margin-bottom: 20px;
-        color: $color-text;
-        border: none;
-        padding: 0;
-      }
+    .pane-title {
+      font-family: $font-family-light;
+      line-height: 33px;
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: $color-text;
+      border: none;
+      padding: 0;
+    }
   }
 
   #ding-library-front h2.pane-title {
@@ -307,4 +307,10 @@
 }
 .button-previous  {
   @extend .float-left;
+}
+
+#ding-library-front {
+  .view .more-link {
+    margin-bottom: 20px;
+  }
 }

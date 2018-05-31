@@ -165,7 +165,8 @@ table td {
   margin-right: -5px;
   margin-left: -7px;
 
-  .col {
+ .front & .col-md-4,
+ .front & .col-md-8 {
     margin-top: 40px;
   }
 }

@@ -108,7 +108,8 @@
 //list events
 .view-display-id-ding_event_list {
  h3 .date-display-single {
-    @extend .display-4;
+   font-size: 40px;
+  text-transform: uppercase;
   }
   .view-content {
     @include make-col(12);
@@ -159,5 +160,34 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+
+.bef-checkboxes {
+  @include clearfix();
+}
+
+.fieldset-legend,
+a.fieldset-title {
+  display: block;
+  width: auto;
+}
+
+.fieldset-legend {
+  height: 50px;
+}
+
+a.fieldset-title {
+  font-size: 20px;
+}
+
+fieldset.collapsible .fieldset-title::after {
+  content: "\e905";
+}
+
+fieldset.bef-select-as-checkboxes-fieldset {
+  @media #{$wide}, #{$normal} {
+    padding: 0;
   }
 }
