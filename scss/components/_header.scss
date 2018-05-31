@@ -1,7 +1,7 @@
 // // Styling of header region.
 
 .site-header {
-  height: 175px;
+ height: 90px;
   // Topbar
   // ==========================================================================
   .topbar {
@@ -279,6 +279,7 @@
 
     .pane-search-form {
       @extend .col-12;
+      top: 8px;
 
       .pane-content {
         display: block;

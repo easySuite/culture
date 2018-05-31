@@ -5,8 +5,6 @@
     attach: function (context, settings) {
       // Display all filters for big screens.
       if ($(window).width() > 768) {
-        //$('a.fieldset-title', context).click();
-
         $( "fieldset.bef-select-as-checkboxes-fieldset" ).removeClass( "collapsible" );
         $( "fieldset.bef-select-as-checkboxes-fieldset" ).removeClass( "collapsed" );
         $( "fieldset.bef-select-as-checkboxes-fieldset" ).removeClass( "collapse-processed" );
@@ -15,6 +13,10 @@
               html: this.innerHTML
           });
         });
+      }
+
+      if ($('section.navigation-wrapper', context).length) {
+        $('.site-header', context).css({"height": "175px"});
       }
     }
   };
