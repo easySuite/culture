@@ -470,7 +470,8 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row, .footer-inner {
+.row, .footer-inner, #kultur_calendar-day .kultur_calendar-title > a,
+#kultur_calendar-day .kultur_calendar-body > a {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -6563,10 +6564,17 @@ table td {
   margin-top: 10px;
   margin-bottom: 20px; }
 
-.row, .footer-inner {
+.row, .footer-inner, #kultur_calendar-day .kultur_calendar-title > a,
+#kultur_calendar-day .kultur_calendar-body > a {
   margin-right: -5px;
   margin-left: -7px; }
-  .row .col, .footer-inner .col, .footer-inner .pane-block {
+  .front .row .col-md-4, .front .footer-inner .col-md-4, .front #kultur_calendar-day .kultur_calendar-title > a .col-md-4, #kultur_calendar-day .front .kultur_calendar-title > a .col-md-4, .front #kultur_calendar-day .kultur_calendar-body > a .col-md-4, #kultur_calendar-day .front .kultur_calendar-body > a .col-md-4,
+  .front .row .col-md-8,
+  .front .footer-inner .col-md-8,
+  .front #kultur_calendar-day .kultur_calendar-title > a .col-md-8,
+  #kultur_calendar-day .front .kultur_calendar-title > a .col-md-8,
+  .front #kultur_calendar-day .kultur_calendar-body > a .col-md-8,
+  #kultur_calendar-day .front .kultur_calendar-body > a .col-md-8 {
     margin-top: 40px; }
 
 .field-slideshow.field-slideshow-processed {
@@ -6631,7 +6639,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
   content: "\e906"; }
 
 .site-header {
-  height: 175px; }
+  height: 90px; }
   .site-header .topbar {
     transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
     z-index: 901;
@@ -6842,9 +6850,11 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
       display: block;
       clear: both;
       content: ""; }
-    .site-header .navigation-inner .pane-search-form .pane-content {
-      display: block;
-      margin: 0 25px; }
+    .site-header .navigation-inner .pane-search-form {
+      top: 8px; }
+      .site-header .navigation-inner .pane-search-form .pane-content {
+        display: block;
+        margin: 0 25px; }
     .site-header .navigation-inner .main-menu-wrapper {
       transition: transform 300ms cubic-bezier(0.165, 0.84, 0.44, 1), top 0ms cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
       flex: 0 0 33.33333%;
@@ -6991,7 +7001,8 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 .footer {
   background-color: #262626;
-  color: #ffffff; }
+  color: #ffffff;
+  clear: both; }
   .footer a,
   .footer a.active {
     transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -7009,14 +7020,15 @@ ul.main-menu > li, ul.secondary-menu > li {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  padding: 50px 0; }
+  padding-top: 30px; }
   .footer-inner::after {
     display: block;
     clear: both;
     content: ""; }
   .footer-inner .pane-block {
     display: block;
-    flex-basis: initial; }
+    flex-basis: initial;
+    margin-bottom: 20px; }
   @media screen and (min-width: 1200px), screen and (min-width: 992px), screen and (min-width: 767px) {
     .footer-inner .pane-block {
       flex-basis: 0; } }
@@ -7531,7 +7543,8 @@ fieldset.collapsible .fieldset-title::after {
   max-width: 100%;
   height: auto; }
 
-.node-type-ding-news .node-ding-news .inner.row, .node-type-ding-news .node-ding-news .inner.footer-inner {
+.node-type-ding-news .node-ding-news .inner.row, .node-type-ding-news .node-ding-news .inner.footer-inner, .node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-title > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-title > a.inner,
+.node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-body > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-body > a.inner {
   padding: 20px; }
 
 .node-type-ding-news .node-ding-news .left h2 {
@@ -8067,6 +8080,9 @@ fieldset.collapsible .fieldset-title::after {
   .button-previous:hover {
     color: #e3e000; }
 
+#ding-library-front .view .more-link {
+  margin-bottom: 20px; }
+
 #kultur_calendar {
   margin-bottom: 40px; }
   #kultur_calendar table {
@@ -8158,7 +8174,11 @@ fieldset.collapsible .fieldset-title::after {
             font-weight: blold; } }
       #kultur_calendar .fc-day-grid-event span.event-amount {
         display: inline-block;
-        padding-left: 5px; }
+        padding-left: 5px;
+        display: none; }
+        @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+          #kultur_calendar .fc-day-grid-event span.event-amount {
+            display: inline-block; } }
     #kultur_calendar .fc-day-grid-event.other-info {
       position: absolute; }
       #kultur_calendar .fc-day-grid-event.other-info span {
