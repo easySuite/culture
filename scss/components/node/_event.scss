@@ -186,3 +186,8 @@ fieldset.collapsible .fieldset-title::after {
   content: "\e905";
 }
 
+fieldset.bef-select-as-checkboxes-fieldset {
+  @media #{$wide}, #{$normal} {
+    padding: 0;
+  }
+}

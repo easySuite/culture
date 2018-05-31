@@ -7539,6 +7539,10 @@ a.fieldset-title {
 fieldset.collapsible .fieldset-title::after {
   content: "\e905"; }
 
+@media screen and (min-width: 1200px), screen and (min-width: 992px) {
+  fieldset.bef-select-as-checkboxes-fieldset {
+    padding: 0; } }
+
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
   height: auto; }
