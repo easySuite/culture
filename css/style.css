@@ -6913,7 +6913,7 @@ ul.menu, ul.main-menu, ul.menu-second-level, ul.menu-third-level, ul.secondary-m
   .main-menu-wrapper {
     padding-bottom: 0; }
     .main-menu-wrapper ul.navbar-nav li a {
-      padding: 30px 5px 20px 5px;
+      padding: 30px 5px 30px 5px;
       display: block; }
     .main-menu-wrapper ul.navbar-nav li a {
       color: #262626;
