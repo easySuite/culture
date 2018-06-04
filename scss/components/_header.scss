@@ -1,7 +1,11 @@
 // // Styling of header region.
 
 .site-header {
- height: 90px;
+ height: 175px;
+
+ @media #{$wide}, #{$normal} {
+  height: 90px;
+}
   // Topbar
   // ==========================================================================
   .topbar {
