@@ -2,6 +2,10 @@
 #kultur_calendar {
   margin-bottom: 40px;
 
+  .fc-center {
+    width: 310px;
+  }
+
   table {
     width: 100%;
     table-layout: fixed;
