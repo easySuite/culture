@@ -7346,6 +7346,9 @@ input[type="radio"]:checked + label::after {
   box-shadow: rgba(226, 226, 57, 0.73); }
 
 .btn-success:focus, .btn-success.focus {
+  box-shadow: 0 0 0 0.2rem #e2e239; }
+
+.btn-success:focus, .btn-success.focus {
   box-shadow: rgba(226, 226, 57, 0.73); }
 
 .select-wrapper,
