@@ -43,8 +43,26 @@
 
   .fc-month-view {
     margin-top: 55px;
+    td.fc-widget-header {
+      display: none;
+    }
   }
+  .fc-listWeek-view {
+    td {
+      &:hover {
+        background: $white!important;
+      }
+      a:hover {
+        color: $grey-dark;
+      }
+      border: 0;
+    }
 
+    .fc-list-item-time,
+    .fc-list-item-marker {
+      display: none;
+    }
+  }
   h2 {
     text-transform: uppercase;
     color: $charcoal;
@@ -104,15 +122,12 @@
     }
   }
 
-  td.fc-widget-header {
-    display: none;
-  }
-
   div, div.fc-bg,
   div.fc-content-skeleton,
   div.fc-day-grid, 
   div.fc-scroller {
     border: none;
+    width: 100%;
   }
 
   .fc-body {

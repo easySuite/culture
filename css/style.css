@@ -8115,6 +8115,17 @@ fieldset.collapsible .fieldset-title::after {
         font-size: 18px; } }
   #kultur_calendar .fc-month-view {
     margin-top: 55px; }
+    #kultur_calendar .fc-month-view td.fc-widget-header {
+      display: none; }
+  #kultur_calendar .fc-listWeek-view td {
+    border: 0; }
+    #kultur_calendar .fc-listWeek-view td:hover {
+      background: #ffffff !important; }
+    #kultur_calendar .fc-listWeek-view td a:hover {
+      color: #808285; }
+  #kultur_calendar .fc-listWeek-view .fc-list-item-time,
+  #kultur_calendar .fc-listWeek-view .fc-list-item-marker {
+    display: none; }
   #kultur_calendar h2 {
     text-transform: uppercase;
     color: #262626;
@@ -8150,13 +8161,12 @@ fieldset.collapsible .fieldset-title::after {
     border: 1px solid #e5e5e5; }
     #kultur_calendar div.fc-row div.fc-content-skeleton {
       position: relative; }
-  #kultur_calendar td.fc-widget-header {
-    display: none; }
   #kultur_calendar div, #kultur_calendar div.fc-bg,
   #kultur_calendar div.fc-content-skeleton,
   #kultur_calendar div.fc-day-grid,
   #kultur_calendar div.fc-scroller {
-    border: none; }
+    border: none;
+    width: 100%; }
   #kultur_calendar .fc-body {
     background-color: #808285;
     height: auto; }
