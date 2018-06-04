@@ -3,7 +3,7 @@
 .site-header {
  height: 175px;
 
- @media #{$wide}, #{$normal} {
+ @media #{$wide} {
   height: 90px;
 }
   // Topbar
@@ -484,6 +484,14 @@ ul {
       position: relative;
       float: left;
       margin-right: 40px;
+
+      @media #{$normal} {
+        margin-right: 15px;
+      }
+
+      @media #{$wide} {
+        margin-right: 40px;
+      }
 
       &:last-child {
         margin-right: 0;

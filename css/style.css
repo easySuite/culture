@@ -6640,7 +6640,7 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
 
 .site-header {
   height: 175px; }
-  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     .site-header {
       height: 90px; } }
   .site-header .topbar {
@@ -6972,6 +6972,12 @@ ul.main-menu > li, ul.secondary-menu > li {
   position: relative;
   float: left;
   margin-right: 40px; }
+  @media screen and (min-width: 992px) {
+    ul.main-menu > li, ul.secondary-menu > li {
+      margin-right: 15px; } }
+  @media screen and (min-width: 1200px) {
+    ul.main-menu > li, ul.secondary-menu > li {
+      margin-right: 40px; } }
   ul.main-menu > li:last-child, ul.secondary-menu > li:last-child {
     margin-right: 0; }
   ul.main-menu > li a::after, ul.secondary-menu > li a::after {
@@ -8093,7 +8099,9 @@ fieldset.collapsible .fieldset-title::after {
 #kultur_calendar {
   margin-bottom: 40px; }
   #kultur_calendar .fc-center {
-    width: 310px; }
+    width: auto;
+    display: table;
+    margin: 0 auto; }
   #kultur_calendar table {
     width: 100%;
     table-layout: fixed; }
@@ -8297,6 +8305,9 @@ fieldset.collapsible .fieldset-title::after {
     .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-time {
       margin-left: 0;
       font-weight: bold; }
+
+table#calendar {
+  table-layout: fixed; }
 
 .slick-prev:before,
 .slick-next:before {
