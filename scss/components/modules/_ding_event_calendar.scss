@@ -66,6 +66,10 @@
   }
 }
 
+table#calendar {
+  table-layout: fixed;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: $color-primary;

@@ -3,7 +3,9 @@
   margin-bottom: 40px;
 
   .fc-center {
-    width: 310px;
+    width: auto;
+    display: table;
+    margin: 0 auto;
   }
 
   table {
