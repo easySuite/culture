@@ -381,3 +381,71 @@ ul.main-menu.navbar-nav {
     }
   }
 }
+.field-type-culture-frontend-lists-control {
+// style for slick arrow
+  .slick-slider {
+    // Prev/Next
+    .slick-arrow {
+      position: absolute;
+      &.slick-prev {
+        color: transparent;
+        left: auto;
+        transform: rotate(-180deg);
+
+        &:after {
+          font-family: 'icomoon';
+          color: $grey-dark;
+          content: "\e903";
+        }
+      }
+
+      &.slick-next {
+        color: transparent;
+        margin-right: 5px;
+        &:after {
+          font-family: 'icomoon';
+          color:  $grey-dark;
+          content: "\e903";
+        }
+      }
+
+      &.slick-prev,
+      &.slick-next {
+        @extend .btn;
+        width: 65px;
+        height: 40px;
+        background-color: $color-primary;
+        opacity: 1;
+        z-index: 1;
+        cursor: pointer;
+
+        &::after {
+          right: -2px;
+          width: 100%;
+          height: 100%;
+          font-size: 25px;
+          position: absolute;
+          top: -2px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          &::after {
+            color: $grey-dark;
+          }
+        }
+
+        &.slick-disabled {
+          cursor: default;
+          opacity: $disabled;
+
+          &:hover {
+            &::after {
+              color: $charcoal-opacity-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
