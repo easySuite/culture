@@ -7074,36 +7074,46 @@ ul.main-menu > li, ul.secondary-menu > li {
     .page-arrangementer #autocomplete ul li:hover {
       background-color: #e3e000; }
 
-.page-arrangementer .views-submit-button .events-tomorrow a,
-.page-arrangementer .views-submit-button .events-next_weekend a,
-.page-arrangementer .views-submit-button .top_events a {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 15px;
-  height: 54px;
-  text-align: left;
-  background-color: #e5e5e5;
-  color: #262626;
-  border-color: #e5e5e5; }
-  .page-arrangementer .views-submit-button .events-tomorrow a:hover, .page-arrangementer .views-submit-button .events-tomorrow a:active, .page-arrangementer .views-submit-button .events-tomorrow a:focus, .page-arrangementer .views-submit-button .events-tomorrow a:visited, .page-arrangementer .views-submit-button .events-tomorrow a:focus-within,
-  .page-arrangementer .views-submit-button .events-next_weekend a:hover,
-  .page-arrangementer .views-submit-button .events-next_weekend a:active,
-  .page-arrangementer .views-submit-button .events-next_weekend a:focus,
-  .page-arrangementer .views-submit-button .events-next_weekend a:visited,
-  .page-arrangementer .views-submit-button .events-next_weekend a:focus-within,
-  .page-arrangementer .views-submit-button .top_events a:hover,
-  .page-arrangementer .views-submit-button .top_events a:active,
-  .page-arrangementer .views-submit-button .top_events a:focus,
-  .page-arrangementer .views-submit-button .top_events a:visited,
-  .page-arrangementer .views-submit-button .top_events a:focus-within {
-    background-color: #e3e000;
+.page-arrangementer .filters-group {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .page-arrangementer .filters-group .label {
+    font-weight: 900; }
+    @media (max-width: 767.98px) {
+      .page-arrangementer .filters-group .label {
+        margin-bottom: 10px; } }
+  .page-arrangementer .filters-group .events-tomorrow a,
+  .page-arrangementer .filters-group .events-next_weekend a,
+  .page-arrangementer .filters-group .top_events a {
+    background-color: #e5e5e5;
     color: #262626;
-    border-color: #e3e000; }
-
-.page-arrangementer .views-submit-button .btn-success:not(:disabled):not(.disabled):active:focus,
-.page-arrangementer .views-submit-button .btn-success:not(:disabled):not(.disabled).active:focus,
-.page-arrangementer .views-submit-button .show > .btn-success.dropdown-toggle:focus {
-  box-shadow: rgba(226, 226, 57, 0.73); }
+    border-color: #e5e5e5;
+    width: 100%;
+    text-align: center; }
+    @media (max-width: 767.98px) {
+      .page-arrangementer .filters-group .events-tomorrow a,
+      .page-arrangementer .filters-group .events-next_weekend a,
+      .page-arrangementer .filters-group .top_events a {
+        margin-bottom: 10px; } }
+    .page-arrangementer .filters-group .events-tomorrow a:hover, .page-arrangementer .filters-group .events-tomorrow a:active, .page-arrangementer .filters-group .events-tomorrow a:focus, .page-arrangementer .filters-group .events-tomorrow a:visited, .page-arrangementer .filters-group .events-tomorrow a:focus-within,
+    .page-arrangementer .filters-group .events-next_weekend a:hover,
+    .page-arrangementer .filters-group .events-next_weekend a:active,
+    .page-arrangementer .filters-group .events-next_weekend a:focus,
+    .page-arrangementer .filters-group .events-next_weekend a:visited,
+    .page-arrangementer .filters-group .events-next_weekend a:focus-within,
+    .page-arrangementer .filters-group .top_events a:hover,
+    .page-arrangementer .filters-group .top_events a:active,
+    .page-arrangementer .filters-group .top_events a:focus,
+    .page-arrangementer .filters-group .top_events a:visited,
+    .page-arrangementer .filters-group .top_events a:focus-within {
+      background-color: #e3e000;
+      color: #262626;
+      border-color: #e3e000; }
+  .page-arrangementer .filters-group .btn-success:not(:disabled):not(.disabled):active:focus,
+  .page-arrangementer .filters-group .btn-success:not(:disabled):not(.disabled).active:focus,
+  .page-arrangementer .filters-group .show > .btn-success.dropdown-toggle:focus {
+    box-shadow: rgba(226, 226, 57, 0.73); }
 
 .page-search .views-widget-filter-sticky {
   display: none; }
