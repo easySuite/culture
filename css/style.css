@@ -1324,20 +1324,20 @@ select.form-control:focus::-ms-value {
   .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .page-contact .col-md-8 form .input-group-sm > input.form-control-plaintext, .page-contact .col-md-8 form .input-group-sm > textarea.form-control-plaintext,
   .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
-  .input-group-sm > .input-group-prepend > .form-control-plaintext.btn, .input-group-sm > .input-group-prepend > .form-control-plaintext.more-link, .page-contact .col-md-8 form .input-group-sm > .input-group-prepend > input.form-control-plaintext#edit-submit,
-  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .input-group-sm > .input-group-append > .form-control-plaintext.more-link, .page-contact .col-md-8 form .input-group-sm > .input-group-append > input.form-control-plaintext#edit-submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .page-contact .col-md-8 form .input-group-lg > input.form-control-plaintext, .page-contact .col-md-8 form .input-group-lg > textarea.form-control-plaintext,
+  .input-group-sm > .input-group-prepend > .form-control-plaintext.btn, .input-group-sm > .input-group-prepend > .form-control-plaintext.more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > .form-control-plaintext.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > .form-control-plaintext.slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-sm > .input-group-prepend > input.form-control-plaintext#edit-submit,
+  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .input-group-sm > .input-group-append > .form-control-plaintext.more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > .form-control-plaintext.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > .form-control-plaintext.slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-sm > .input-group-append > input.form-control-plaintext#edit-submit, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .page-contact .col-md-8 form .input-group-lg > input.form-control-plaintext, .page-contact .col-md-8 form .input-group-lg > textarea.form-control-plaintext,
   .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
-  .input-group-lg > .input-group-prepend > .form-control-plaintext.btn, .input-group-lg > .input-group-prepend > .form-control-plaintext.more-link, .page-contact .col-md-8 form .input-group-lg > .input-group-prepend > input.form-control-plaintext#edit-submit,
-  .input-group-lg > .input-group-append > .form-control-plaintext.btn, .input-group-lg > .input-group-append > .form-control-plaintext.more-link, .page-contact .col-md-8 form .input-group-lg > .input-group-append > input.form-control-plaintext#edit-submit {
+  .input-group-lg > .input-group-prepend > .form-control-plaintext.btn, .input-group-lg > .input-group-prepend > .form-control-plaintext.more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > .form-control-plaintext.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > .form-control-plaintext.slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-lg > .input-group-prepend > input.form-control-plaintext#edit-submit,
+  .input-group-lg > .input-group-append > .form-control-plaintext.btn, .input-group-lg > .input-group-append > .form-control-plaintext.more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > .form-control-plaintext.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > .form-control-plaintext.slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-lg > .input-group-append > input.form-control-plaintext#edit-submit {
     padding-right: 0;
     padding-left: 0; }
 
 .form-control-sm, .input-group-sm > .form-control, .page-contact .col-md-8 form .input-group-sm > input, .page-contact .col-md-8 form .input-group-sm > textarea,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
-.input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-prepend > .more-link, .page-contact .col-md-8 form .input-group-sm > .input-group-prepend > input#edit-submit,
-.input-group-sm > .input-group-append > .btn, .input-group-sm > .input-group-append > .more-link, .page-contact .col-md-8 form .input-group-sm > .input-group-append > input#edit-submit {
+.input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-prepend > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-sm > .input-group-prepend > input#edit-submit,
+.input-group-sm > .input-group-append > .btn, .input-group-sm > .input-group-append > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-sm > .input-group-append > input#edit-submit {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1346,15 +1346,15 @@ select.form-control:focus::-ms-value {
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
-.input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-sm > .input-group-prepend > select.more-link:not([size]):not([multiple]),
-.input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]), .input-group-sm > .input-group-append > select.more-link:not([size]):not([multiple]) {
+.input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-sm > .input-group-prepend > select.more-link:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > select.slick-arrow.slick-prev:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-prepend > select.slick-arrow.slick-next:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]), .input-group-sm > .input-group-append > select.more-link:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > select.slick-arrow.slick-prev:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-sm > .input-group-append > select.slick-arrow.slick-next:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control, .page-contact .col-md-8 form .input-group-lg > input, .page-contact .col-md-8 form .input-group-lg > textarea,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
-.input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-prepend > .more-link, .page-contact .col-md-8 form .input-group-lg > .input-group-prepend > input#edit-submit,
-.input-group-lg > .input-group-append > .btn, .input-group-lg > .input-group-append > .more-link, .page-contact .col-md-8 form .input-group-lg > .input-group-append > input#edit-submit {
+.input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-prepend > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-lg > .input-group-prepend > input#edit-submit,
+.input-group-lg > .input-group-append > .btn, .input-group-lg > .input-group-append > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-lg > .input-group-append > input#edit-submit {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1363,8 +1363,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
-.input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-lg > .input-group-prepend > select.more-link:not([size]):not([multiple]),
-.input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]), .input-group-lg > .input-group-append > select.more-link:not([size]):not([multiple]) {
+.input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]), .input-group-lg > .input-group-prepend > select.more-link:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > select.slick-arrow.slick-prev:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-prepend > select.slick-arrow.slick-next:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]), .input-group-lg > .input-group-append > select.more-link:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > select.slick-arrow.slick-prev:not([size]):not([multiple]), .field-type-culture-frontend-lists-control .slick-slider .input-group-lg > .input-group-append > select.slick-arrow.slick-next:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px); }
 
 .form-group {
@@ -1636,7 +1636,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn, .more-link, .page-contact .col-md-8 form input#edit-submit {
+.btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -1650,23 +1650,27 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
-    .btn, .more-link, .page-contact .col-md-8 form input#edit-submit {
+    .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
       transition: none; } }
-  .btn:hover, .more-link:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:focus, .more-link:focus, .page-contact .col-md-8 form input#edit-submit:focus {
+  .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus {
     text-decoration: none; }
-  .btn:focus, .more-link:focus, .page-contact .col-md-8 form input#edit-submit:focus, .btn.focus, .focus.more-link, .page-contact .col-md-8 form input.focus#edit-submit {
+  .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus, .btn.focus, .focus.more-link, .field-type-culture-frontend-lists-control .slick-slider .focus.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .focus.slick-arrow.slick-next, .page-contact .col-md-8 form input.focus#edit-submit {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .disabled.more-link, .page-contact .col-md-8 form input.disabled#edit-submit, .btn:disabled, .more-link:disabled, .page-contact .col-md-8 form input#edit-submit:disabled {
+  .btn.disabled, .disabled.more-link, .field-type-culture-frontend-lists-control .slick-slider .disabled.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .disabled.slick-arrow.slick-next, .page-contact .col-md-8 form input.disabled#edit-submit, .btn:disabled, .more-link:disabled, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:disabled, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:disabled, .page-contact .col-md-8 form input#edit-submit:disabled {
     opacity: 0.65; }
-  .btn:not(:disabled):not(.disabled), .more-link:not(:disabled):not(.disabled), .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled) {
+  .btn:not(:disabled):not(.disabled), .more-link:not(:disabled):not(.disabled), .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:not(:disabled):not(.disabled), .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:not(:disabled):not(.disabled), .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled) {
     cursor: pointer; }
-  .btn:not(:disabled):not(.disabled):active, .more-link:not(:disabled):not(.disabled):active, .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .more-link:not(:disabled):not(.disabled).active, .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled).active {
+  .btn:not(:disabled):not(.disabled):active, .more-link:not(:disabled):not(.disabled):active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:not(:disabled):not(.disabled):active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:not(:disabled):not(.disabled):active, .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .more-link:not(:disabled):not(.disabled).active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:not(:disabled):not(.disabled).active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:not(:disabled):not(.disabled).active, .page-contact .col-md-8 form input#edit-submit:not(:disabled):not(.disabled).active {
     background-image: none; }
 
-a.btn.disabled, a.disabled.more-link,
+a.btn.disabled, a.disabled.more-link, .field-type-culture-frontend-lists-control .slick-slider a.disabled.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider a.disabled.slick-arrow.slick-next,
 fieldset:disabled a.btn,
-fieldset:disabled a.more-link {
+fieldset:disabled a.more-link,
+fieldset:disabled .field-type-culture-frontend-lists-control .slick-slider a.slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider fieldset:disabled a.slick-arrow.slick-prev,
+fieldset:disabled .field-type-culture-frontend-lists-control .slick-slider a.slick-arrow.slick-next,
+.field-type-culture-frontend-lists-control .slick-slider fieldset:disabled a.slick-arrow.slick-next {
   pointer-events: none; }
 
 .btn-primary {
@@ -2054,13 +2058,13 @@ fieldset:disabled a.more-link {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .more-link, .page-contact .col-md-8 form .btn-group-lg > input#edit-submit {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-lg > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-lg > .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group-lg > input#edit-submit {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .more-link, .page-contact .col-md-8 form .btn-group-sm > input#edit-submit {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-sm > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-sm > .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group-sm > input#edit-submit {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2276,58 +2280,124 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .btn-group > .more-link, .page-contact .col-md-8 form .btn-group > input#edit-submit,
+  .btn-group > .btn, .btn-group > .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group > input#edit-submit,
   .btn-group-vertical > .btn,
   .btn-group-vertical > .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next,
   .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit {
     position: relative;
     flex: 0 1 auto; }
-    .btn-group > .btn:hover, .btn-group > .more-link:hover, .page-contact .col-md-8 form .btn-group > input#edit-submit:hover,
+    .btn-group > .btn:hover, .btn-group > .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:hover, .page-contact .col-md-8 form .btn-group > input#edit-submit:hover,
     .btn-group-vertical > .btn:hover,
     .btn-group-vertical > .more-link:hover,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev:hover,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next:hover,
     .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .more-link:focus, .page-contact .col-md-8 form .btn-group > input#edit-submit:focus, .btn-group > .btn:active, .btn-group > .more-link:active, .page-contact .col-md-8 form .btn-group > input#edit-submit:active, .btn-group > .btn.active, .btn-group > .active.more-link, .page-contact .col-md-8 form .btn-group > input.active#edit-submit,
+    .btn-group > .btn:focus, .btn-group > .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:focus, .page-contact .col-md-8 form .btn-group > input#edit-submit:focus, .btn-group > .btn:active, .btn-group > .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:active, .page-contact .col-md-8 form .btn-group > input#edit-submit:active, .btn-group > .btn.active, .btn-group > .active.more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .active.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .active.slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group > input.active#edit-submit,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .more-link:focus,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev:focus,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next:focus,
     .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .more-link:active,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev:active,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next:active,
     .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:active,
     .btn-group-vertical > .btn.active,
     .btn-group-vertical > .active.more-link,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .active.slick-arrow.slick-prev,
+    .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .active.slick-arrow.slick-next,
     .page-contact .col-md-8 form .btn-group-vertical > input.active#edit-submit {
       z-index: 1; }
-  .btn-group .btn + .btn, .btn-group .more-link + .btn, .btn-group .page-contact .col-md-8 form input#edit-submit + .btn, .page-contact .col-md-8 form .btn-group input#edit-submit + .btn, .btn-group .btn + .more-link, .btn-group .more-link + .more-link, .btn-group .page-contact .col-md-8 form input#edit-submit + .more-link, .page-contact .col-md-8 form .btn-group input#edit-submit + .more-link, .btn-group .page-contact .col-md-8 form .btn + input#edit-submit, .page-contact .col-md-8 form .btn-group .btn + input#edit-submit, .btn-group .page-contact .col-md-8 form .more-link + input#edit-submit, .page-contact .col-md-8 form .btn-group .more-link + input#edit-submit, .btn-group .page-contact .col-md-8 form input#edit-submit + input#edit-submit, .page-contact .col-md-8 form .btn-group input#edit-submit + input#edit-submit,
+  .btn-group .btn + .btn, .btn-group .more-link + .btn, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + .btn, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + .btn, .btn-group .page-contact .col-md-8 form input#edit-submit + .btn, .page-contact .col-md-8 form .btn-group input#edit-submit + .btn, .btn-group .btn + .more-link, .btn-group .more-link + .more-link, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + .more-link, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + .more-link, .btn-group .page-contact .col-md-8 form input#edit-submit + .more-link, .page-contact .col-md-8 form .btn-group input#edit-submit + .more-link, .btn-group .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group .btn + .slick-arrow.slick-prev, .btn-group .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group .more-link + .slick-arrow.slick-prev, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + .slick-arrow.slick-prev, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + .slick-arrow.slick-prev, .btn-group .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-prev, .page-contact .col-md-8 form .btn-group .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group input#edit-submit + .slick-arrow.slick-prev, .btn-group .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group .btn + .slick-arrow.slick-next, .btn-group .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group .more-link + .slick-arrow.slick-next, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + .slick-arrow.slick-next, .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + .slick-arrow.slick-next, .btn-group .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group input#edit-submit + .slick-arrow.slick-next, .btn-group .page-contact .col-md-8 form .btn + input#edit-submit, .page-contact .col-md-8 form .btn-group .btn + input#edit-submit, .btn-group .page-contact .col-md-8 form .more-link + input#edit-submit, .page-contact .col-md-8 form .btn-group .more-link + input#edit-submit, .btn-group .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit, .page-contact .col-md-8 form .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .btn-group .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + input#edit-submit, .btn-group .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .btn-group .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + input#edit-submit, .btn-group .page-contact .col-md-8 form input#edit-submit + input#edit-submit, .page-contact .col-md-8 form .btn-group input#edit-submit + input#edit-submit,
   .btn-group .btn + .btn-group,
   .btn-group .more-link + .btn-group,
+  .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-prev + .btn-group,
+  .btn-group .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group .slick-arrow.slick-next + .btn-group,
   .btn-group .page-contact .col-md-8 form input#edit-submit + .btn-group,
   .page-contact .col-md-8 form .btn-group input#edit-submit + .btn-group,
   .btn-group .btn-group + .btn,
   .btn-group .btn-group + .more-link,
+  .btn-group .field-type-culture-frontend-lists-control .slick-slider .btn-group + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group .btn-group + .slick-arrow.slick-prev,
+  .btn-group .field-type-culture-frontend-lists-control .slick-slider .btn-group + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group .btn-group + .slick-arrow.slick-next,
   .btn-group .page-contact .col-md-8 form .btn-group + input#edit-submit,
   .page-contact .col-md-8 form .btn-group .btn-group + input#edit-submit,
   .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
   .btn-group-vertical .more-link + .btn,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + .btn,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + .btn,
   .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + .btn,
   .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + .btn,
   .btn-group-vertical .btn + .more-link,
   .btn-group-vertical .more-link + .more-link,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + .more-link,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + .more-link,
   .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + .more-link,
   .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + .more-link,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .btn + .slick-arrow.slick-prev,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .more-link + .slick-arrow.slick-prev,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + .slick-arrow.slick-prev,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + .slick-arrow.slick-prev,
+  .btn-group-vertical .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-prev,
+  .page-contact .col-md-8 form .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + .slick-arrow.slick-prev,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .btn + .slick-arrow.slick-next,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .more-link + .slick-arrow.slick-next,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + .slick-arrow.slick-next,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + .slick-arrow.slick-next,
+  .btn-group-vertical .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-next,
+  .page-contact .col-md-8 form .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + .slick-arrow.slick-next,
   .btn-group-vertical .page-contact .col-md-8 form .btn + input#edit-submit,
   .page-contact .col-md-8 form .btn-group-vertical .btn + input#edit-submit,
   .btn-group-vertical .page-contact .col-md-8 form .more-link + input#edit-submit,
   .page-contact .col-md-8 form .btn-group-vertical .more-link + input#edit-submit,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit,
+  .page-contact .col-md-8 form .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + input#edit-submit,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit,
+  .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + input#edit-submit,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit,
+  .page-contact .col-md-8 form .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + input#edit-submit,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit,
+  .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + input#edit-submit,
   .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + input#edit-submit,
   .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + input#edit-submit,
   .btn-group-vertical .btn + .btn-group,
   .btn-group-vertical .more-link + .btn-group,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev + .btn-group,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next + .btn-group,
   .btn-group-vertical .page-contact .col-md-8 form input#edit-submit + .btn-group,
   .page-contact .col-md-8 form .btn-group-vertical input#edit-submit + .btn-group,
   .btn-group-vertical .btn-group + .btn,
   .btn-group-vertical .btn-group + .more-link,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .btn-group + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .btn-group + .slick-arrow.slick-prev,
+  .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .btn-group + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .btn-group + .slick-arrow.slick-next,
   .btn-group-vertical .page-contact .col-md-8 form .btn-group + input#edit-submit,
   .page-contact .col-md-8 form .btn-group-vertical .btn-group + input#edit-submit,
   .btn-group-vertical .btn-group + .btn-group {
@@ -2340,19 +2410,23 @@ input[type="button"].btn-block {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:first-child, .btn-group > .more-link:first-child, .page-contact .col-md-8 form .btn-group > input#edit-submit:first-child {
+.btn-group > .btn:first-child, .btn-group > .more-link:first-child, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:first-child, .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:first-child, .page-contact .col-md-8 form .btn-group > input#edit-submit:first-child {
   margin-left: 0; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .more-link:not(:last-child):not(.dropdown-toggle), .page-contact .col-md-8 form .btn-group > input#edit-submit:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .more-link:not(:last-child):not(.dropdown-toggle), .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:not(:last-child):not(.dropdown-toggle), .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:not(:last-child):not(.dropdown-toggle), .page-contact .col-md-8 form .btn-group > input#edit-submit:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .more-link,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group > .btn-group:not(:last-child) > .slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group > .btn-group:not(:last-child) > .slick-arrow.slick-next,
 .page-contact .col-md-8 form .btn-group > .btn-group:not(:last-child) > input#edit-submit {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child), .btn-group > .more-link:not(:first-child), .page-contact .col-md-8 form .btn-group > input#edit-submit:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .more-link:not(:first-child), .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-prev:not(:first-child), .field-type-culture-frontend-lists-control .slick-slider .btn-group > .slick-arrow.slick-next:not(:first-child), .page-contact .col-md-8 form .btn-group > input#edit-submit:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .more-link,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group > .btn-group:not(:first-child) > .slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group > .btn-group:not(:first-child) > .slick-arrow.slick-next,
 .page-contact .col-md-8 form .btn-group > .btn-group:not(:first-child) > input#edit-submit {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -2367,11 +2441,11 @@ input[type="button"].btn-block {
   .dropleft .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .more-link + .dropdown-toggle-split, .page-contact .col-md-8 form .btn-group-sm > input#edit-submit + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .more-link + .dropdown-toggle-split, .field-type-culture-frontend-lists-control .slick-slider .btn-group-sm > .slick-arrow.slick-prev + .dropdown-toggle-split, .field-type-culture-frontend-lists-control .slick-slider .btn-group-sm > .slick-arrow.slick-next + .dropdown-toggle-split, .page-contact .col-md-8 form .btn-group-sm > input#edit-submit + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .more-link + .dropdown-toggle-split, .page-contact .col-md-8 form .btn-group-lg > input#edit-submit + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .more-link + .dropdown-toggle-split, .field-type-culture-frontend-lists-control .slick-slider .btn-group-lg > .slick-arrow.slick-prev + .dropdown-toggle-split, .field-type-culture-frontend-lists-control .slick-slider .btn-group-lg > .slick-arrow.slick-next + .dropdown-toggle-split, .page-contact .col-md-8 form .btn-group-lg > input#edit-submit + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2379,46 +2453,62 @@ input[type="button"].btn-block {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical .btn, .btn-group-vertical .more-link, .btn-group-vertical .page-contact .col-md-8 form input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical input#edit-submit,
+  .btn-group-vertical .btn, .btn-group-vertical .more-link, .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-prev, .btn-group-vertical .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical .slick-arrow.slick-next, .btn-group-vertical .page-contact .col-md-8 form input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical input#edit-submit,
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, .btn-group-vertical > .more-link + .btn, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .btn, .btn-group-vertical > .btn + .more-link, .btn-group-vertical > .more-link + .more-link, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .more-link, .page-contact .col-md-8 form .btn-group-vertical > .btn + input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical > .more-link + input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + input#edit-submit,
+  .btn-group-vertical > .btn + .btn, .btn-group-vertical > .more-link + .btn, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + .btn, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + .btn, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .btn, .btn-group-vertical > .btn + .more-link, .btn-group-vertical > .more-link + .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + .more-link, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .more-link + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + .slick-arrow.slick-prev, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .more-link + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + .slick-arrow.slick-next, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > input#edit-submit + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group-vertical > .btn + input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical > .more-link + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical > .slick-arrow.slick-prev + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .btn-group-vertical > .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + input#edit-submit,
   .btn-group-vertical > .btn + .btn-group,
   .btn-group-vertical > .more-link + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev + .btn-group,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next + .btn-group,
   .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit + .btn-group,
   .btn-group-vertical > .btn-group + .btn,
   .btn-group-vertical > .btn-group + .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group + .slick-arrow.slick-next,
   .page-contact .col-md-8 form .btn-group-vertical > .btn-group + input#edit-submit,
   .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .more-link:not(:last-child):not(.dropdown-toggle), .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .more-link:not(:last-child):not(.dropdown-toggle), .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev:not(:last-child):not(.dropdown-toggle), .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next:not(:last-child):not(.dropdown-toggle), .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .btn-group-vertical > .btn-group:not(:last-child) > .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group:not(:last-child) > .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group:not(:last-child) > .slick-arrow.slick-next,
   .page-contact .col-md-8 form .btn-group-vertical > .btn-group:not(:last-child) > input#edit-submit {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .more-link:not(:first-child), .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .more-link:not(:first-child), .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-prev:not(:first-child), .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .slick-arrow.slick-next:not(:first-child), .page-contact .col-md-8 form .btn-group-vertical > input#edit-submit:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .btn-group-vertical > .btn-group:not(:first-child) > .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group:not(:first-child) > .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-vertical > .btn-group:not(:first-child) > .slick-arrow.slick-next,
   .page-contact .col-md-8 form .btn-group-vertical > .btn-group:not(:first-child) > input#edit-submit {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .more-link, .page-contact .col-md-8 form .btn-group-toggle > input#edit-submit,
+.btn-group-toggle > .btn, .btn-group-toggle > .more-link, .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-next, .page-contact .col-md-8 form .btn-group-toggle > input#edit-submit,
 .btn-group-toggle > .btn-group > .btn,
 .btn-group-toggle > .btn-group > .more-link,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-next,
 .page-contact .col-md-8 form .btn-group-toggle > .btn-group > input#edit-submit {
   margin-bottom: 0; }
-  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .more-link input[type="radio"], .page-contact .col-md-8 form .btn-group-toggle > input#edit-submit input[type="radio"],
+  .btn-group-toggle > .btn input[type="radio"], .btn-group-toggle > .more-link input[type="radio"], .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-prev input[type="radio"], .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-next input[type="radio"], .page-contact .col-md-8 form .btn-group-toggle > input#edit-submit input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .more-link input[type="checkbox"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-prev input[type="checkbox"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .slick-arrow.slick-next input[type="checkbox"],
   .page-contact .col-md-8 form .btn-group-toggle > input#edit-submit input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
   .btn-group-toggle > .btn-group > .more-link input[type="radio"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-prev input[type="radio"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-next input[type="radio"],
   .page-contact .col-md-8 form .btn-group-toggle > .btn-group > input#edit-submit input[type="radio"],
   .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .more-link input[type="checkbox"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-prev input[type="checkbox"],
+  .field-type-culture-frontend-lists-control .slick-slider .btn-group-toggle > .btn-group > .slick-arrow.slick-next input[type="checkbox"],
   .page-contact .col-md-8 form .btn-group-toggle > .btn-group > input#edit-submit input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
@@ -2496,44 +2586,104 @@ input[type="button"].btn-block {
 .input-group-prepend,
 .input-group-append {
   display: flex; }
-  .input-group-prepend .btn, .input-group-prepend .more-link, .input-group-prepend .page-contact .col-md-8 form input#edit-submit, .page-contact .col-md-8 form .input-group-prepend input#edit-submit,
+  .input-group-prepend .btn, .input-group-prepend .more-link, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next, .input-group-prepend .page-contact .col-md-8 form input#edit-submit, .page-contact .col-md-8 form .input-group-prepend input#edit-submit,
   .input-group-append .btn,
   .input-group-append .more-link,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next,
   .input-group-append .page-contact .col-md-8 form input#edit-submit,
   .page-contact .col-md-8 form .input-group-append input#edit-submit {
     position: relative;
     z-index: 2; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .more-link + .btn, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .btn, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .btn, .input-group-prepend .btn + .more-link, .input-group-prepend .more-link + .more-link, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .more-link, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .more-link, .input-group-prepend .page-contact .col-md-8 form .btn + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .btn + input#edit-submit, .input-group-prepend .page-contact .col-md-8 form .more-link + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .more-link + input#edit-submit, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + input#edit-submit,
+  .input-group-prepend .btn + .btn, .input-group-prepend .more-link + .btn, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + .btn, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + .btn, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .btn, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .btn, .input-group-prepend .btn + .more-link, .input-group-prepend .more-link + .more-link, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + .more-link, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + .more-link, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .more-link, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .more-link, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .btn + .slick-arrow.slick-prev, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .more-link + .slick-arrow.slick-prev, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + .slick-arrow.slick-prev, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + .slick-arrow.slick-prev, .input-group-prepend .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-prev, .page-contact .col-md-8 form .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .slick-arrow.slick-prev, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .btn + .slick-arrow.slick-next, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .more-link + .slick-arrow.slick-next, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + .slick-arrow.slick-next, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + .slick-arrow.slick-next, .input-group-prepend .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .slick-arrow.slick-next, .input-group-prepend .page-contact .col-md-8 form .btn + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .btn + input#edit-submit, .input-group-prepend .page-contact .col-md-8 form .more-link + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .more-link + input#edit-submit, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + input#edit-submit, .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + input#edit-submit, .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit, .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + input#edit-submit, .input-group-prepend .page-contact .col-md-8 form input#edit-submit + input#edit-submit, .page-contact .col-md-8 form .input-group-prepend input#edit-submit + input#edit-submit,
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .more-link + .input-group-text,
+  .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .input-group-text,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-prev + .input-group-text,
+  .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .input-group-text,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .slick-arrow.slick-next + .input-group-text,
   .input-group-prepend .page-contact .col-md-8 form input#edit-submit + .input-group-text,
   .page-contact .col-md-8 form .input-group-prepend input#edit-submit + .input-group-text,
   .input-group-prepend .input-group-text + .input-group-text,
   .input-group-prepend .input-group-text + .btn,
   .input-group-prepend .input-group-text + .more-link,
+  .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .input-group-text + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .input-group-text + .slick-arrow.slick-prev,
+  .input-group-prepend .field-type-culture-frontend-lists-control .slick-slider .input-group-text + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-prepend .input-group-text + .slick-arrow.slick-next,
   .input-group-prepend .page-contact .col-md-8 form .input-group-text + input#edit-submit,
   .page-contact .col-md-8 form .input-group-prepend .input-group-text + input#edit-submit,
   .input-group-append .btn + .btn,
   .input-group-append .more-link + .btn,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .btn,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + .btn,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .btn,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + .btn,
   .input-group-append .page-contact .col-md-8 form input#edit-submit + .btn,
   .page-contact .col-md-8 form .input-group-append input#edit-submit + .btn,
   .input-group-append .btn + .more-link,
   .input-group-append .more-link + .more-link,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + .more-link,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .more-link,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + .more-link,
   .input-group-append .page-contact .col-md-8 form input#edit-submit + .more-link,
   .page-contact .col-md-8 form .input-group-append input#edit-submit + .more-link,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .btn + .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .more-link + .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + .slick-arrow.slick-prev,
+  .input-group-append .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-prev,
+  .page-contact .col-md-8 form .input-group-append .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .input-group-append input#edit-submit + .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .btn + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .btn + .slick-arrow.slick-next,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .more-link + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .more-link + .slick-arrow.slick-next,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + .slick-arrow.slick-next,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + .slick-arrow.slick-next,
+  .input-group-append .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .page-contact .col-md-8 form input#edit-submit + .slick-arrow.slick-next,
+  .page-contact .col-md-8 form .input-group-append .field-type-culture-frontend-lists-control .slick-slider input#edit-submit + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .input-group-append input#edit-submit + .slick-arrow.slick-next,
   .input-group-append .page-contact .col-md-8 form .btn + input#edit-submit,
   .page-contact .col-md-8 form .input-group-append .btn + input#edit-submit,
   .input-group-append .page-contact .col-md-8 form .more-link + input#edit-submit,
   .page-contact .col-md-8 form .input-group-append .more-link + input#edit-submit,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit,
+  .page-contact .col-md-8 form .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + input#edit-submit,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .page-contact .col-md-8 form .slick-arrow.slick-prev + input#edit-submit,
+  .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + input#edit-submit,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit,
+  .page-contact .col-md-8 form .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + input#edit-submit,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .page-contact .col-md-8 form .slick-arrow.slick-next + input#edit-submit,
+  .page-contact .col-md-8 form .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + input#edit-submit,
   .input-group-append .page-contact .col-md-8 form input#edit-submit + input#edit-submit,
   .page-contact .col-md-8 form .input-group-append input#edit-submit + input#edit-submit,
   .input-group-append .btn + .input-group-text,
   .input-group-append .more-link + .input-group-text,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev + .input-group-text,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-prev + .input-group-text,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next + .input-group-text,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .slick-arrow.slick-next + .input-group-text,
   .input-group-append .page-contact .col-md-8 form input#edit-submit + .input-group-text,
   .page-contact .col-md-8 form .input-group-append input#edit-submit + .input-group-text,
   .input-group-append .input-group-text + .input-group-text,
   .input-group-append .input-group-text + .btn,
   .input-group-append .input-group-text + .more-link,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .input-group-text + .slick-arrow.slick-prev,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .input-group-text + .slick-arrow.slick-prev,
+  .input-group-append .field-type-culture-frontend-lists-control .slick-slider .input-group-text + .slick-arrow.slick-next,
+  .field-type-culture-frontend-lists-control .slick-slider .input-group-append .input-group-text + .slick-arrow.slick-next,
   .input-group-append .page-contact .col-md-8 form .input-group-text + input#edit-submit,
   .page-contact .col-md-8 form .input-group-append .input-group-text + input#edit-submit {
     margin-left: -1px; }
@@ -2562,27 +2712,35 @@ input[type="button"].btn-block {
   .input-group-text input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .more-link, .page-contact .col-md-8 form .input-group > .input-group-prepend > input#edit-submit,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group > .input-group-prepend > input#edit-submit,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .input-group > .input-group-append:not(:last-child) > .more-link,
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append:not(:last-child) > .slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append:not(:last-child) > .slick-arrow.slick-next,
 .page-contact .col-md-8 form .input-group > .input-group-append:not(:last-child) > input#edit-submit,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .more-link:not(:last-child):not(.dropdown-toggle),
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append:last-child > .slick-arrow.slick-prev:not(:last-child):not(.dropdown-toggle),
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append:last-child > .slick-arrow.slick-next:not(:last-child):not(.dropdown-toggle),
 .page-contact .col-md-8 form .input-group > .input-group-append:last-child > input#edit-submit:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .more-link, .page-contact .col-md-8 form .input-group > .input-group-append > input#edit-submit,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .more-link, .field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append > .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-append > .slick-arrow.slick-next, .page-contact .col-md-8 form .input-group > .input-group-append > input#edit-submit,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .input-group > .input-group-prepend:not(:first-child) > .more-link,
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend:not(:first-child) > .slick-arrow.slick-prev,
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend:not(:first-child) > .slick-arrow.slick-next,
 .page-contact .col-md-8 form .input-group > .input-group-prepend:not(:first-child) > input#edit-submit,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .more-link:not(:first-child),
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend:first-child > .slick-arrow.slick-prev:not(:first-child),
+.field-type-culture-frontend-lists-control .slick-slider .input-group > .input-group-prepend:first-child > .slick-arrow.slick-next:not(:first-child),
 .page-contact .col-md-8 form .input-group > .input-group-prepend:first-child > input#edit-submit:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
@@ -3484,7 +3642,7 @@ input[type="button"].btn-block {
   .badge:empty {
     display: none; }
 
-.btn .badge, .more-link .badge, .page-contact .col-md-8 form input#edit-submit .badge {
+.btn .badge, .more-link .badge, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev .badge, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next .badge, .page-contact .col-md-8 form input#edit-submit .badge {
   position: relative;
   top: -1px; }
 
@@ -7140,10 +7298,10 @@ ul.main-menu > li, ul.secondary-menu > li {
   display: block;
   margin-top: 20px; }
 
-.btn, .more-link, .page-contact .col-md-8 form input#edit-submit, .more-link {
+.btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit, .more-link {
   background-color: #e5e5e5;
   color: #262626; }
-  .btn:hover, .more-link:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .page-contact .col-md-8 form input#edit-submit:focus, .more-link:hover, .more-link:active, .more-link:focus {
+  .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus, .more-link:hover, .more-link:active, .more-link:focus {
     background-color: #e3e000; }
 
 .btn-search {
@@ -7393,6 +7551,47 @@ ul.main-menu.navbar-nav {
         margin-left: 0; }
         ul.main-menu.navbar-nav li:hover, ul.main-menu.navbar-nav li:active {
           background: none; } }
+
+.field-type-culture-frontend-lists-control .slick-slider .slick-arrow {
+  position: absolute; }
+  .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev {
+    color: transparent;
+    left: auto;
+    transform: rotate(-180deg); }
+    .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:after {
+      font-family: 'icomoon';
+      color: #808285;
+      content: "\e903"; }
+  .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next {
+    color: transparent;
+    margin-right: 5px; }
+    .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:after {
+      font-family: 'icomoon';
+      color: #808285;
+      content: "\e903"; }
+  .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next {
+    width: 65px;
+    height: 40px;
+    background-color: #e3e000;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer; }
+    .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev::after, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next::after {
+      right: -2px;
+      width: 100%;
+      height: 100%;
+      font-size: 25px;
+      position: absolute;
+      top: -2px; }
+    .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover {
+      cursor: pointer; }
+      .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover::after, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover::after {
+        color: #808285; }
+    .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev.slick-disabled, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next.slick-disabled {
+      cursor: default;
+      opacity: 0.3; }
+      .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev.slick-disabled:hover::after, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next.slick-disabled:hover::after {
+        color: rgba(38, 38, 38, 0.54); }
 
 .default-panel-layout {
   padding-left: 0;
