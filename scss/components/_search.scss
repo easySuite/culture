@@ -58,6 +58,26 @@
       box-shadow: $color-primary-opacity;
     }
   }
+
+  .views-widget-filter-term_node_tid_depth {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      .bef-all-none-nested-processed {
+        .bef-tree-child {
+          display: none;
+        }
+
+        .highlight {
+          + .bef-tree-child {
+            display: block;
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .page-search {

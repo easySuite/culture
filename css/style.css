@@ -7273,6 +7273,15 @@ ul.main-menu > li, ul.secondary-menu > li {
   .page-arrangementer .filters-group .show > .btn-success.dropdown-toggle:focus {
     box-shadow: rgba(226, 226, 57, 0.73); }
 
+.page-arrangementer .views-widget-filter-term_node_tid_depth ul {
+  list-style: none;
+  padding: 0; }
+  .page-arrangementer .views-widget-filter-term_node_tid_depth ul .bef-all-none-nested-processed .bef-tree-child {
+    display: none; }
+  .page-arrangementer .views-widget-filter-term_node_tid_depth ul .bef-all-none-nested-processed .highlight + .bef-tree-child {
+    display: block;
+    padding-left: 40px; }
+
 .page-search .views-widget-filter-sticky {
   display: none; }
 
