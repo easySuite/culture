@@ -121,9 +121,6 @@
           print $book_button;
         endif;
       ?>
-      <?php if (!empty($campaigns)): ?>
-        <?php print drupal_render($campaigns); ?>
-      <?php endif; ?>
     </div>
     <div class="right col-md-6">
       <?php print render($content['field_ding_event_category']); ?>
