@@ -29,7 +29,7 @@ function culture_preprocess_node(&$variables, $hook) {
   if (!(strpos($path, 'search', 0) === 0)) {
     $hooks = theme_get_registry(FALSE);
     if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
-      $variables['opening_hours'] = theme('ding_culture_opening_hours_week', array('node' => $variables['node']));
+      $variables['opening_hours'] = theme('ding_ddbasic_opening_hours_week', array('node' => $variables['node']));
     }
   }
 
@@ -131,7 +131,7 @@ function culture_preprocess__node__ding_event(&$variables) {
       // Date.
       if (!empty($date)) {
         // When the user saves the event time (e.g. danish time 2018-01-10 00:00),
-        // the value is saved in the database in UTC time 
+        // the value is saved in the database in UTC time
         // (e.g. UTC time 2018-01-09 23:00). To print out the date/time properly
         // We first need to create the dateObject with the UTC database time, and
         // afterwards we can convert the dateObject db-time to localtime.
