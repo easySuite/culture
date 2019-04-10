@@ -240,3 +240,20 @@ table td {
 .pane-facebook-embeds {
   margin: 20px 0;
 }
+
+.page-node {
+  .node {
+    ul li {
+      list-style: initial;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    .field-name-field-ding-page-lead .field-item {
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+  }
+}

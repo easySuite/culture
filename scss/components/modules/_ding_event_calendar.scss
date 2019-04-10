@@ -1,6 +1,62 @@
 // Style ding_event_calendar
 
 .pane-ding-event-calendar-ding-event-calendar {
+  .slick-prev:before, .slick-next:before {
+    color: $charcoal;
+    font-size: 30px;
+    position: relative;
+    top: -11px;
+    background: $color-text-link;
+    border-radius: 20px;
+    content: "\e904";
+    font-family: 'icomoon';
+    font-weight: 800;
+  }
+
+  .slick-prev:before {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+
+  .slick-next:before {
+    display: inline-block;
+  }
+
+  #eventsCalendar {
+    #calendar {
+      tr td.calendar-day.has-events.selected {
+        background-color: $color-primary;
+  
+        a {
+          color: $charcoal;
+        }
+      }
+
+      td.calendar-day.has-events.selected {
+        background-color: $color-primary;
+
+        .day-number {
+          position: relative;
+        }
+
+        a {
+        color: $charcoal;
+
+          &.progress-disabled {
+          opacity: 0.2;
+          color: $charcoal;
+          }
+        }
+
+        div.ajax-progress {
+          position: absolute;
+          left: calc(50% - 8px);
+          top: 2px;
+        }
+      }
+    }
+  }
+
   .event-items {
     height: 100%;
 
@@ -80,20 +136,15 @@ table#calendar {
   right: 10px;
 }
 
-#eventsCalendar {
-  #calendar {
-    tr td.calendar-day.has-events.selected {
-      background-color: $color-primary;
-
-      a {
-        color: $charcoal;
-      }
-    }
-  } 
-}
 
 .pane-ding-event-calendar-ding-event-calendar {
   .more-link {
     margin-bottom: 20px;
+    background-color: transparent;
+    a {
+      background-color: $color-primary;
+      padding: 15px;
+      border-radius: 5px;
+    }
   }
 }
