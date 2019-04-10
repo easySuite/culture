@@ -37,7 +37,8 @@
 
   .field-name-field-ding-library-title-image {
     img {
-      float: right;
+      position: absolute;
+      right: 0;
     }
   }
 
@@ -157,6 +158,10 @@
   .pane-node-field-ding-library-lead {
     .field-name-field-ding-library-lead {
       padding: 15px 0;
+
+      .field-item.even {
+        font-weight: bold;
+      }
     }
   }
 
@@ -182,32 +187,6 @@
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-top: none;
-  }
-
-  .opening-hours-table {
-    width: 100%;
-
-    thead {
-      border: none;
-    }
-
-    tbody {
-      .odd {
-        background-color: $grey;
-
-        td {
-          padding-left: 10px;
-        }
-      }
-
-      .even {
-        background-color: $grey-light;
-
-        td {
-          padding-left: 10px;
-        }
-      }
-    }
   }
 
   .ding-library-address .pane-title, 
@@ -253,6 +232,39 @@
     .library-contact-fax-label {
       width: 100px;
       float: left;
+    }
+  }
+}
+
+
+.opening-hours-table {
+  width: 100%;
+
+  thead {
+    border: none;
+  }
+
+  tbody {
+    tr.odd {
+      background-color: $grey;
+
+      td {
+        padding-left: 10px;
+        div span {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    tr.even {
+      background-color: $grey-light;
+
+      td {
+        padding-left: 10px;
+        div span {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }
