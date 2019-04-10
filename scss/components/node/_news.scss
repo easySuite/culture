@@ -114,15 +114,15 @@
 
       a {
         display: block;
-        padding: 7px 0 1px 42px;
+        padding: 1px 0 1px 42px;
         position: relative;
         &::before {
           content: '';
           position: absolute;
           left: 0;
           top: 0;
-          width: 28px;
-          height: 28px;
+          width: 25px;
+          height: 25px;
           margin: 0 10px 5px 0;
           border-radius: $round-corner;
           background-color: $grey;
@@ -131,7 +131,7 @@
         &.active {
           @include place-icon(check);
           &::after {
-            left: -11px;
+            left: -15px;
             top: -15px;
           }
           &::before {

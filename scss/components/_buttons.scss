@@ -3,7 +3,7 @@
 // General
 // ==========================================================================
 .btn, .more-link {
-  background-color: $grey;
+  background-color: $color-primary;
   color: $charcoal;
 
   &:hover,
@@ -11,6 +11,10 @@
   &:focus {
     background-color: $color-primary;
   }
+}
+
+.card .button.btn {
+  background-color: $color-primary;
 }
 
 .btn-search {
@@ -250,15 +254,15 @@ input[type="radio"] {
   display: none;
   & + label {
     display: block;
-    padding: 7px 0 1px 42px;
+    padding: 1px 0 1px 42px;
     position: relative;
     &::before {
       content: '';
       position: absolute;
       left: 0;
       top: 0;
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
       margin: 0 10px 5px 0;
       background-color: $grey;
     }
@@ -355,7 +359,7 @@ input[type=checkbox]:checked+label {
 }
 
 input[type=checkbox]:checked+label::after {
-  left: -11px;
+  left: -15px;
   top: -15px;
 }
 

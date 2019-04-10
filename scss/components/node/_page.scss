@@ -43,3 +43,114 @@
     }
   }
 }
+.page-node {
+  .node {
+    ul li {
+      list-style: initial;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    .field-name-field-ding-page-lead .field-item {
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+  }
+}
+  
+.page-taxonomy {
+  .frontpage-layout {
+    margin-top: 25px;
+  }
+
+  .pane-all-opening-hours {
+    table td {
+      padding-left: 10px;
+
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.page-node {
+  .node-ding-page {
+    a {
+      color: $color-primary;
+    }
+  }
+}
+
+.node-ding-page.node-full {
+  .field-name-field-ding-page-tags {
+    float: left;
+    display: block;
+    margin-right: 3.78378%;
+    width: 74.05405%;
+    padding: 10px 0;
+    border-top: 1px solid $grey-medium;
+    border-bottom: 1px solid $grey-medium;
+    margin-bottom: 30px;
+
+    .field-items .field-item {
+      display: inline;
+      margin-right: 15px;
+    }
+  }
+}
+
+.page-bibliotek-biblioteket-personale {
+  .pane-ding-staff-ding-staff-library-departments {
+    h2 {
+      font-size: 30px;
+      line-height: 44px;
+      color:  $charcoal;
+      margin-bottom: 20px;
+    }
+    ul.staff-list {
+      padding-left: 0;
+
+      .staff-list-item {
+        position: relative;
+        display: block;
+        padding: 40px 40px 40px 0;
+        margin-bottom: 20px;
+
+        .staff-name {
+          position: absolute;
+          bottom: 0;
+
+          a {
+          font-size: 18px;
+          line-height: 24px;
+          color: $charcoal;
+          }
+        }
+
+        .staff-position {
+          position: absolute;
+          top: 0;
+          font-size: 40px;
+          line-height: 44px;
+          float: left;
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding: 15px 15px 10px;
+          background-color: $grey-medium;
+          color: $white;
+
+        }
+      }
+    }
+  }
+}
+
+.card .field-type-taxonomy-term-reference  {
+  text-transform: uppercase;
+  color: $charcoal;
+  font-weight: bold;
+}
