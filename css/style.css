@@ -7119,6 +7119,8 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
 ul.menu, ul.main-menu, ul.menu-second-level, ul.menu-third-level, ul.secondary-menu, ul.topbar-menu {
   padding: 0;
   margin-bottom: 0; }
+  ul.menu .menu, ul.main-menu .menu, ul.menu-second-level .menu, ul.menu-third-level .menu, ul.secondary-menu .menu, ul.topbar-menu .menu {
+    padding-left: 20px; }
   ul.menu li, ul.main-menu li, ul.menu-second-level li, ul.menu-third-level li, ul.secondary-menu li, ul.topbar-menu li {
     list-style: none;
     padding: 0;
