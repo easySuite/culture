@@ -7119,6 +7119,8 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
 ul.menu, ul.main-menu, ul.menu-second-level, ul.menu-third-level, ul.secondary-menu, ul.topbar-menu {
   padding: 0;
   margin-bottom: 0; }
+  ul.menu .menu, ul.main-menu .menu, ul.menu-second-level .menu, ul.menu-third-level .menu, ul.secondary-menu .menu, ul.topbar-menu .menu {
+    padding-left: 20px; }
   ul.menu li, ul.main-menu li, ul.menu-second-level li, ul.menu-third-level li, ul.secondary-menu li, ul.topbar-menu li {
     list-style: none;
     padding: 0;
@@ -7697,7 +7699,7 @@ ul.main-menu.navbar-nav {
 .page-node .node-ding-page a {
   color: #e3e000; }
 
-.node-ding-page.node-full .field-name-field-ding-page-tags {
+article.node.node-ding-page .field-name-field-ding-page-tags {
   float: left;
   display: block;
   margin-right: 3.78378%;
@@ -7706,7 +7708,7 @@ ul.main-menu.navbar-nav {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px; }
-  .node-ding-page.node-full .field-name-field-ding-page-tags .field-items .field-item {
+  article.node.node-ding-page .field-name-field-ding-page-tags .field-items .field-item {
     display: inline;
     margin-right: 15px; }
 
@@ -7714,18 +7716,19 @@ ul.main-menu.navbar-nav {
   font-size: 30px;
   line-height: 44px;
   color: #262626;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list {
   padding-left: 0; }
   .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item {
     position: relative;
     display: block;
-    padding: 40px 40px 40px 0;
+    padding: 45px 45px 45px 0;
     margin-bottom: 20px; }
     .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name {
       position: absolute;
-      bottom: 0; }
+      bottom: -20px;
+      padding-left: 10px; }
       .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name a {
         font-size: 18px;
         line-height: 24px;
@@ -7733,13 +7736,13 @@ ul.main-menu.navbar-nav {
     .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-position {
       position: absolute;
       top: 0;
-      font-size: 40px;
-      line-height: 44px;
+      font-size: 30px;
+      line-height: 34px;
       float: left;
       width: 100%;
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 15px 15px 10px;
+      padding: 10px 10px 5px;
       background-color: #ccc;
       color: #ffffff; }
 
@@ -8215,6 +8218,93 @@ fieldset.collapsible .fieldset-title::after {
 .pane-campaign {
   clear: both; }
 
+.ding-campaign-grid-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+
+.ding-campaign-grid-item {
+  height: 195px;
+  flex-basis: 100%;
+  -ms-flex: auto;
+  width: 359px;
+  position: relative;
+  box-sizing: border-box; }
+  @media screen and (min-width: 767px) {
+    .ding-campaign-grid-item {
+      flex-basis: 45%; } }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding-campaign-grid-item {
+      flex-basis: 30%; } }
+
+.ding-campaign-grid-item {
+  margin: 0 10px 30px 10px; }
+  .ding-campaign-grid-item h2 {
+    margin-bottom: 0px;
+    font-size: 120%;
+    line-height: 1;
+    padding-top: 10px;
+    position: absolute;
+    width: 200px; }
+  .ding-campaign-grid-item .ding-campaign-grid-title a {
+    color: #494949; }
+  .ding-campaign-grid-item .media {
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+  .ding-campaign-grid-item .media__image {
+    display: block; }
+  .ding-campaign-grid-item .media__body {
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    color: white;
+    font-size: 1em;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0.75em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.6s;
+    transition: 0.6s; }
+  .ding-campaign-grid-item .media__body:hover {
+    opacity: 1; }
+  .ding-campaign-grid-item .media__body:after,
+  .ding-campaign-grid-item .media__body:before {
+    bottom: 1em;
+    content: '';
+    left: 1em;
+    opacity: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 0.6s 0.2s;
+    transition: 0.6s 0.2s; }
+  .ding-campaign-grid-item .media__body:before {
+    border-bottom: none;
+    border-top: none;
+    left: 2em;
+    right: 2em; }
+  .ding-campaign-grid-item .media__body:after {
+    border-left: none;
+    border-right: none;
+    bottom: 2em;
+    top: 2em; }
+  .ding-campaign-grid-item .media__body:hover:after,
+  .ding-campaign-grid-item .media__body:hover:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  .ding-campaign-grid-item .media__body h2 {
+    margin-top: 0; }
+  .ding-campaign-grid-item .media__body p {
+    margin-bottom: 1.5em; }
+
 .node-ding-library.node-teaser {
   position: relative;
   padding: 0; }
@@ -8236,7 +8326,8 @@ fieldset.collapsible .fieldset-title::after {
     top: 0;
     right: 0; }
   .node-ding-library.node-teaser .field-name-field-ding-library-title-image img {
-    float: right; }
+    position: absolute;
+    right: 0; }
   .node-ding-library.node-teaser a.opening-hours-toggle {
     position: static;
     width: getColumn(9);
@@ -8328,6 +8419,8 @@ fieldset.collapsible .fieldset-title::after {
 
 .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead {
   padding: 15px 0; }
+  .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead .field-item.even {
+    font-weight: bold; }
 
 .node-type-ding-library .pane-weekly-opening-hours {
   flex: 0 0 100%;
@@ -8349,19 +8442,6 @@ fieldset.collapsible .fieldset-title::after {
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-top: none; }
-
-.node-type-ding-library .opening-hours-table {
-  width: 100%; }
-  .node-type-ding-library .opening-hours-table thead {
-    border: none; }
-  .node-type-ding-library .opening-hours-table tbody .odd {
-    background-color: #e5e5e5; }
-    .node-type-ding-library .opening-hours-table tbody .odd td {
-      padding-left: 10px; }
-  .node-type-ding-library .opening-hours-table tbody .even {
-    background-color: #f1f2f2; }
-    .node-type-ding-library .opening-hours-table tbody .even td {
-      padding-left: 10px; }
 
 .node-type-ding-library .ding-library-address .pane-title,
 .node-type-ding-library .ding-library-contact .pane-title {
@@ -8404,6 +8484,23 @@ fieldset.collapsible .fieldset-title::after {
   .node-type-ding-library .ding-library-contact .library-contact-fax-label {
     width: 100px;
     float: left; }
+
+.opening-hours-table {
+  width: 100%; }
+  .opening-hours-table thead {
+    border: none; }
+  .opening-hours-table tbody tr.odd {
+    background-color: #e5e5e5; }
+    .opening-hours-table tbody tr.odd td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.odd td div span {
+        margin-left: 10px; }
+  .opening-hours-table tbody tr.even {
+    background-color: #f1f2f2; }
+    .opening-hours-table tbody tr.even td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.even td div span {
+        margin-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }

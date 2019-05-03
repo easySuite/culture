@@ -367,6 +367,10 @@ ul {
   &.topbar-menu {
     padding: 0;
     margin-bottom: 0;
+
+    .menu {
+      padding-left: 20px; 
+    }
     li {
       list-style: none;
       padding: 0;
