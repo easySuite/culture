@@ -96,7 +96,11 @@
     @media #{$wide}, #{$normal} {
       @include make-col(12);
       margin-right: 0px;
-     }
+    }
+
+    a {
+      color: $color-primary;
+    }
 
     .field-label {
       position: absolute;
@@ -204,6 +208,10 @@
   .ding-library-address .library-address,
   .ding-library-contact .library-contact {
     margin-bottom: 20px;
+
+    span a {
+      color: $color-primary;
+    }
   }
 
   .ding-library-address {
@@ -293,6 +301,16 @@
     }
   }
 }
+
+.library-address-postal-code {
+  padding-right: 10px;
+}
+
+.library-contact-email-label {
+  width: 100px;
+  padding-right: 55px;
+}
+
 
 .ding-library-events {
   margin: 100px 0;
