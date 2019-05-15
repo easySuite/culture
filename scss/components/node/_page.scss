@@ -8,6 +8,17 @@
   margin-top: 40px;
 }
 
+.page-node.node-type-ding-page {
+  .field-slideshow.field-slideshow-processed {
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+
+  .field-name-field-ding-page-lead {
+    padding-top: 20px;
+  }
+}
+
 .page-contact {
   .col-md-8 {
     @extend .col-md-12;
