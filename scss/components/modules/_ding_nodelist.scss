@@ -1,4 +1,400 @@
 // Style ding_nodlist.
+
+/* Ding nodelist styles
+   ========================================================================== */
+
+   .page-ding-frontpage .ding_nodelist-carousel {
+    .article_image img, 
+    .event-image img {
+      height: 100%;
+  
+      @media #{$wide}, #{$normal} , #{tablet} {
+        height: auto;
+      }
+    }
+
+    .ding_nodelist-items {
+      .event-image img {
+        height: 500px;
+      }
+    }
+  }
+
+  .ding_nodelist-carousel {
+    .article_image img,
+    .event-image img{
+      height: 100%;
+  
+      @media #{$wide}, #{$normal} , #{tablet} {
+        height: auto;
+      }
+    }
+  }
+  
+  .ding_nodelist .more-links {
+    margin-top: 0;
+  }
+
+  .ding_nodelist {
+    .event-time .event-day,
+    .pagination a.selected,
+    .field-name-field-ding-event-category,
+    .field-name-field-ding-news-category {
+      color: $charcoal;
+      font-family: $font-family-bold;
+      text-transform: uppercase;
+
+      .field-item.even {
+        background-color: $color-primary;
+        padding: 3px 5px;
+        border-radius: 4px;
+      }
+    }
+ 
+    &.ding_nodelist-carousel {
+      .slick-dots li.slick-active a {
+        color: $charcoal;
+      }
+ 
+      .field-name-field-ding-event-category,
+      .field-name-field-ding-news-category {
+        margin-left: 0;
+
+        .field-item.even {
+          max-width: 160px;
+        }
+      }
+
+      .node, .label,
+      .label-wrapper {
+        padding-left: 20px;
+      }
+     .event-time {
+       margin-left: 14px;
+     }
+      .event-day {
+        padding-top: 3px;
+        font-size: 14px;
+      }
+
+      .slick-dots {
+        width: auto;
+        height: 30px;
+        margin-right: 0;
+
+        @media #{$wide}, #{$normal} {
+          margin-right: 15px;
+        }
+ 
+        li {
+          margin: 10px 5px 0 5px;
+ 
+          @media #{$wide}, #{$normal} {
+            margin: 10px 10px 0 10px;
+          }
+        }
+ 
+         li a {
+          background-color: $white;
+          color: $charcoal;
+        }
+ 
+        li.slick-active a {
+          background: $color-primary;
+        }
+      }
+ 
+      .slick-arrow {
+        color: $color-primary;
+        z-index: 1;
+      }
+    } 
+ 
+    .pagination {
+      top: 30px;
+ 
+      a {
+        background-color: $white;
+    
+        span {
+         color: $charcoal;
+        }
+      }
+    }
+ 
+    .event-date,
+    .event-month {
+      color: $charcoal;
+      text-transform: uppercase;
+    }
+      .event-date {
+      font-family: $font-family-bold;
+      font-size: 30px;
+    }
+
+    .event-time {
+      width: 55px; 
+
+      .event-month {
+      font-size: 9px;
+      }
+    }
+ 
+    .field-name-field-ding-news-library {
+      .field-item a {
+        color: $color-primary;
+      }
+    }
+ 
+    .library a {
+      color: $color-primary;
+      text-decoration: underline;
+      font-size: 18px;
+ 
+      @media #{$wide}, #{$normal} {
+        font-size: 20px;
+      }
+    }
+
+    h3.node-title {
+      font-size: 35px;
+      text-decoration: none;
+      text-transform: uppercase;
+ 
+      @media #{$wide}, #{$normal} {
+        font-size: 50px;
+      }
+    }
+ 
+    .article-info {
+      background: transparent;
+    }
+ 
+    span {
+      font-size: 18px;
+ 
+      @media #{$wide}, #{$normal} {
+        font-size: 22px;
+      }
+    }
+
+    &.ding_nodelist-taxonomy .item {
+      margin-bottom: 20px;
+    }
+
+    .item .node {
+      background-image: -webkit-linear-gradient(transparent 0%,rgba(0,0,0,0.3) 0%);
+      height: 100%;
+ 
+      .item-date,
+      .library a,
+      .item-price {
+        font-size: 16px;
+        font-family: $font-family-bold;
+
+        @media #{$wide}, #{$normal} {
+          font-size: 20px;
+        }
+      }
+ 
+      p {
+        font-size: 16px;
+  
+        @media #{$wide}, #{$normal} {
+          font-size: 20px;
+        }
+      }
+  
+      .node-title a {
+        font-family: $font-family-bold;
+  
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .ding_nodelist-items{
+
+      h2.item-title a {
+        color: $charcoal;
+        font-size: 16px;
+        font-family: $font-family-bold;
+      }
+  
+      .date,
+      .author,
+      .item-body {
+        color: $charcoal;
+        font-family: "SourceSansProRegular";
+        font-size: $font-size-max;
+      }
+  
+      .item-body {
+        padding-right: 100px;
+      }
+  
+      .item-title {
+        left: -8px;
+        position: relative;
+  
+        @media  #{tablet} , #{$wide}, #{$normal} {
+          left: 0;
+        }
+      }
+    }
+  }
+  
+  .ding_nodelist-taxonomy {
+    .event-list-leaf .event-list-date-wrapper {
+      display: none;
+    }
+  
+    .item-byline {
+      margin-bottom: 0;
+    }
+  
+    .item {
+      position: relative;
+      padding: 10px;
+  
+      .item-list-image {
+        padding: 0 10px 0 0;
+      }
+  
+      h2.item-title {
+        padding-left: 7px;
+        
+        @media  #{tablet}, #{$wide}, #{$normal} {
+          padding-left: 0px;
+        }
+      }
+    }
+  
+    .event-list-leaf {
+      display: none;
+    }
+  
+    .field-type-taxonomy-term-reference {
+      display: inline-block;
+      border-radius: 3px;
+      width: auto;
+      margin-right: 10px;
+      height: 20px;
+    }
+  
+    .news .label {
+      float: none;
+    }
+  
+    .field-name-field-ding-news-category {
+      padding-left: 0;
+    }
+  
+    .event-list-fulldate,
+    .label {
+      float: initial;
+
+      @media  #{tablet}, #{$wide}, #{$normal} {
+        float: left;
+      }
+    }
+  
+    .item-library {
+      margin-left: 5px;
+      line-height: 1.7;
+      width: 100px;
+      
+    }
+  
+    .item .item-details,
+    .item .item-details.news {
+      position: relative;
+      padding: 0;
+  
+      &:after { 
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+    }
+  
+    span.item-library,
+    .item-date,
+    .item-price,
+    .item-body span,
+    .event-list-fulldate,
+    .more a {
+      font-family: $font-family;
+      font-size: 16px;
+      color: $charcoal;
+    }
+ 
+    .more {
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+    }
+
+    .item .news-link {
+      display: block;
+      position: absolute;
+      bottom: -16px;
+      right: -10px;
+    }
+
+    .event-list-leaf ~ .item .item-list-image,
+    .event-list-leaf ~ .item .item-library {
+      display: inline-block;
+      @extend .float-left;
+    }
+
+    .event-list-leaf ~ .item .item-details {
+      @extend .float-right;
+      display: inline-block;
+      width: 76%;
+
+      .event-arrow-link {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        top: auto;
+
+        &:after {
+          color: $charcoal;
+          font-family: $font-family;
+          content: 'Læs mere';
+          width: 150px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .not-front .frontpage-layout {
+    .pane-ding-nodelist {
+      .pane-title {
+        margin: 20px 0;
+      }
+    }
+  }
+///////////  
+
+.page-ding-frontpage .ding_nodelist-carousel {
+  .article_image img, 
+  .event-image img {
+    height: 100%;
+
+    @media #{$wide}, #{$normal} , #{tablet} {
+      height: auto;
+    }
+  }
+}
+
 .pane-ding-nodelist {
 
   .ding_nodelist-taxonomy {
