@@ -62,6 +62,10 @@
 
   .field-name-field-ding-event-category {
     margin-bottom: 5px;
+    background-color: $color-primary;
+    width: max-content;
+    padding:  0px 5px;
+    border-radius: 3px;
   }
 
   .field-name-field-ding-event-date {
@@ -74,11 +78,6 @@
 
   .field-name-field-ding-event-lead {
     font-family: $font-family-bold;
-  }
-
-  .field-name-field-ding-event-lead,
-  .field-name-field-ding-event-body p {
-    margin: 20px 0;
   }
 }
 
@@ -163,6 +162,11 @@
   }
 }
 
+.share-buttons {
+  a {
+    color: $color-primary;
+  }
+}
 
 .bef-checkboxes {
   @include clearfix();
