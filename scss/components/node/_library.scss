@@ -37,8 +37,14 @@
 
   .field-name-field-ding-library-title-image {
     img {
+      position: relative;
+      bottom: 0;
+      clear: left;
+
+      @media #{$wide}, #{$normal} {
       position: absolute;
       right: 0;
+      }
     }
   }
 
@@ -289,11 +295,14 @@
 .pane-ding-news-ding-news-library-list {
   .views-row {
     @include make-col(12);
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+
+    @media #{$tablet} {
+      @include make-col(5.6);
+    }
 
     @media #{$wide}, #{$normal} {
-      @include make-col(3.8);
+      @include make-col(3.7);
     }
 
     .card-img-top {
@@ -308,7 +317,7 @@
 
 .library-contact-email-label {
   width: 100px;
-  padding-right: 55px;
+  padding-right: 48px;
 }
 
 
@@ -327,6 +336,7 @@
   border: none;
   margin-top: 10px;
   color: $charcoal;
+  outline: none;
   &:hover {
     color: $color-primary;
   }
