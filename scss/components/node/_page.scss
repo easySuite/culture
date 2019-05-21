@@ -60,10 +60,6 @@
       list-style: initial;
     }
 
-    img {
-      margin-bottom: 20px;
-    }
-
     .field-name-field-ding-page-lead .field-item {
       font-weight: bold;
       padding-bottom: 20px;
@@ -165,4 +161,11 @@ article.node.node-ding-page {
   text-transform: uppercase;
   color: $charcoal;
   font-weight: bold;
+
+  .field-item {
+    background-color: $color-primary;
+    width: max-content;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
 }
