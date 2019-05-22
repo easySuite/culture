@@ -37,8 +37,14 @@
 
   .field-name-field-ding-library-title-image {
     img {
+      position: relative;
+      bottom: 0;
+      clear: left;
+
+      @media #{$wide}, #{$normal} {
       position: absolute;
       right: 0;
+      }
     }
   }
 
@@ -96,7 +102,11 @@
     @media #{$wide}, #{$normal} {
       @include make-col(12);
       margin-right: 0px;
-     }
+    }
+
+    a {
+      color: $color-primary;
+    }
 
     .field-label {
       position: absolute;
@@ -204,6 +214,10 @@
   .ding-library-address .library-address,
   .ding-library-contact .library-contact {
     margin-bottom: 20px;
+
+    span a {
+      color: $color-primary;
+    }
   }
 
   .ding-library-address {
@@ -281,11 +295,14 @@
 .pane-ding-news-ding-news-library-list {
   .views-row {
     @include make-col(12);
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+
+    @media #{$tablet} {
+      @include make-col(5.6);
+    }
 
     @media #{$wide}, #{$normal} {
-      @include make-col(3.8);
+      @include make-col(3.7);
     }
 
     .card-img-top {
@@ -293,6 +310,16 @@
     }
   }
 }
+
+.library-address-postal-code {
+  padding-right: 10px;
+}
+
+.library-contact-email-label {
+  width: 100px;
+  padding-right: 48px;
+}
+
 
 .ding-library-events {
   margin: 100px 0;
@@ -309,6 +336,7 @@
   border: none;
   margin-top: 10px;
   color: $charcoal;
+  outline: none;
   &:hover {
     color: $color-primary;
   }

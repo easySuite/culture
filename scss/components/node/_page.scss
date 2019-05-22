@@ -8,6 +8,17 @@
   margin-top: 40px;
 }
 
+.page-node.node-type-ding-page {
+  .field-slideshow.field-slideshow-processed {
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+
+  .field-name-field-ding-page-lead {
+    padding-top: 20px;
+  }
+}
+
 .page-contact {
   .col-md-8 {
     @extend .col-md-12;
@@ -47,10 +58,6 @@
   .node {
     ul li {
       list-style: initial;
-    }
-
-    img {
-      margin-bottom: 20px;
     }
 
     .field-name-field-ding-page-lead .field-item {
@@ -154,4 +161,15 @@ article.node.node-ding-page {
   text-transform: uppercase;
   color: $charcoal;
   font-weight: bold;
+
+  .field-item {
+    background-color: $color-primary;
+    width: max-content;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+}
+
+.adaptive-image {
+  margin-bottom: 20px;
 }
