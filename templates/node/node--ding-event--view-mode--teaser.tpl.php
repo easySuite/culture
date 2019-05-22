@@ -88,7 +88,7 @@
   <a href="<?php print $node_url; ?>">
     <?php
       if (!empty($event_background_image)):
-        print '<img class="card-img-top" style="background-image:url(' . $event_background_image . ');"' . $image_title . '>';
+        print '<div class="card-img-top" style="background-image:url(' . $event_background_image . ');"' . $image_title . '> </div>';
       endif;
     ?>
   </a>
