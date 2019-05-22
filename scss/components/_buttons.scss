@@ -26,7 +26,7 @@
   @extend .btn;
   @extend .float-right;
   padding: 15px 15px 14px 15px;
-  background-color: $grey-medium;
+  background-color: $color-primary;
   margin-top: 10px;
 
 
@@ -37,6 +37,20 @@
   a::after {
     top: -18px;
     right: -47px;
+  }
+}
+
+.events-tomorrow,
+.events-next_weekend,
+.top_events {
+ // padding: 0 5px;
+
+  @media #{$tablet} , #{$wide} {
+    padding: 0 5px;
+  }
+
+  @media  #{$normal} {
+    padding: 0 15px;
   }
 }
 
@@ -264,7 +278,7 @@ input[type="radio"] {
       width: 25px;
       height: 25px;
       margin: 0 10px 5px 0;
-      background-color: $grey;
+      background-color: $color-primary;
     }
   }
 }
