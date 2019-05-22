@@ -105,13 +105,19 @@
 }
 
 //list events
-.view-display-id-ding_event_list {
+.view-display-id-ding_event_list,
+.view-display-id-ding_event_list_library {
  h3 .date-display-single {
    font-size: 40px;
   text-transform: uppercase;
   }
   .view-content {
     @include make-col(12);
+
+    @media #{$tablet} {
+      margin: 0 30px;
+    }
+
     .views-row {
       @include make-col(12);
       margin-bottom: 15px;
@@ -133,7 +139,6 @@
   background-size: cover;
   min-height: 150px;
 }
-
 .field-name-field-culture-lists-control,
 .pane-ding-related-content-news-events {
   @include make-col(12);
@@ -194,4 +199,29 @@ fieldset.bef-select-as-checkboxes-fieldset {
   @media #{$wide}, #{$normal} {
     padding: 0;
   }
+}
+
+.page-arrangementer {
+  .filters-group {
+    position: relative;
+    .label {
+      position: relative;
+      margin-top: 0px;
+
+      @media #{$tablet} {
+        padding: 0 5px;
+        position: absolute;
+        margin-top: -27px;
+      }
+      @media #{$wide}, #{$normal} {
+        position: relative;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > div.form-checkboxes {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
 }
