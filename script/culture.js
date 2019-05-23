@@ -87,5 +87,47 @@
       }
     }
   });
+
+  $(document).ready(function () {
+
+    var $header = $('.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > label');
+    var $body = $('.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > div.form-checkboxes'); 
+    $header.parents('.views-exposed-widget').addClass('collapsible-checkbox-container');
+    $body.addClass('clearfix');
+    $body.find('ul.bef-tree').addClass('clearfix');
+
+    function toggleCollapse(event) {
+      var item$ = $(event.currentTarget);
+      var content$ = item$.parent().find('div.form-checkboxes');
+
+      item$.toggleClass("chexbox-items-collapsed");
+      if (!item$.hasClass("chexbox-items-collapsed")) {
+        content$.slideUp();     
+      } else {
+        content$.slideDown();           
+      }
+    }
+
+    $(window).resize(function() {
+      if ($header.css('position') === 'relative') {
+        $body.css('display', 'none');
+        $header.unbind('click', toggleCollapse);
+        $header.bind('click', toggleCollapse);
+      } else {
+        $body.css('display', 'block');
+        $header.unbind('click', toggleCollapse);
+      }
+    });
+
+    if ($header.css('position') === 'relative') {
+      $body.css('display', 'none');
+      $header.unbind('click', toggleCollapse);
+      $header.bind('click', toggleCollapse);
+    } else {
+      $body.css('display', 'block');
+      $header.unbind('click', toggleCollapse);
+    }
+  });
+
 })(jQuery);
 

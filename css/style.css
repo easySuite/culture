@@ -7091,13 +7091,9 @@ input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active
           padding: 0;
           margin-left: 0; } }
     .site-header .navigation-inner .secondary-menu-wrapper {
-      display: none;
-      z-index: -1; }
-      @media screen and (min-width: 1200px), screen and (min-width: 992px) {
-        .site-header .navigation-inner .secondary-menu-wrapper {
-          display: block;
-          float: right;
-          z-index: 1; } }
+      display: block;
+      float: right;
+      z-index: 1; }
       .site-header .navigation-inner .secondary-menu-wrapper > ul.secondary-menu > li > a {
         padding: 20px 0;
         display: block; }
@@ -7391,17 +7387,42 @@ ul.main-menu > li, ul.secondary-menu > li {
     top: -18px;
     right: -47px; }
 
-@media screen and (min-width: 767px), screen and (min-width: 1200px) {
-  .events-tomorrow,
-  .events-next_weekend,
-  .top_events {
-    padding: 0 5px; } }
+.events-next_weekend div {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .events-next_weekend div {
+      text-overflow: initial;
+      width: auto; } }
 
-@media screen and (min-width: 992px) {
-  .events-tomorrow,
-  .events-next_weekend,
-  .top_events {
-    padding: 0 15px; } }
+.events-tomorrow {
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px; }
+
+.events-tomorrow,
+.events-next_weekend,
+.top_events {
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px; }
+  .events-tomorrow a,
+  .events-next_weekend a,
+  .top_events a {
+    padding: 5px; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .events-tomorrow,
+    .events-next_weekend,
+    .top_events {
+      max-width: 100%;
+      display: inline-block; } }
 
 fieldset {
   border: none;
@@ -7858,30 +7879,36 @@ article.node.node-ding-page .field-name-field-ding-page-tags {
     height: auto;
     padding: 0 10px; }
 
+.view-display-id-ding_news_list_library h3 .date-display-single,
 .view-display-id-ding_event_list h3 .date-display-single,
 .view-display-id-ding_event_list_library h3 .date-display-single {
   font-size: 40px;
   text-transform: uppercase; }
 
+.view-display-id-ding_news_list_library .view-content,
 .view-display-id-ding_event_list .view-content,
 .view-display-id-ding_event_list_library .view-content {
   flex: 0 0 100%;
   max-width: 100%; }
   @media screen and (min-width: 767px) {
+    .view-display-id-ding_news_list_library .view-content,
     .view-display-id-ding_event_list .view-content,
     .view-display-id-ding_event_list_library .view-content {
       margin: 0 30px; } }
+  .view-display-id-ding_news_list_library .view-content .views-row,
   .view-display-id-ding_event_list .view-content .views-row,
   .view-display-id-ding_event_list_library .view-content .views-row {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 15px; }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .view-display-id-ding_news_list_library .view-content .views-row,
       .view-display-id-ding_event_list .view-content .views-row,
       .view-display-id-ding_event_list_library .view-content .views-row {
         flex: 0 0 48.33333%;
         max-width: 48.33333%;
         display: inline-block; } }
+  .view-display-id-ding_news_list_library .view-content .views-row-odd,
   .view-display-id-ding_event_list .view-content .views-row-odd,
   .view-display-id-ding_event_list_library .view-content .views-row-odd {
     margin-right: 15px; }
@@ -7954,16 +7981,60 @@ fieldset.collapsible .fieldset-title::after {
     @media screen and (min-width: 767px) {
       .page-arrangementer .filters-group .label {
         padding: 0 5px;
-        position: absolute;
-        margin-top: -27px; } }
+        position: relative; } }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .page-arrangementer .filters-group .label {
         position: relative;
         margin-top: 0px; } }
+  .page-arrangementer .filters-group a {
+    padding: 5px; }
 
-.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > div.form-checkboxes {
-  overflow: hidden;
-  transition: height 0.3s ease-in-out; }
+@keyframes checkbox-collapse-in {
+  0% {
+    content: "\002B"; }
+  50% {
+    color: white; }
+  100% {
+    content: "\2212"; } }
+
+@keyframes checkbox-collapse-out {
+  0% {
+    content: "\2212"; }
+  50% {
+    color: white; }
+  100% {
+    content: "\002B"; } }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container {
+  width: 100%; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select {
+  max-width: 100%; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: -12px;
+  content: '\002B';
+  animation: checkbox-collapse-out 0.35s ease;
+  color: #494949;
+  font-size: 20px;
+  font-weight: bold; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label.chexbox-items-collapsed:after {
+  content: "\2212";
+  animation: checkbox-collapse-in 0.35s ease; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label {
+  position: relative;
+  display: block; }
+  .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+    display: block; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label {
+      position: static; }
+      .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+        display: none; } }
 
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
