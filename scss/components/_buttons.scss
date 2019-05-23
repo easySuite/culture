@@ -40,17 +40,45 @@
   }
 }
 
+.events-next_weekend {
+ div{
+    padding: 5px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+    
+    @media #{$tablet} , #{$wide} , #{$normal} {
+      text-overflow: initial;
+      width: auto;
+
+    }
+  }
+}
+
+.events-tomorrow {
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px;
+}
+
 .events-tomorrow,
 .events-next_weekend,
 .top_events {
- // padding: 0 5px;
-
-  @media #{$tablet} , #{$wide} {
-    padding: 0 5px;
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px;
+  a {
+    padding: 5px;
   }
 
-  @media  #{$normal} {
-    padding: 0 15px;
+  @media #{$tablet}, #{$wide} , #{$normal} {
+    max-width: 100%;
+    display: inline-block;
   }
 }
 

@@ -311,14 +311,9 @@
     }
 
     .secondary-menu-wrapper {
-      display: none;
-      z-index: -1;
-
-      @media #{$wide}, #{$normal} {
-        display: block;
-        float: right;
-        z-index: 1;
-      }
+      display: block;
+      float: right;
+      z-index: 1;
 
       > ul.secondary-menu {
         > li {
