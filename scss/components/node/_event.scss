@@ -105,6 +105,7 @@
 }
 
 //list events
+.view-display-id-ding_news_list_library,
 .view-display-id-ding_event_list,
 .view-display-id-ding_event_list_library {
  h3 .date-display-single {
@@ -210,18 +211,82 @@ fieldset.bef-select-as-checkboxes-fieldset {
 
       @media #{$tablet} {
         padding: 0 5px;
-        position: absolute;
-        margin-top: -27px;
+        position: relative;
       }
-      @media #{$wide}, #{$normal} {
+
+      @media  #{$wide}, #{$normal} {
         position: relative;
         margin-top: 0px;
       }
     }
+
+    a {
+      padding: 5px;
+    }
   }
 }
 
-.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > div.form-checkboxes {
-  overflow: hidden;
-  transition: height 0.3s ease-in-out;
+@keyframes checkbox-collapse-in {
+  0% {
+    content: "\002B";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "\2212";
+  }
+}
+
+@keyframes checkbox-collapse-out {
+  0% {
+    content: "\2212";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "\002B";
+  }
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container {
+  width: 100%;
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select {
+  max-width: 100%;
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: -12px;
+  content: '\002B';
+  animation: checkbox-collapse-out 0.35s ease;
+  color: $color-text;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label.chexbox-items-collapsed:after {
+  content: "\2212";
+  animation: checkbox-collapse-in 0.35s ease;
+}
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label {
+  position: relative;
+  display: block;
+
+  &::after {
+    display: block;
+  }
+
+  @media #{$tablet}, #{$wide}, #{$normal} {
+    position: static;
+
+    &::after {
+      display: none;
+    }
+  }
 }
