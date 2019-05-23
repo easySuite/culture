@@ -6660,7 +6660,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
   html a,
   body a {
-    color: #494949; }
+    color: #e3e000; }
     html a:hover,
     body a:hover {
       color: #e3e000;
@@ -7806,6 +7806,9 @@ article.node.node-ding-page .field-name-field-ding-page-tags {
   max-width: 100%;
   height: auto; }
 
+.node-ding-event a {
+  color: #e3e000; }
+
 .node-ding-event .left h2 {
   padding: 25px 0;
   margin-bottom: 25px;
@@ -7844,12 +7847,17 @@ article.node.node-ding-page .field-name-field-ding-page-tags {
 .node-ding-event .field-name-field-ding-event-price.field-label-hidden {
   display: none; }
 
+.node-ding-event .card a {
+  color: #262626; }
+
 .node-ding-event .field-name-field-ding-event-category {
   margin-bottom: 5px;
   background-color: #e3e000;
   width: max-content;
   padding: 0px 5px;
   border-radius: 3px; }
+  .node-ding-event .field-name-field-ding-event-category a {
+    color: #262626; }
 
 .node-ding-event .field-name-field-ding-event-date {
   font-size: 26px;
@@ -8039,6 +8047,9 @@ fieldset.collapsible .fieldset-title::after {
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
   height: auto; }
+
+.node-type-ding-news .node-ding-news a {
+  color: #e3e000; }
 
 .node-type-ding-news .node-ding-news .inner.row, .node-type-ding-news .node-ding-news .inner.footer-inner, .node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-title > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-title > a.inner,
 .node-type-ding-news .node-ding-news #kultur_calendar-day .kultur_calendar-body > a.inner, #kultur_calendar-day .node-type-ding-news .node-ding-news .kultur_calendar-body > a.inner {
@@ -8530,7 +8541,7 @@ fieldset.collapsible .fieldset-title::after {
       position: absolute;
       top: 0;
       left: 0;
-      width: 50%;
+      width: auto;
       margin-right: 10px; }
     .node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-items,
     .node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-items,
