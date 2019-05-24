@@ -7,6 +7,10 @@
     height: auto;
   }
 
+  a {
+    color: $color-primary;
+  }
+
   .left {
     h2 {
       padding: 25px 0;
@@ -60,12 +64,22 @@
     display: none;
   }
 
+  .card {
+    a {
+      color: $charcoal;
+    }
+  }
+
   .field-name-field-ding-event-category {
     margin-bottom: 5px;
     background-color: $color-primary;
     width: max-content;
     padding:  0px 5px;
     border-radius: 3px;
+
+    a {
+      color: $charcoal;
+    }
   }
 
   .field-name-field-ding-event-date {
