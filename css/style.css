@@ -7704,6 +7704,19 @@ ul.main-menu.navbar-nav {
   padding-right: 0;
   margin-top: 40px; }
 
+.page-taxonomy-term .content-wrapper .pane-page-content {
+  padding-top: 40px; }
+
+.field-name-field-ding-page-body a {
+  clear: left;
+  position: relative;
+  width: 100%;
+  min-width: 720px;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 .page-node.node-type-ding-page .field-slideshow.field-slideshow-processed {
   max-width: 100% !important;
   height: 100% !important; }
@@ -7797,6 +7810,12 @@ article.node.node-ding-page .field-name-field-ding-page-tags {
     width: max-content;
     padding: 0 5px;
     border-radius: 3px; }
+
+.card-body a,
+.card-body a:visited,
+.card-body a:hover {
+  cursor: pointer;
+  color: #262626; }
 
 .adaptive-image {
   margin-bottom: 20px; }
