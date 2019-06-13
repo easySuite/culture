@@ -9000,25 +9000,6 @@ table#calendar {
 
 /* Ding nodelist styles
    ========================================================================== */
-.page-ding-frontpage .ding_nodelist-carousel .article_image img,
-.page-ding-frontpage .ding_nodelist-carousel .event-image img {
-  height: 100%; }
-  @media screen and (min-width: 1200px), screen and (min-width: 992px), tablet {
-    .page-ding-frontpage .ding_nodelist-carousel .article_image img,
-    .page-ding-frontpage .ding_nodelist-carousel .event-image img {
-      height: auto; } }
-
-.page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
-  height: 500px; }
-
-.ding_nodelist-carousel .article_image img,
-.ding_nodelist-carousel .event-image img {
-  height: 100%; }
-  @media screen and (min-width: 1200px), screen and (min-width: 992px), tablet {
-    .ding_nodelist-carousel .article_image img,
-    .ding_nodelist-carousel .event-image img {
-      height: auto; } }
-
 .ding_nodelist .more-links {
   margin-top: 0; }
 
@@ -9167,9 +9148,6 @@ table#calendar {
   font-family: "SourceSansProRegular";
   font-size: 18px; }
 
-.ding_nodelist .ding_nodelist-items .item-body {
-  padding-right: 100px; }
-
 .ding_nodelist .ding_nodelist-items .item-title {
   left: -8px;
   position: relative; }
@@ -9246,10 +9224,7 @@ table#calendar {
   color: #262626; }
 
 .ding_nodelist-taxonomy .more {
-  display: block;
-  position: absolute;
-  bottom: 10px;
-  right: 0; }
+  display: block; }
 
 .ding_nodelist-taxonomy .item .news-link {
   display: block;
@@ -9342,7 +9317,10 @@ table#calendar {
 .ding_nodelist-taxonomy .more {
   background-color: #e3e000;
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  float: right; }
 
 .ding_nodelist .more-links .more-link {
   background-color: #e3e000; }
