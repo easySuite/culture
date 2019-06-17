@@ -7711,7 +7711,7 @@ ul.main-menu.navbar-nav {
   clear: left;
   position: relative;
   width: 100%;
-  min-width: 720px;
+  min-width: 150px;
   white-space: nowrap;
   display: block;
   overflow: hidden;
@@ -8662,8 +8662,13 @@ fieldset.collapsible .fieldset-title::after {
     width: 100px;
     float: left; }
 
+.pane-all-opening-hours .page-title {
+  overflow-x: scroll; }
+
 .opening-hours-table {
-  width: 100%; }
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 4px; }
   .opening-hours-table thead {
     border: none; }
   .opening-hours-table tbody tr.odd {
@@ -9017,6 +9022,28 @@ table#calendar {
     background-color: #e3e000;
     padding: 3px 5px;
     border-radius: 4px; }
+
+.ding_nodelist.ding_nodelist-carousel .event-image {
+  text-align: center;
+  font: 0/0 a; }
+  .ding_nodelist.ding_nodelist-carousel .event-image a {
+    background: black; }
+    @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .ding_nodelist.ding_nodelist-carousel .event-image a {
+        background: transparent; } }
+  .ding_nodelist.ding_nodelist-carousel .event-image::before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    /* vertical alignment of the inline element */
+    height: 100%; }
+  .ding_nodelist.ding_nodelist-carousel .event-image img {
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto; }
 
 .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
   color: #262626; }

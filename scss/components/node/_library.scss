@@ -250,9 +250,13 @@
   }
 }
 
-
+.pane-all-opening-hours .page-title {
+  overflow-x: scroll;
+}
 .opening-hours-table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 4px;
 
   thead {
     border: none;
