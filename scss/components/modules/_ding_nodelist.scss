@@ -24,28 +24,7 @@
     }
  
     &.ding_nodelist-carousel {
-      .event-image {
-        
-        a {
-          background: black;
-
-          @media #{$tablet}, #{$wide}, #{$normal} {
-            background: transparent;
-          }
-        }
-
-
-
-        text-align: center; 
-        font: 0/0 a; 
-  
-        &::before {
-          content: ' ';
-          display: inline-block;
-          vertical-align: middle;  /* vertical alignment of the inline element */
-          height: 100%;
-        }
-      
+      .event-image {      
         img {
           display: block;
           top: 0;
@@ -53,6 +32,8 @@
           position: absolute;
           margin-top: auto;
           margin-bottom: auto;
+          min-width: 300px;
+          min-height: 400px;
         }
       }
 
