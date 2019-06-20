@@ -131,6 +131,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+
+  .media img {
+    width: 100%;
+  }
 }
 
 .ding-campaign-grid-item {
@@ -139,12 +143,14 @@
    }
   @media #{$wide}, #{$normal} {
     flex-basis: 30%;
+    // height: 165px;
+    // width: 375px;
   }
 
-  height: 195px;
+  height: 100%;
   flex-basis: 100%;
   -ms-flex: auto;
-  width: 359px;
+  width: 100%;
   position: relative;
   box-sizing: border-box;
 }     

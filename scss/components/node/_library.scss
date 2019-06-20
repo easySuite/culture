@@ -240,7 +240,7 @@
 
     @media #{$wide}, #{$normal} {
       @include make-col(5.5);
-     }
+    }
 
     .library-contact-phone-label,
     .library-contact-fax-label {
@@ -250,7 +250,7 @@
   }
 }
 
-.pane-all-opening-hours .page-title {
+.pane-all-opening-hours .pane-content {
   overflow-x: scroll;
 }
 .opening-hours-table {
