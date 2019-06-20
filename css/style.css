@@ -8385,12 +8385,14 @@ fieldset.collapsible .fieldset-title::after {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start; }
+  .ding-campaign-grid-wrapper .media img {
+    width: 100%; }
 
 .ding-campaign-grid-item {
-  height: 195px;
+  height: 100%;
   flex-basis: 100%;
   -ms-flex: auto;
-  width: 359px;
+  width: 100%;
   position: relative;
   box-sizing: border-box; }
   @media screen and (min-width: 767px) {
@@ -8661,7 +8663,7 @@ fieldset.collapsible .fieldset-title::after {
     width: 100px;
     float: left; }
 
-.pane-all-opening-hours .page-title {
+.pane-all-opening-hours .pane-content {
   overflow-x: scroll; }
 
 .opening-hours-table {
@@ -9022,16 +9024,6 @@ table#calendar {
     padding: 3px 5px;
     border-radius: 4px; }
 
-.ding_nodelist.ding_nodelist-carousel .event-image img {
-  display: block;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
-  min-width: 300px;
-  min-height: 400px; }
-
 .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
   color: #262626; }
 
@@ -9152,7 +9144,6 @@ table#calendar {
 
 .ding_nodelist .ding_nodelist-items h2.item-title a {
   color: #262626;
-  font-size: 16px;
   font-family: "FaktPro-SemiBold", sans-serif; }
 
 .ding_nodelist .ding_nodelist-items .date,
@@ -9242,9 +9233,12 @@ table#calendar {
 
 .ding_nodelist-taxonomy .item .news-link {
   display: block;
-  position: absolute;
-  bottom: -16px;
-  right: -10px; }
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  float: right;
+  margin-top: 5px; }
 
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .item-list-image,
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .item-library {
@@ -9276,6 +9270,9 @@ table#calendar {
     .page-ding-frontpage .ding_nodelist-carousel .article_image img,
     .page-ding-frontpage .ding_nodelist-carousel .event-image img {
       height: auto; } }
+
+.pane-ding-nodelist .ding_nodelist-taxonomy .field-name-field-ding-news-category a {
+  font-size: 16px; }
 
 .pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-day {
   background-color: #e3e000;
