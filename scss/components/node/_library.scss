@@ -252,6 +252,10 @@
 
 .pane-all-opening-hours .pane-content {
   overflow-x: scroll;
+  @media #{tablet}, #{$wide}, #{$normal} {
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
 }
 .opening-hours-table {
   width: 100%;
