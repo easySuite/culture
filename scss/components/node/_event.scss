@@ -92,6 +92,7 @@
   .field-name-field-ding-event-lead {
     font-family: $font-family-bold;
     margin-bottom: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -182,11 +183,17 @@
   }
 }
 
+.social-share-container {
+  padding-top: 10px;
+}
+
 .share-buttons {
   a {
     color: $color-primary;
     margin-bottom: 10px;
   }
+  border-bottom: 1px solid $grey;
+  padding-bottom: 10px;
 }
 
 .bef-checkboxes {
