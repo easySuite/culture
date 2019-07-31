@@ -366,7 +366,6 @@
     margin-bottom: 20px;
   }
 }
-////////
 
 .opening-hours-week {
    padding: 0;
@@ -401,7 +400,6 @@
       display: block;
     }
 
-    // Tablet
     @media #{$normal}, #{$wide} {
       display: inline-block;
       width: 18.5%;
@@ -415,8 +413,6 @@
   tr {
     width: 100%;
 
-  //   // Tablet
-  //   // Tablet
     @media #{$tablet} {
       float: left;
       &.even {
