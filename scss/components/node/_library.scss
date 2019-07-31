@@ -271,9 +271,11 @@
       background-color: $grey;
 
       td {
-        padding-left: 10px;
-        div span {
-          margin-left: 10px;
+        div {
+          padding-left: 10px;
+          span {
+            padding-left: 10px;
+          }
         }
       }
     }
@@ -282,9 +284,11 @@
       background-color: $grey-light;
 
       td {
-        padding-left: 10px;
-        div span {
-          margin-left: 10px;
+        div {
+          padding-left: 10px;
+          span {
+            padding-left: 10px;
+          }
         }
       }
     }
@@ -360,5 +364,103 @@
 #ding-library-front {
   .view .more-link {
     margin-bottom: 20px;
+  }
+}
+
+.opening-hours-week {
+   padding: 0;
+
+  .opening-hours-title {
+    @media  #{$wide}, #{$normal} {
+    display: none;
+    }
+
+    display: block;
+    float: left;
+    line-height: 54px;
+    margin-top: 20px;
+  }
+  .button-previous {
+    margin-right: 12px;}
+}
+
+.opening-hours-table {
+  th,
+  td {
+    vertical-align: top;
+    display: block;
+  }
+
+  thead {
+    width: 100%;
+  }
+  th {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+
+    @media #{$normal}, #{$wide} {
+      display: inline-block;
+      width: 18.5%;
+      
+      &:first-child {
+        display: inline-block;
+        width: 26%;
+      }
+    }
+  }
+  tr {
+    width: 100%;
+
+    @media #{$tablet} {
+      float: left;
+      &.even {
+        background: $grey;
+        padding: 20px;
+      }
+      &.odd {
+        background: $white;
+        padding: 20px;
+      }
+    }
+  }
+  td {
+    @media  #{$wide}, #{$normal} {
+      display: inline-block;
+      width: 18.5%;
+      padding: 0;
+      margin-top: 10px;
+      &:first-child {
+        color: $color-primary;
+        margin-bottom: 0;
+        padding: 0;
+        display: inline-block;
+        width: 26%;
+      }
+    }
+
+    &:first-child {
+      padding-left: 30px;
+      color: $color-primary;
+    }
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+
+    &::before {
+      display: block;
+      content: attr(data-label) " ";
+      padding-left: 10px;
+      font-weight: bold;
+
+      @media #{$wide}, #{$normal} {
+        display: none;
+      }
+    }
+
+    span {
+      padding-left: 10px;
+    }
   }
 }

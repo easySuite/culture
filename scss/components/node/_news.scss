@@ -267,3 +267,25 @@
 .view-ding-news .card-body {
   height: 235px;
 }
+
+.card-text .field-name-field-ding-news-lead {
+  max-height: 6em;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  line-height: 1.5em;
+  background: white;
+  word-break: break-all;
+ }
+
+.card-text .field-name-field-ding-news-lead ::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4.8em;
+  width: 25%;
+  height:15px;
+  text-align: center;
+}
