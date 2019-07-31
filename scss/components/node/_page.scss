@@ -14,16 +14,6 @@
   }
 }
 
-.field-name-field-ding-page-body a {
-  clear: left;
-  width: 100%;
-  min-width: 150px;
-  white-space: nowrap;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .page-node.node-type-ding-page {
   .field-slideshow.field-slideshow-processed {
     max-width: 100% !important;
@@ -177,6 +167,7 @@ article.node.node-ding-page {
   text-transform: uppercase;
   color: $charcoal;
   font-weight: bold;
+  margin-bottom: 5px;
 
   .field-item {
     background-color: $color-primary;
@@ -194,4 +185,16 @@ article.node.node-ding-page {
 }
 .adaptive-image {
   margin-bottom: 20px;
+}
+
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.field-type-text-long {
+  word-break: break-all;
 }
