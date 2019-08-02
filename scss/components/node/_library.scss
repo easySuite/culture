@@ -254,13 +254,19 @@
   overflow-x: scroll;
   @media #{tablet}, #{$wide}, #{$normal} {
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
   }
 }
 .opening-hours-table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 4px;
+
+    th:first-child:nth-last-child(4),
+    th:first-child:nth-last-child(5) ~ th {
+      float: left;
+      width: calc(100% / 5 - 15px);
+    }
 
   thead {
     border: none;
