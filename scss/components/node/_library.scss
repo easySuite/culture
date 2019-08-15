@@ -262,12 +262,6 @@
   border-collapse: collapse;
   border-spacing: 4px;
 
-    th:first-child:nth-last-child(4),
-    th:first-child:nth-last-child(5) ~ th {
-      float: left;
-      width: calc(100% / 5 - 15px);
-    }
-
   thead {
     border: none;
   }
@@ -278,7 +272,6 @@
 
       td {
         div {
-          padding-left: 10px;
           span {
             padding-left: 10px;
           }
@@ -291,7 +284,6 @@
 
       td {
         div {
-          padding-left: 10px;
           span {
             padding-left: 10px;
           }
@@ -442,7 +434,7 @@
         margin-bottom: 0;
         padding: 0;
         display: inline-block;
-        width: 26%;
+        width: 24%;
       }
     }
 
@@ -469,4 +461,16 @@
       padding-left: 10px;
     }
   }
+}
+
+.opening-hours-table th,
+.opening-hours-table tr {
+  @media #{$tablet}, #{$wide}, #{$normal} {
+    border-bottom : none;
+  }
+  border-bottom : none;
+}
+
+.opening-hours-week thead {
+  border-bottom: 3px solid #ccc;
 }
