@@ -89,8 +89,4 @@ function culture_preprocess_panels_pane(&$vars) {
       $vars['content']['#theme_wrappers'] = array('menu_tree__sub_menu');
     }
   }
-
-  if ($vars['pane']->subtype == 'menu_block-main_menu_second_level') {
-    cu_body_class('has-second-level-menu');
-  }
 }
