@@ -215,9 +215,6 @@
 
   .sub-menu-title,
   .pane-title {
-    position: relative;
-    border-top: 1px solid $charcoal-opacity-light;
-    padding-top: 25px;
 
     &:last-child {
       border-bottom: none;
