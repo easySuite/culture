@@ -7480,6 +7480,9 @@ table td {
   font-weight: bold;
   padding-bottom: 5px; }
 
+html body .search-overlay--wrapper .icon-spinner::after {
+  animation-direction: reverse; }
+
 .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
 input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
