@@ -260,3 +260,7 @@ table td {
     }
   }
 }
+
+html body .search-overlay--wrapper .icon-spinner::after {
+  animation-direction: reverse;
+}
