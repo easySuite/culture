@@ -109,12 +109,14 @@
         </div>
       </div>
       <!-- insert price-field markup -->
+      <?php if (!empty($event_price)) : ?>
       <div class="field field-name-field-ding-event-price field-label-inline clearfix">
         <div class="field-label"><?php print t('Price'); ?></div>
         <div class="field-items">
           <div class="field-item even"><?php print $event_price; ?></div>
         </div>
       </div>
+      <?php endif; ?>
       <?php print render($content['group_left']); ?>
       <?php
         if (!empty($book_button)):

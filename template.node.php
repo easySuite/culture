@@ -101,10 +101,10 @@ function culture_preprocess__node__ding_event(&$variables) {
   $date = field_get_items('node', $variables['node'], 'field_ding_event_date');
 
   $price = field_get_items('node', $variables['node'], 'field_ding_event_price');
-  if (!empty($price)) {
+  if ($price !== FALSE && $price[0]['value'] !== '0') {
     $variables['event_price'] = $price[0]['value'] . ' ' . variable_get('ding_event_currency_type', 'Kr');
   }
-  else {
+  else if ($price[0]['value'] === '0') {
     $variables['event_price'] = t('Free');
   }
 

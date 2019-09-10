@@ -98,8 +98,8 @@
     </div>
     <div class="date"><?php print $event_date; ?></div>
     <a href="<?php print $node_url; ?>">
-        <h3 class="card-title"><?php print $title; ?></h3>
-      <div class="card-text">   
+      <h3 class="card-title"><?php print $title; ?></h3>
+      <div class="card-text">
         <?php print render($content['field_ding_event_lead']); ?>
       </div>
     </a>
@@ -110,7 +110,9 @@
         <div class="library"><?php print render($content['og_group_ref']); ?></div>
       <?php endif; ?>
       <div class="date-time"><?php print $event_time; ?></div>
-      <div class="price"><?php print $event_price; ?></div>
+      <?php if (!empty($event_price)) : ?>
+        <div class="price"><?php print $event_price; ?></div>
+      <?php endif; ?>
     </div>
     <a href="<?php print $node_url; ?>">
       <div class="button btn float-right"><?php print t('Read more'); ?></div>
