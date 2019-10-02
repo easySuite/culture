@@ -27,8 +27,12 @@ function culture_preprocess_node(&$variables, $hook) {
   // Opening hours on library list. but not on the search page.
   $path = drupal_get_path_alias();
   if (!(strpos($path, 'search', 0) === 0)) {
-    $hooks = theme_get_registry(FALSE);
-    if (isset($hooks['opening_hours_week']) && $variables['type'] == 'ding_library') {
+    $hide_empty_oh = variable_get('opening_hours_hide_on_empty_ding_library', 0);
+    $node_have_active_oh = opening_hours_present_on_node($variables['node']->nid);
+    if ($variables['type'] == 'ding_library') {
+      if (empty($node_have_active_oh) && $hide_empty_oh == 1) {
+        return;
+      }
       $variables['opening_hours'] = theme('ding_ddbasic_opening_hours_week', array('node' => $variables['node']));
     }
   }
