@@ -18,7 +18,7 @@
  */
 ?>
 <div class="logo">
-  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+  <a href="<?php print $front_page; ?>" title="<?php print t('Oplev Brøndby'); ?>" rel="home">
     <div class="site-name-container<?php if ($logo): ?> logo-container<?php
    endif; ?>">
       <div class="site-name"><?php print $site_name; ?></div>
