@@ -408,11 +408,11 @@
 
     @media #{$normal}, #{$wide} {
       display: inline-block;
-      width: 18.5%;
+      width: 60%;
       
       &:first-child {
         display: inline-block;
-        width: 26%;
+        width: 40%;
       }
     }
   }
@@ -434,7 +434,7 @@
   td {
     @media  #{$wide}, #{$normal} {
       display: inline-block;
-      width: 18.5%;
+      width: 60%;
       padding: 0;
       margin-top: 10px;
       &:first-child {
@@ -442,7 +442,7 @@
         margin-bottom: 0;
         padding: 0;
         display: inline-block;
-        width: 26%;
+        width: 40%;
       }
     }
 
